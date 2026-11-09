@@ -9,15 +9,15 @@
 ## Slices
 | Slice | Scope | Target | Status |
 |---|---|---|---|
-| A1 | UAE WhatsApp (Sharjah/Ajman/RAK/Al Ain/Fujairah/UAQ), mixed niches | 30 | running |
-| A2 | KSA 10 / Qatar 5 / Kuwait 5 WhatsApp | 20 | running |
-| A3 | UAE Instagram (Dubai/Abu Dhabi): clinics, salons, gyms, restaurants | 30 | running |
-| A4 | UAE Instagram (Dubai/Abu Dhabi): law/accounting, home services, real estate, restaurants | 30 | running |
-| A5 | KSA 20 / Qatar 5 / Kuwait 5 Instagram | 30 | running |
-| A6 | Netherlands Instagram | 30 | running |
-| A7 | Switzerland Instagram | 25 | running |
-| A8 | Germany / Austria Instagram | 25 | running |
-| A9 | Nordics 20 + Belgium/Luxembourg 10 Instagram | 30 | running |
+| A1 | UAE WhatsApp (Sharjah/Ajman/RAK/Al Ain/Fujairah/UAQ), mixed niches | 30 | running (relaunched 01:21 after first run stalled) |
+| A2 | KSA 10 / Qatar 5 / Kuwait 5 WhatsApp | 20 | running (relaunched 01:21 after first run stalled) |
+| A3 | UAE Instagram (Dubai/Abu Dhabi): clinics, salons, gyms, restaurants | 30 | running (relaunched 01:21 after first run stalled) |
+| A4 | UAE Instagram (Dubai/Abu Dhabi): law/accounting, home services, real estate, restaurants | 30 | running (relaunched 01:21 after first run stalled) |
+| A5 | KSA 20 / Qatar 5 / Kuwait 5 Instagram | 30 | running (relaunched 01:21 after first run stalled) |
+| A6 | Netherlands Instagram | 30 | running (relaunched 01:21 after first run stalled) |
+| A7 | Switzerland Instagram | 25 | running (relaunched 01:21 after first run stalled) |
+| A8 | Germany / Austria Instagram | 25 | running (relaunched 01:21 after first run stalled) |
+| A9 | Nordics 20 + Belgium/Luxembourg 10 Instagram | 30 | running (relaunched 01:21 after first run stalled) |
 
 ## Done
 - brand kit unzipped to `brand/`

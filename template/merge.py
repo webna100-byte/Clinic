@@ -38,38 +38,38 @@ FALLBACK_REASON = {
 
 TPL = {
     ('ar', 'WhatsApp'): (
-        'السلام عليكم، معكم فريق Bytevia لتصميم المواقع. لاحظنا أن {reason}، ويسعدنا أن نساعد {name} في الظهور بصورة احترافية على الإنترنت. هل تحبون أن نريكم تصميمًا جاهزًا لنشاطكم؟',
-        'السلام عليكم، نتابع رسالتنا السابقة بخصوص موقع {name}. التصميم جاهز، ويسعدنا إرساله لكم متى ما ناسبكم.'),
+        'السلام عليكم 👋 معكم Bytevia. لاحظنا أن {reason}. جهّزنا لـ{name} تصميم موقع احترافي جاهز، وتنفيذه بـ 900$ فقط (دفعة واحدة، بدون اشتراكات). تحبون نرسل لكم التصميم؟',
+        'السلام عليكم، تصميم موقع {name} جاهز وسعره 900$ فقط. هل نرسله لكم؟'),
     ('ar', 'Instagram'): (
-        'مرحبًا {name} 👋 أعجبنا محتوى حسابكم كثيرًا. لاحظنا أن {reason}، فجهّزنا فكرة لموقع خاص بكم. هل تحبون أن نريكم تصميمًا جاهزًا لنشاطكم؟',
-        'مرحبًا مجددًا 🙂 تصميم موقع {name} جاهز، هل نرسله لكم هنا؟'),
+        'مرحبًا {name} 👋 معكم Bytevia. لاحظنا أن {reason}. جهّزنا لكم تصميم موقع احترافي جاهز، وتنفيذه بـ 900$ فقط (دفعة واحدة، بدون اشتراكات). نرسله لكم؟',
+        'مرحبًا مجددًا 🙂 تصميم موقع {name} جاهز بسعر 900$ فقط. نرسله هنا؟'),
     ('en', 'WhatsApp'): (
-        "Hello, this is the Bytevia web design team. We noticed that {reason}, and we'd love to help {name} look as professional online as it is in person. Would you like us to show you a ready-made design for your business?",
-        'Hello again, just following up on our message about a website for {name}. The design is ready and we would be happy to send it whenever suits you.'),
+        "Hello 👋 This is Bytevia. We noticed that {reason}. We've prepared a professional website design for {name}, and we can build it for just $900 (one-time, no subscriptions). Shall we send it over?",
+        'Hello, the website design for {name} is ready for just $900. Shall we send it?'),
     ('en', 'Instagram'): (
-        "Hi {name}! 👋 Really like what you share here. We noticed that {reason}, so we sketched a website concept just for you. Would you like us to show you the ready design?",
-        'Hi again! The website concept for {name} is ready, shall we send it over here?'),
+        "Hi {name} 👋 Bytevia here. We noticed that {reason}. We've designed a professional website for you, and we can build it for just $900 (one-time, no subscriptions). Want to see it?",
+        'Hi again 🙂 your website design is ready for just $900. Want us to send it here?'),
     ('nl', 'Instagram'): (
-        'Hoi {name}! 👋 Mooi werk op jullie Instagram. Het viel ons op dat {reason}, dus we hebben alvast een websiteontwerp voor jullie uitgewerkt. Zouden jullie het willen zien?',
-        'Hoi! Nog even een berichtje: het websiteontwerp voor {name} staat klaar. Zullen we het hier sturen?'),
+        'Hoi {name} 👋 Hier Bytevia. Het viel ons op dat {reason}. We hebben alvast een professioneel websiteontwerp voor jullie klaarstaan, uitvoering voor slechts 900 $ (eenmalig, geen abonnement). Zullen we het laten zien?',
+        'Hoi! Het websiteontwerp voor {name} staat klaar voor slechts 900 $. Zullen we het hier sturen?'),
     ('de', 'Instagram'): (
-        'Guten Tag {name}, Ihr Instagram-Auftritt gefällt uns sehr. Uns ist aufgefallen, dass {reason}. Deshalb haben wir bereits einen Website-Entwurf für Sie vorbereitet. Dürfen wir ihn Ihnen zeigen?',
-        'Guten Tag, kurz nachgefragt: Der Website-Entwurf für {name} ist fertig. Sollen wir ihn Ihnen hier schicken?'),
+        'Guten Tag {name} 👋 hier Bytevia. Uns ist aufgefallen, dass {reason}. Wir haben bereits einen professionellen Website-Entwurf für Sie vorbereitet, Umsetzung für nur 900 $ (einmalig, ohne Abo). Dürfen wir ihn Ihnen zeigen?',
+        'Guten Tag, der Website-Entwurf für {name} ist fertig, für nur 900 $. Dürfen wir ihn Ihnen hier schicken?'),
     ('fr', 'Instagram'): (
-        "Bonjour {name} ! Votre compte Instagram nous plaît beaucoup. Nous avons remarqué que {reason}, alors nous avons préparé une maquette de site web pour vous. Souhaitez-vous la découvrir ?",
-        "Bonjour, nous nous permettons de revenir vers vous : la maquette du site de {name} est prête. Voulez-vous que nous vous l'envoyions ici ?"),
+        "Bonjour {name} 👋 Ici Bytevia. Nous avons remarqué que {reason}. Nous avons préparé une maquette de site professionnelle pour vous, réalisable pour seulement 900 $ (paiement unique, sans abonnement). Souhaitez-vous la voir ?",
+        "Bonjour, la maquette du site de {name} est prête, pour seulement 900 $. On vous l'envoie ici ?"),
     ('da', 'Instagram'): (
-        'Hej {name}! 👋 Vi er rigtig glade for jeres Instagram. Vi lagde mærke til, at {reason}, så vi har lavet et udkast til en hjemmeside til jer. Har I lyst til at se det?',
-        'Hej igen! Udkastet til jeres hjemmeside er klar. Skal vi sende det her?'),
+        'Hej {name} 👋 Bytevia her. Vi lagde mærke til, at {reason}. Vi har lavet et professionelt hjemmesideudkast til jer, og det kan realiseres for kun 900 $ (engangsbetaling, intet abonnement). Vil I se det?',
+        'Hej igen! Udkastet til jeres hjemmeside er klar for kun 900 $. Skal vi sende det her?'),
     ('no', 'Instagram'): (
-        'Hei {name}! 👋 Vi liker Instagram-kontoen deres godt. Vi la merke til at {reason}, så vi har laget et utkast til en nettside for dere. Har dere lyst til å se det?',
-        'Hei igjen! Utkastet til nettsiden deres er klart. Skal vi sende det her?'),
+        'Hei {name} 👋 Bytevia her. Vi la merke til at {reason}. Vi har laget et profesjonelt nettsideutkast til dere, som kan realiseres for kun 900 $ (engangsbetaling, uten abonnement). Vil dere se det?',
+        'Hei igjen! Utkastet til nettsiden deres er klart for kun 900 $. Skal vi sende det her?'),
     ('sv', 'Instagram'): (
-        'Hej {name}! 👋 Vi gillar ert Instagramkonto. Vi märkte att {reason}, så vi har tagit fram ett förslag på en webbplats åt er. Vill ni se det?',
-        'Hej igen! Förslaget på er webbplats är klart. Ska vi skicka det här?'),
+        'Hej {name} 👋 Bytevia här. Vi märkte att {reason}. Vi har tagit fram ett professionellt webbplatsförslag åt er, som kan genomföras för bara 900 $ (engångsbelopp, inget abonnemang). Vill ni se det?',
+        'Hej igen! Förslaget på er webbplats är klart för bara 900 $. Ska vi skicka det här?'),
     ('fi', 'Instagram'): (
-        'Hei {name}! 👋 Pidämme Instagram-tilistänne. Huomasimme, että {reason}, joten teimme teille valmiin verkkosivuehdotuksen. Haluaisitteko nähdä sen?',
-        'Hei taas! Verkkosivuehdotuksenne on valmis. Lähetämmekö sen tänne?'),
+        'Hei {name} 👋 Bytevia tässä. Huomasimme, että {reason}. Olemme tehneet teille valmiin ammattimaisen verkkosivuehdotuksen, toteutus vain 900 $ (kertamaksu, ei tilausta). Haluaisitteko nähdä sen?',
+        'Hei taas! Verkkosivuehdotuksenne on valmis hintaan 900 $. Lähetämmekö sen tänne?'),
 }
 CONFIDENT = {'ar', 'en', 'de', 'nl', 'fr'}  # others flagged for native review
 
@@ -178,7 +178,7 @@ def main():
     rows.sort(key=lambda r: (order.get(r['need_score'], 3), r['_slice']))
     build = []
     for r in rows:
-        build.append({'name': r['name'], 'name_ar': r['name_ar'], 'niche': r['niche'], 'city': r['city'], 'lang': r['message_lang'],
+        build.append({'name': r['name'], 'name_ar': r['name_ar'], 'country': r['country'], 'niche': r['niche'], 'city': r['city'], 'lang': r['message_lang'],
                       'color': r['brand_color'], 'whatsapp': r['whatsapp'], 'instagram': r['instagram'],
                       'maps': f"{r['name']} {r['city']}", 'logo': r['logo_url']})
     os.makedirs(os.path.join(ROOT, 'data'), exist_ok=True)
@@ -230,6 +230,14 @@ def main():
             'مصدر المعلومة': r['source_url'],
         })
         nxt += 1
+    byig = {ig_handle(r['instagram']): r for r in rows if ig_handle(r['instagram'])}
+    byph = {phone(r['whatsapp']): r for r in rows if phone(r['whatsapp'])}
+    for o in out[:len(existing)]:
+        if o.get('حالة الإرسال', 'لم يُرسل') not in ('', 'لم يُرسل'):
+            continue  # already sent: never touch
+        src = byig.get(ig_handle(o.get('حساب انستغرام'))) or byph.get(phone(o.get('رقم الواتساب')))
+        if src:
+            o['الرسالة الأولى'], o['رسالة المتابعة'], o['يحتاج مراجعة لغوية'] = messages(src)
     with open(os.path.join(ROOT, 'leads.csv'), 'w', encoding='utf-8-sig', newline='') as fh:
         w = csv.DictWriter(fh, fieldnames=COLUMNS)
         w.writeheader()

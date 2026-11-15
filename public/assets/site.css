@@ -77,3 +77,8 @@ footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;a
 /* responsive */
 @media (max-width:980px){.g4{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr}.menu{display:none}}
 @media (max-width:720px){.g2,.g4{grid-template-columns:1fr}.hero{min-height:560px}section{padding:64px 0}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gallery div:first-child{grid-column:span 2;grid-row:span 1}.nav .btn{display:none}.concept{font-size:11.5px}.trust{gap:16px}}
+
+.band{background:var(--brand);color:#fff;padding:56px 0}.band .wrap{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}.band h2{margin:0;font-size:clamp(24px,3vw,34px);max-width:720px}.band .btn{background:#fff;color:var(--brand)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.rv.in{opacity:1;transform:none}
+.card{transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(15,30,50,.12)}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}

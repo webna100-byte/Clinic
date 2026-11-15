@@ -99,7 +99,8 @@ function render(d, lang, otherLang, depth) {
   const up = '../'.repeat(depth);
   const assets = up + '../../assets';
   const img = (i) => `${assets}/img/${n.images[i % n.images.length]}.jpg`;
-  const waNum = (d.whatsapp || '').replace(/[^\d]/g, '');
+  const waNum = d.gulf ? (d.whatsapp || '').replace(/[^\d]/g, '') : '';
+  const telNum = (d.whatsapp || '').replace(/[^\d+]/g, '');
   const waLink = waNum ? `https://wa.me/${waNum}` : '';
   const igLink = d.instagram || '';
   const chat = waLink || igLink || '#contact';
@@ -117,6 +118,7 @@ function render(d, lang, otherLang, depth) {
 <meta name="robots" content="noindex,nofollow">
 <meta name="description" content="${esc(fill(c.heroS, v))}">
 <link rel="stylesheet" href="${assets}/site.css">
+<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'LocalBusiness', name: v.name, address: { '@type': 'PostalAddress', addressLocality: v.city } })}</script>
 <style>:root{--brand:${esc(d.color)}}</style>
 </head>
 <body>
@@ -134,7 +136,7 @@ function render(d, lang, otherLang, depth) {
   <span class="kicker">${esc(v.name)} · ${esc(v.city)}</span>
   <h1>${esc(fill(c.heroT, v))}</h1>
   <p>${esc(fill(c.heroS, v))}</p>
-  <div class="ctas"><a class="btn" href="#contact">${esc(c.cta)}</a>${waLink ? `<a class="btn ghost" href="${waLink}" target="_blank" rel="noopener">${esc(t.whatsapp)}</a>` : ''}</div>
+  <div class="ctas"><a class="btn" href="#contact">${esc(c.cta)}</a>${waLink ? `<a class="btn ghost" href="${waLink}" target="_blank" rel="noopener">${esc(t.whatsapp)}</a>` : telNum ? `<a class="btn ghost" href="tel:${telNum}">${esc(t.call)}</a>` : igLink ? `<a class="btn ghost" href="${esc(igLink)}" target="_blank" rel="noopener">Instagram</a>` : ''}</div>
   <div class="trust">${t.why.map((w) => `<div>${svg('check')}${esc(w)}</div>`).join('')}</div>
 </div></section>
 
@@ -166,6 +168,8 @@ function render(d, lang, otherLang, depth) {
   <p class="note">${esc(t.reviewsNote)}</p>
 </div></section>
 
+<section class="band"><div class="wrap"><h2>${esc(fill(c.heroT, v))}</h2><a class="btn" href="#contact">${esc(c.cta)}</a></div></section>
+
 <section id="contact" class="soft"><div class="wrap grid g2 contact">
   <div class="card">
     <span class="eyebrow">${esc(t.nav[4])}</span><h2>${esc(c.cta)}</h2>
@@ -182,7 +186,7 @@ function render(d, lang, otherLang, depth) {
     <div class="map"><iframe loading="lazy" title="${esc(t.map)}" src="https://www.google.com/maps?q=${mapsQ}&output=embed"></iframe></div>
     <div class="info">
       <a href="https://www.google.com/maps/search/?api=1&query=${mapsQ}" target="_blank" rel="noopener">${svg('pin')}${esc(v.name)}, ${esc(v.city)}</a>
-      ${waLink ? `<a href="${waLink}" target="_blank" rel="noopener">${svg('phone')}<span dir="ltr">${esc(d.whatsapp)}</span></a>` : ''}
+      ${(waLink || telNum) ? `<a href="${waLink || 'tel:' + telNum}"${waLink ? ' target="_blank" rel="noopener"' : ''}>${svg('phone')}<span dir="ltr">${esc(d.whatsapp)}</span></a>` : ''}
       ${igLink ? `<a href="${esc(igLink)}" target="_blank" rel="noopener">${svg('insta')}Instagram</a>` : ''}
     </div>
   </div>
@@ -191,6 +195,7 @@ function render(d, lang, otherLang, depth) {
 
 <footer><div class="wrap row"><div>© ${new Date().getFullYear()} ${esc(v.name)} · ${esc(t.rights)}</div><div>${esc(fill(t.bar, v))}</div></div></footer>
 ${chat !== '#contact' ? `<a class="fab" href="${esc(chat)}" target="_blank" rel="noopener" aria-label="${esc(t.whatsapp)}" style="${waLink ? '' : 'background:var(--brand)'}">${waLink ? WA : svg('insta')}</a>` : ''}
+<script>(function(){var e=document.querySelectorAll('.card,.head,.about .img,.gallery div');if(!('IntersectionObserver' in window)){return}var o=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{threshold:.12});e.forEach(function(n){n.classList.add('rv');o.observe(n)})})();</script>
 </body></html>`;
 }
 
@@ -203,7 +208,8 @@ function normalize(r) {
   const color = /^#[0-9a-f]{6}$/i.test(r.color || r.brand_color || '') ? (r.color || r.brand_color) : niches[niche].color;
   const city = r.city.trim();
   const cityLocal = AR_CITY[city.toLowerCase()] ? { ar: AR_CITY[city.toLowerCase()] } : {};
-  return { name: r.name.trim(), nameAr: (r.name_ar || '').trim(), niche, city, cityLocal, lang, color, whatsapp: r.whatsapp || '', instagram: r.instagram || '', maps: r.maps || '', logo: r.logo || r.logo_url || '' };
+  const gulf = ['UAE','Saudi Arabia','Qatar','Kuwait'].includes(r.country || '');
+  return { gulf, name: r.name.trim(), nameAr: (r.name_ar || '').trim(), niche, city, cityLocal, lang, color, whatsapp: r.whatsapp || '', instagram: r.instagram || '', maps: r.maps || '', logo: r.logo || r.logo_url || '' };
 }
 
 function buildOne(raw, tokens) {

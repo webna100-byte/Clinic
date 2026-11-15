@@ -43,3 +43,9 @@ name,niche,sub_niche,country,city,channel,whatsapp,instagram,maps_url,website,ne
 - notes: anything useful (followers count, "booking only via Fresha", etc.)
 
 When finished, reply with: rows written, count per niche, count per need_score, and any shortfall + why. Keep the reply short.
+
+## Addendum (round 2)
+- Before adding a lead, check it is not already in any research/*.csv (`grep -il "<instagram handle or phone>" /home/user/Clinic/research/*.csv`). Skip duplicates.
+- The `country` column must be the country where the business really is (check city + phone prefix: +971 UAE, +966 KSA, +974 Qatar, +965 Kuwait, +31 NL, +41 CH, +49 DE, +43 AT, +45 DK, +47 NO, +46 SE, +32 BE, +352 LU). Never label a Gulf business as Switzerland etc.
+- If TinyFish is rate limited use WebSearch (queries like `site:instagram.com dental clinic Riyadh`) and WebFetch/curl. Save every 5 rows.
+- Stay strictly inside your slice; prefer need_score 3.

@@ -153,7 +153,7 @@ def fix_row(r):
 def load():
     rows, seen = [], set()
     dups = []
-    for f in sorted(glob.glob(os.path.join(ROOT, 'research', 'A*.csv'))):
+    for f in sorted(glob.glob(os.path.join(ROOT, 'research', '[AB]*.csv'))):
         with open(f, encoding='utf-8') as fh:
             for r in csv.DictReader(fh):
                 if not (r.get('name') or '').strip():

@@ -18,7 +18,7 @@ NICHE_LABEL = {'clinic': 'Clinic (dental/aesthetic/derma)', 'law': 'Law / accoun
 
 COLUMNS = ['#', 'اسم النشاط', 'النيش', 'الدولة', 'المدينة', 'القناة', 'رقم الواتساب', 'حساب انستغرام', 'رابط Google Maps',
            'رابط الموقع', 'سبب الحاجة', 'درجة الحاجة', 'اسم المالك/المسؤول', 'اللون/الهوية', 'لغة الرسالة', 'رابط الديمو',
-           'الرسالة الأولى', 'رسالة المتابعة', 'يحتاج مراجعة لغوية', 'حالة الإرسال', 'تاريخ الإرسال', 'الرد', 'ملاحظات',
+           'الرسالة الأولى', 'رسالة المتابعة', 'رابط الإرسال', 'يحتاج مراجعة لغوية', 'حالة الإرسال', 'تاريخ الإرسال', 'الرد', 'ملاحظات',
            # extra helpful columns
            'التخصص', 'سبب الحاجة (بلغة الرسالة)', 'لقطة ديسكتوب', 'لقطة جوال', 'الشعار في الديمو', 'مصدر المعلومة']
 
@@ -36,40 +36,62 @@ FALLBACK_REASON = {
     'fi': 'teillä ei vielä ole omia verkkosivuja',
 }
 
+# ---- PRICE (edit here only). ~USD 850-900 equivalent, shown in the client's local currency. ----
+PRICES = {  # country: (code/symbol, amount, arabic unit)
+    'UAE': ('AED', '3,300', 'درهم'), 'Saudi Arabia': ('SAR', '3,400', 'ريال'), 'Qatar': ('QAR', '3,300', 'ريال'),
+    'Kuwait': ('KWD', '275', 'دينار'),
+    'Netherlands': ('€', '790', ''), 'Germany': ('€', '790', ''), 'Austria': ('€', '790', ''), 'Belgium': ('€', '790', ''),
+    'Luxembourg': ('€', '790', ''), 'Finland': ('€', '790', ''), 'Ireland': ('€', '790', ''),
+    'Switzerland': ('CHF', '790', ''), 'Denmark': ('DKK', '5,900', ''), 'Norway': ('NOK', '8,900', ''),
+    'Sweden': ('SEK', '8,500', ''), 'Australia': ('AUD', '1,390', ''), 'Canada': ('CAD', '1,190', ''),
+}
+
+
+def price_str(country, lang):
+    code, amt, ar = PRICES.get(country, ('$', '900', 'دولار'))
+    if lang == 'ar':
+        return f'{amt} {ar or code}'
+    if code == '€':
+        return f'€{amt}'
+    if code == '$':
+        return f'${amt}'
+    return f'{code} {amt}'
+
+
 TPL = {
     ('ar', 'WhatsApp'): (
-        'السلام عليكم 👋 معكم Bytevia. لاحظنا أن {reason}. جهّزنا لـ{name} تصميم موقع احترافي جاهز، وتنفيذه بـ 900$ فقط (دفعة واحدة، بدون اشتراكات). تحبون نرسل لكم التصميم؟',
-        'السلام عليكم، تصميم موقع {name} جاهز وسعره 900$ فقط. هل نرسله لكم؟'),
+        'السلام عليكم 👋 معكم Bytevia. لاحظنا أن {reason}. صمّمنا لـ{name} موقعًا احترافيًا جاهزًا، وتنفيذه بـ {price} فقط (دفعة واحدة، بدون اشتراكات). لا نطلب أي مقدّم، تشوفون التصميم أولًا. نرسله لكم؟',
+        'السلام عليكم، تصميم موقع {name} جاهز بـ {price} فقط، وبدون أي مقدّم. نرسله لكم؟'),
     ('ar', 'Instagram'): (
-        'مرحبًا {name} 👋 معكم Bytevia. لاحظنا أن {reason}. جهّزنا لكم تصميم موقع احترافي جاهز، وتنفيذه بـ 900$ فقط (دفعة واحدة، بدون اشتراكات). نرسله لكم؟',
-        'مرحبًا مجددًا 🙂 تصميم موقع {name} جاهز بسعر 900$ فقط. نرسله هنا؟'),
+        'مرحبًا {name} 👋 معكم Bytevia. لاحظنا أن {reason}. صمّمنا لكم موقعًا احترافيًا جاهزًا، وتنفيذه بـ {price} فقط (دفعة واحدة، بدون اشتراكات). لا نطلب أي مقدّم، تشوفون التصميم أولًا. نرسله لكم؟',
+        'مرحبًا مجددًا 🙂 تصميم موقع {name} جاهز بـ {price} فقط، وبدون أي مقدّم. نرسله هنا؟'),
     ('en', 'WhatsApp'): (
-        "Hello 👋 This is Bytevia. We noticed that {reason}. We've prepared a professional website design for {name}, and we can build it for just $900 (one-time, no subscriptions). Shall we send it over?",
-        'Hello, the website design for {name} is ready for just $900. Shall we send it?'),
+        "Hello 👋 This is Bytevia. We noticed that {reason}. We've designed a professional website for {name} and can build it for just {price} (one-time, no subscriptions). No upfront payment: you see the design first. Shall we send it over?",
+        'Hello, the website design for {name} is ready for just {price}, with no upfront payment. Shall we send it?'),
     ('en', 'Instagram'): (
-        "Hi {name} 👋 Bytevia here. We noticed that {reason}. We've designed a professional website for you, and we can build it for just $900 (one-time, no subscriptions). Want to see it?",
-        'Hi again 🙂 your website design is ready for just $900. Want us to send it here?'),
+        "Hi {name} 👋 Bytevia here. We noticed that {reason}. We've designed a professional website for you and can build it for just {price} (one-time, no subscriptions). No upfront payment: you see the design first. Want to see it?",
+        'Hi again 🙂 your website design is ready for just {price}, no upfront payment. Want us to send it here?'),
     ('nl', 'Instagram'): (
-        'Hoi {name} 👋 Hier Bytevia. Het viel ons op dat {reason}. We hebben alvast een professioneel websiteontwerp voor jullie klaarstaan, uitvoering voor slechts 900 $ (eenmalig, geen abonnement). Zullen we het laten zien?',
-        'Hoi! Het websiteontwerp voor {name} staat klaar voor slechts 900 $. Zullen we het hier sturen?'),
+        'Hoi {name} 👋 Hier Bytevia. Het viel ons op dat {reason}. We hebben alvast een professioneel websiteontwerp voor jullie gemaakt, uitvoering voor slechts {price} (eenmalig, geen abonnement). Geen aanbetaling: jullie zien eerst het ontwerp. Zullen we het sturen?',
+        'Hoi! Het websiteontwerp voor {name} staat klaar voor slechts {price}, zonder aanbetaling. Zullen we het hier sturen?'),
     ('de', 'Instagram'): (
-        'Guten Tag {name} 👋 hier Bytevia. Uns ist aufgefallen, dass {reason}. Wir haben bereits einen professionellen Website-Entwurf für Sie vorbereitet, Umsetzung für nur 900 $ (einmalig, ohne Abo). Dürfen wir ihn Ihnen zeigen?',
-        'Guten Tag, der Website-Entwurf für {name} ist fertig, für nur 900 $. Dürfen wir ihn Ihnen hier schicken?'),
+        'Guten Tag {name} 👋 hier Bytevia. Uns ist aufgefallen, dass {reason}. Wir haben bereits einen professionellen Website-Entwurf für Sie erstellt, Umsetzung für nur {price} (einmalig, ohne Abo). Keine Anzahlung: Sie sehen zuerst den Entwurf. Dürfen wir ihn Ihnen schicken?',
+        'Guten Tag, der Website-Entwurf für {name} ist fertig, für nur {price} und ohne Anzahlung. Dürfen wir ihn Ihnen hier schicken?'),
     ('fr', 'Instagram'): (
-        "Bonjour {name} 👋 Ici Bytevia. Nous avons remarqué que {reason}. Nous avons préparé une maquette de site professionnelle pour vous, réalisable pour seulement 900 $ (paiement unique, sans abonnement). Souhaitez-vous la voir ?",
-        "Bonjour, la maquette du site de {name} est prête, pour seulement 900 $. On vous l'envoie ici ?"),
+        "Bonjour {name} 👋 Ici Bytevia. Nous avons remarqué que {reason}. Nous avons déjà conçu un site professionnel pour vous, réalisable pour seulement {price} (paiement unique, sans abonnement). Aucun acompte : vous voyez d'abord la maquette. On vous l'envoie ?",
+        "Bonjour, la maquette du site de {name} est prête pour seulement {price}, sans acompte. On vous l'envoie ici ?"),
     ('da', 'Instagram'): (
-        'Hej {name} 👋 Bytevia her. Vi lagde mærke til, at {reason}. Vi har lavet et professionelt hjemmesideudkast til jer, og det kan realiseres for kun 900 $ (engangsbetaling, intet abonnement). Vil I se det?',
-        'Hej igen! Udkastet til jeres hjemmeside er klar for kun 900 $. Skal vi sende det her?'),
+        'Hej {name} 👋 Bytevia her. Vi lagde mærke til, at {reason}. Vi har allerede lavet et professionelt hjemmesideudkast til jer, som kan realiseres for kun {price} (engangsbetaling, intet abonnement). Ingen forudbetaling – I ser først udkastet. Skal vi sende det?',
+        'Hej igen! Udkastet til jeres hjemmeside er klar for kun {price}, uden forudbetaling. Skal vi sende det her?'),
     ('no', 'Instagram'): (
-        'Hei {name} 👋 Bytevia her. Vi la merke til at {reason}. Vi har laget et profesjonelt nettsideutkast til dere, som kan realiseres for kun 900 $ (engangsbetaling, uten abonnement). Vil dere se det?',
-        'Hei igjen! Utkastet til nettsiden deres er klart for kun 900 $. Skal vi sende det her?'),
+        'Hei {name} 👋 Bytevia her. Vi la merke til at {reason}. Vi har allerede laget et profesjonelt nettsideutkast til dere, som kan realiseres for kun {price} (engangsbetaling, uten abonnement). Ingen forskuddsbetaling – dere ser først utkastet. Skal vi sende det?',
+        'Hei igjen! Utkastet til nettsiden deres er klart for kun {price}, uten forskuddsbetaling. Skal vi sende det her?'),
     ('sv', 'Instagram'): (
-        'Hej {name} 👋 Bytevia här. Vi märkte att {reason}. Vi har tagit fram ett professionellt webbplatsförslag åt er, som kan genomföras för bara 900 $ (engångsbelopp, inget abonnemang). Vill ni se det?',
-        'Hej igen! Förslaget på er webbplats är klart för bara 900 $. Ska vi skicka det här?'),
+        'Hej {name} 👋 Bytevia här. Vi märkte att {reason}. Vi har redan tagit fram ett professionellt webbplatsförslag åt er, som kan genomföras för bara {price} (engångsbelopp, inget abonnemang). Ingen förskottsbetalning – ni ser förslaget först. Ska vi skicka det?',
+        'Hej igen! Förslaget på er webbplats är klart för bara {price}, utan förskottsbetalning. Ska vi skicka det här?'),
     ('fi', 'Instagram'): (
-        'Hei {name} 👋 Bytevia tässä. Huomasimme, että {reason}. Olemme tehneet teille valmiin ammattimaisen verkkosivuehdotuksen, toteutus vain 900 $ (kertamaksu, ei tilausta). Haluaisitteko nähdä sen?',
-        'Hei taas! Verkkosivuehdotuksenne on valmis hintaan 900 $. Lähetämmekö sen tänne?'),
+        'Hei {name} 👋 Bytevia tässä. Huomasimme, että {reason}. Olemme jo tehneet teille ammattimaisen verkkosivuehdotuksen, toteutus vain {price} (kertamaksu, ei tilausta). Ei ennakkomaksua – näette ensin luonnoksen. Lähetämmekö sen?',
+        'Hei taas! Verkkosivuehdotuksenne on valmis hintaan {price}, ilman ennakkomaksua. Lähetämmekö sen tänne?'),
 }
 CONFIDENT = {'ar', 'en', 'de', 'nl', 'fr'}  # others flagged for native review
 
@@ -88,13 +110,23 @@ def clean_reason(r, lang):
     return r
 
 
+def send_link(row, first):
+    """WhatsApp: wa.me with the message pre-filled. Instagram: opens the DM thread (paste the message)."""
+    from urllib.parse import quote
+    if row['channel'].lower().startswith('whats') and phone(row.get('whatsapp')):
+        return f"https://wa.me/{phone(row['whatsapp'])}?text={quote(first)}"
+    h = ig_handle(row.get('instagram'))
+    return f'https://ig.me/m/{h}' if h else ''
+
+
 def messages(row):
     lang = row['message_lang'] if row['message_lang'] in FALLBACK_REASON else 'en'
     ch = 'WhatsApp' if row['channel'].lower().startswith('whats') else 'Instagram'
     tpl = TPL.get((lang, ch)) or TPL.get((lang, 'Instagram'))
     reason = clean_reason(row.get('need_reason_local'), lang) or FALLBACK_REASON[lang]
     name = (row.get('name_ar') if lang == 'ar' and row.get('name_ar') else row['name']).strip()
-    first, follow = (t.format(name=name, reason=reason) for t in tpl)
+    pr = price_str(row.get('country', ''), lang)
+    first, follow = (t.format(name=name, reason=reason, price=pr) for t in tpl)
     review = 'نعم' if (lang not in CONFIDENT or not row.get('need_reason_local')) else 'لا'
     return first, follow, review
 
@@ -222,7 +254,7 @@ def main():
             'رقم الواتساب': r['whatsapp'], 'حساب انستغرام': r['instagram'], 'رابط Google Maps': r['maps_url'],
             'رابط الموقع': r['website'], 'سبب الحاجة': r['need_reason_en'], 'درجة الحاجة': r['need_score'],
             'اسم المالك/المسؤول': r['owner_name'], 'اللون/الهوية': r['brand_color'], 'لغة الرسالة': r['message_lang'],
-            'رابط الديمو': url, 'الرسالة الأولى': first, 'رسالة المتابعة': follow, 'يحتاج مراجعة لغوية': review,
+            'رابط الديمو': url, 'الرسالة الأولى': first, 'رسالة المتابعة': follow, 'رابط الإرسال': send_link(r, first), 'يحتاج مراجعة لغوية': review,
             'حالة الإرسال': 'لم يُرسل', 'تاريخ الإرسال': '', 'الرد': '', 'ملاحظات': r['notes'],
             'التخصص': r['sub_niche'], 'سبب الحاجة (بلغة الرسالة)': r['need_reason_local'],
             'لقطة ديسكتوب': f'screenshots/{tok}-desktop.jpg', 'لقطة جوال': f'screenshots/{tok}-mobile.jpg',
@@ -238,6 +270,7 @@ def main():
         src = byig.get(ig_handle(o.get('حساب انستغرام'))) or byph.get(phone(o.get('رقم الواتساب')))
         if src:
             o['الرسالة الأولى'], o['رسالة المتابعة'], o['يحتاج مراجعة لغوية'] = messages(src)
+            o['رابط الإرسال'] = send_link(src, o['الرسالة الأولى'])
     with open(os.path.join(ROOT, 'leads.csv'), 'w', encoding='utf-8-sig', newline='') as fh:
         w = csv.DictWriter(fh, fieldnames=COLUMNS)
         w.writeheader()
@@ -270,7 +303,7 @@ def write_xlsx(out):
     for row in ws.iter_rows(min_row=2):
         for c in row:
             c.alignment = Alignment(wrap_text=True, vertical='top')
-    for col in ('رابط الديمو', 'حساب انستغرام', 'رابط Google Maps', 'رابط الموقع'):
+    for col in ('رابط الإرسال', 'رابط الديمو', 'حساب انستغرام', 'رابط Google Maps', 'رابط الموقع'):
         j = COLUMNS.index(col) + 1
         for i in range(2, ws.max_row + 1):
             c = ws.cell(i, j)

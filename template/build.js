@@ -30,6 +30,15 @@ const BASE = (process.env.DEMO_BASE_URL || cfg.baseUrl || '').replace(/\/$/, '')
 // ---------- helpers ----------
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const fill = (s, v) => String(s).replace(/\{(\w+)\}/g, (_, k) => v[k] ?? '');
+const LABEL = {
+  clinic: { en: 'Clinic', ar: 'عيادة', nl: 'Kliniek', de: 'Klinik', fr: 'Clinique', da: 'Klinik', no: 'Klinikk', sv: 'Klinik', fi: 'Klinikka' },
+  law: { en: 'Law & consulting', ar: 'محاماة واستشارات', nl: 'Juridisch advies', de: 'Recht & Beratung', fr: 'Droit & conseil', da: 'Jura & rådgivning', no: 'Juss & rådgivning', sv: 'Juridik & rådgivning', fi: 'Laki & neuvonta' },
+  home: { en: 'Home services', ar: 'خدمات منزلية', nl: 'Diensten aan huis', de: 'Haus & Service', fr: 'Services à domicile', da: 'Håndværkerservice', no: 'Håndverkertjenester', sv: 'Hemservice', fi: 'Kotipalvelut' },
+  salon: { en: 'Salon & beauty', ar: 'صالون وعناية', nl: 'Salon & beauty', de: 'Salon & Beauty', fr: 'Salon & beauté', da: 'Salon & skønhed', no: 'Salong & skjønnhet', sv: 'Salong & skönhet', fi: 'Kauneus & kampaamo' },
+  realestate: { en: 'Real estate', ar: 'عقارات', nl: 'Makelaardij', de: 'Immobilien', fr: 'Immobilier', da: 'Ejendomsmægler', no: 'Eiendomsmegler', sv: 'Fastighetsmäklare', fi: 'Kiinteistönvälitys' },
+  gym: { en: 'Fitness studio', ar: 'نادي رياضي', nl: 'Fitness studio', de: 'Fitnessstudio', fr: 'Studio de fitness', da: 'Fitnessstudie', no: 'Treningssenter', sv: 'Träningsstudio', fi: 'Kuntosali' },
+  restaurant: { en: 'Restaurant & café', ar: 'مطعم وكافيه', nl: 'Restaurant & café', de: 'Restaurant & Café', fr: 'Restaurant & café', da: 'Restaurant & café', no: 'Restaurant & kafé', sv: 'Restaurang & café', fi: 'Ravintola & kahvila' },
+};
 const keyOf = (r) => (r.name + '|' + r.city).toLowerCase().replace(/\s+/g, ' ').trim();
 
 function loadTokens() { try { return JSON.parse(fs.readFileSync(TOKENS, 'utf8')); } catch { return {}; } }
@@ -38,7 +47,7 @@ function tokenFor(r, tokens) {
   const k = keyOf(r);
   if (!tokens[k]) {
     const slug = r.name.normalize('NFKD').replace(/[^\w\s-]/g, '').trim().toLowerCase().replace(/[\s_]+/g, '-').slice(0, 24).replace(/-+$/, '');
-    tokens[k] = (slug ? slug + '-' : '') + crypto.randomBytes(6).toString('base64url').toLowerCase().replace(/[^a-z0-9]/g, 'x');
+    tokens[k] = (r.niche && niches[r.niche] ? r.niche + '-' : '') + (slug ? slug + '-' : '') + crypto.randomBytes(6).toString('base64url').toLowerCase().replace(/[^a-z0-9]/g, 'x');
   }
   return tokens[k];
 }
@@ -133,7 +142,7 @@ function render(d, lang, otherLang, depth) {
 
 <main id="top">
 <section class="hero"><div class="bg" style="background-image:url('${img(0)}')"></div><div class="wrap">
-  <span class="kicker">${esc(v.name)} · ${esc(v.city)}</span>
+  <span class="kicker">${esc(LABEL[d.niche][lang])} · ${esc(v.city)}</span>
   <h1>${esc(fill(c.heroT, v))}</h1>
   <p>${esc(fill(c.heroS, v))}</p>
   <div class="ctas"><a class="btn" href="#contact">${esc(c.cta)}</a>${waLink ? `<a class="btn ghost" href="${waLink}" target="_blank" rel="noopener">${esc(t.whatsapp)}</a>` : telNum ? `<a class="btn ghost" href="tel:${telNum}">${esc(t.call)}</a>` : igLink ? `<a class="btn ghost" href="${esc(igLink)}" target="_blank" rel="noopener">Instagram</a>` : ''}</div>

@@ -174,6 +174,8 @@ def fix_row(r):
         r['channel'] = 'Instagram'
     # "English Name (الاسم العربي)" -> name_en / name_ar
     m = re.match(r'^(.*?)\s*\(([^)]*[\u0600-\u06ff][^)]*)\)\s*$', r['name'])
+    if r['niche'] == 'clinic' and re.search(r'cosmetic studio|kosmetik|beauty studio', r['sub_niche'].lower()):
+        r['niche'] = 'salon'
     r['name_ar'] = ''
     if m:
         r['name'], r['name_ar'] = m.group(1).strip(), m.group(2).strip()

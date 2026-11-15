@@ -1,1112 +1,1412 @@
 {
  "al durra dental clinic|ajman": {
-  "token": "al-durra-dental-clinic-qsyylavy",
-  "rel": "d/al-durra-dental-clinic-qsyylavy/",
-  "url": "https://bytevia-demos.pages.dev/d/al-durra-dental-clinic-qsyylavy/",
+  "token": "clinic-al-durra-dental-clinic-9ucwhquk",
+  "rel": "d/clinic-al-durra-dental-clinic-9ucwhquk/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-al-durra-dental-clinic-9ucwhquk/",
   "logo": "monogram"
  },
  "dr shiyas dental team|sharjah": {
-  "token": "dr-shiyas-dental-team-yguea2xy",
-  "rel": "d/dr-shiyas-dental-team-yguea2xy/",
-  "url": "https://bytevia-demos.pages.dev/d/dr-shiyas-dental-team-yguea2xy/",
+  "token": "clinic-dr-shiyas-dental-team-mdjil7to",
+  "rel": "d/clinic-dr-shiyas-dental-team-mdjil7to/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-dr-shiyas-dental-team-mdjil7to/",
   "logo": "monogram"
  },
  "atheer medical and dental center|ras al khaimah": {
-  "token": "atheer-medical-and-denta-d7ofearo",
-  "rel": "d/atheer-medical-and-denta-d7ofearo/",
-  "url": "https://bytevia-demos.pages.dev/d/atheer-medical-and-denta-d7ofearo/",
+  "token": "clinic-atheer-medical-and-denta-tylnkjic",
+  "rel": "d/clinic-atheer-medical-and-denta-tylnkjic/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-atheer-medical-and-denta-tylnkjic/",
   "logo": "monogram"
  },
  "albaik medical center|ras al khaimah": {
-  "token": "albaik-medical-center-jrewrhrq",
-  "rel": "d/albaik-medical-center-jrewrhrq/",
-  "url": "https://bytevia-demos.pages.dev/d/albaik-medical-center-jrewrhrq/",
+  "token": "clinic-albaik-medical-center-owluhvuy",
+  "rel": "d/clinic-albaik-medical-center-owluhvuy/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-albaik-medical-center-owluhvuy/",
   "logo": "monogram"
  },
  "savvy dental clinics|riyadh": {
-  "token": "savvy-dental-clinics-ulzr0kgy",
-  "rel": "d/savvy-dental-clinics-ulzr0kgy/",
-  "url": "https://bytevia-demos.pages.dev/d/savvy-dental-clinics-ulzr0kgy/",
+  "token": "clinic-savvy-dental-clinics-nvm8o6vi",
+  "rel": "d/clinic-savvy-dental-clinics-nvm8o6vi/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-savvy-dental-clinics-nvm8o6vi/",
   "logo": "monogram"
  },
  "eed clinic|jeddah": {
-  "token": "eed-clinic-uwdexpl8",
-  "rel": "d/eed-clinic-uwdexpl8/",
-  "url": "https://bytevia-demos.pages.dev/d/eed-clinic-uwdexpl8/",
+  "token": "clinic-eed-clinic-w5fxl6i4",
+  "rel": "d/clinic-eed-clinic-w5fxl6i4/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-eed-clinic-w5fxl6i4/",
   "logo": "monogram"
  },
  "law office of rami attallah|jeddah": {
-  "token": "law-office-of-rami-attal-nqncxgmr",
-  "rel": "d/law-office-of-rami-attal-nqncxgmr/",
-  "url": "https://bytevia-demos.pages.dev/d/law-office-of-rami-attal-nqncxgmr/",
+  "token": "law-law-office-of-rami-attal-xuekahqr",
+  "rel": "d/law-law-office-of-rami-attal-xuekahqr/",
+  "url": "https://bytevia-demos.pages.dev/d/law-law-office-of-rami-attal-xuekahqr/",
   "logo": "monogram"
  },
  "north riyadh ac maintenance|riyadh": {
-  "token": "north-riyadh-ac-maintena-seslqmw2",
-  "rel": "d/north-riyadh-ac-maintena-seslqmw2/",
-  "url": "https://bytevia-demos.pages.dev/d/north-riyadh-ac-maintena-seslqmw2/",
+  "token": "home-north-riyadh-ac-maintena-fg4kdpfp",
+  "rel": "d/home-north-riyadh-ac-maintena-fg4kdpfp/",
+  "url": "https://bytevia-demos.pages.dev/d/home-north-riyadh-ac-maintena-fg4kdpfp/",
   "logo": "monogram"
  },
  "le salon|jeddah": {
-  "token": "le-salon-d9qioalq",
-  "rel": "d/le-salon-d9qioalq/",
-  "url": "https://bytevia-demos.pages.dev/d/le-salon-d9qioalq/",
+  "token": "salon-le-salon-2o1bblxp",
+  "rel": "d/salon-le-salon-2o1bblxp/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-le-salon-2o1bblxp/",
   "logo": "monogram"
  },
  "mariam khalfan general maintenance (plumbing abu dhabi)|abu dhabi": {
-  "token": "mariam-khalfan-general-m-5ha00ibi",
-  "rel": "d/mariam-khalfan-general-m-5ha00ibi/",
-  "url": "https://bytevia-demos.pages.dev/d/mariam-khalfan-general-m-5ha00ibi/",
+  "token": "home-mariam-khalfan-general-m-vj1mohil",
+  "rel": "d/home-mariam-khalfan-general-m-vj1mohil/",
+  "url": "https://bytevia-demos.pages.dev/d/home-mariam-khalfan-general-m-vj1mohil/",
   "logo": "monogram"
  },
  "maintain|abu dhabi": {
-  "token": "maintain-erq505zf",
-  "rel": "d/maintain-erq505zf/",
-  "url": "https://bytevia-demos.pages.dev/d/maintain-erq505zf/",
+  "token": "home-maintain-35zybpdh",
+  "rel": "d/home-maintain-35zybpdh/",
+  "url": "https://bytevia-demos.pages.dev/d/home-maintain-35zybpdh/",
   "logo": "monogram"
  },
  "fineasy uae|abu dhabi": {
-  "token": "fineasy-uae-jva1fc5q",
-  "rel": "d/fineasy-uae-jva1fc5q/",
-  "url": "https://bytevia-demos.pages.dev/d/fineasy-uae-jva1fc5q/",
+  "token": "law-fineasy-uae-s5dyup4l",
+  "rel": "d/law-fineasy-uae-s5dyup4l/",
+  "url": "https://bytevia-demos.pages.dev/d/law-fineasy-uae-s5dyup4l/",
   "logo": "monogram"
  },
  "vat accounting uae|dubai": {
-  "token": "vat-accounting-uae-h9xygrrt",
-  "rel": "d/vat-accounting-uae-h9xygrrt/",
-  "url": "https://bytevia-demos.pages.dev/d/vat-accounting-uae-h9xygrrt/",
+  "token": "law-vat-accounting-uae-77dypxkb",
+  "rel": "d/law-vat-accounting-uae-77dypxkb/",
+  "url": "https://bytevia-demos.pages.dev/d/law-vat-accounting-uae-77dypxkb/",
   "logo": "monogram"
  },
  "noble dental clinic|riyadh": {
-  "token": "noble-dental-clinic-ust1z478",
-  "rel": "d/noble-dental-clinic-ust1z478/",
-  "url": "https://bytevia-demos.pages.dev/d/noble-dental-clinic-ust1z478/",
+  "token": "clinic-noble-dental-clinic-wp9qxhc8",
+  "rel": "d/clinic-noble-dental-clinic-wp9qxhc8/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-noble-dental-clinic-wp9qxhc8/",
   "logo": "monogram"
  },
  "smile dental clinic|riyadh": {
-  "token": "smile-dental-clinic-gddkvnxy",
-  "rel": "d/smile-dental-clinic-gddkvnxy/",
-  "url": "https://bytevia-demos.pages.dev/d/smile-dental-clinic-gddkvnxy/",
+  "token": "clinic-smile-dental-clinic-fcx75dbb",
+  "rel": "d/clinic-smile-dental-clinic-fcx75dbb/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-smile-dental-clinic-fcx75dbb/",
   "logo": "monogram"
  },
  "best beauty medical clinics|jeddah": {
-  "token": "best-beauty-medical-clin-ex6nezzn",
-  "rel": "d/best-beauty-medical-clin-ex6nezzn/",
-  "url": "https://bytevia-demos.pages.dev/d/best-beauty-medical-clin-ex6nezzn/",
+  "token": "clinic-best-beauty-medical-clin-jqjabvhe",
+  "rel": "d/clinic-best-beauty-medical-clin-jqjabvhe/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-best-beauty-medical-clin-jqjabvhe/",
   "logo": "monogram"
  },
  "cosmoderm clinics|jeddah": {
-  "token": "cosmoderm-clinics-8biwwkl4",
-  "rel": "d/cosmoderm-clinics-8biwwkl4/",
-  "url": "https://bytevia-demos.pages.dev/d/cosmoderm-clinics-8biwwkl4/",
+  "token": "clinic-cosmoderm-clinics-dtxk8kx7",
+  "rel": "d/clinic-cosmoderm-clinics-dtxk8kx7/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-cosmoderm-clinics-dtxk8kx7/",
   "logo": "monogram"
  },
  "mera salon|madinah": {
-  "token": "mera-salon-kvyirixq",
-  "rel": "d/mera-salon-kvyirixq/",
-  "url": "https://bytevia-demos.pages.dev/d/mera-salon-kvyirixq/",
+  "token": "salon-mera-salon-44txanoi",
+  "rel": "d/salon-mera-salon-44txanoi/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-mera-salon-44txanoi/",
   "logo": "monogram"
  },
  "samra salon|madinah": {
-  "token": "samra-salon-kznnwta8",
-  "rel": "d/samra-salon-kznnwta8/",
-  "url": "https://bytevia-demos.pages.dev/d/samra-salon-kznnwta8/",
+  "token": "salon-samra-salon-1noewqq1",
+  "rel": "d/salon-samra-salon-1noewqq1/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-samra-salon-1noewqq1/",
   "logo": "monogram"
  },
  "dina ladies salon|madinah": {
-  "token": "dina-ladies-salon-iyit8mq4",
-  "rel": "d/dina-ladies-salon-iyit8mq4/",
-  "url": "https://bytevia-demos.pages.dev/d/dina-ladies-salon-iyit8mq4/",
+  "token": "salon-dina-ladies-salon-rgwe1sts",
+  "rel": "d/salon-dina-ladies-salon-rgwe1sts/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-dina-ladies-salon-rgwe1sts/",
   "logo": "monogram"
  },
  "saba beauty salon|madinah": {
-  "token": "saba-beauty-salon-ewru3pxp",
-  "rel": "d/saba-beauty-salon-ewru3pxp/",
-  "url": "https://bytevia-demos.pages.dev/d/saba-beauty-salon-ewru3pxp/",
+  "token": "salon-saba-beauty-salon-q7dektja",
+  "rel": "d/salon-saba-beauty-salon-q7dektja/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-saba-beauty-salon-q7dektja/",
   "logo": "monogram"
  },
  "jeddah cleaning company|jeddah": {
-  "token": "jeddah-cleaning-company-cnxgjbcp",
-  "rel": "d/jeddah-cleaning-company-cnxgjbcp/",
-  "url": "https://bytevia-demos.pages.dev/d/jeddah-cleaning-company-cnxgjbcp/",
+  "token": "home-jeddah-cleaning-company-8dxrlc5w",
+  "rel": "d/home-jeddah-cleaning-company-8dxrlc5w/",
+  "url": "https://bytevia-demos.pages.dev/d/home-jeddah-cleaning-company-8dxrlc5w/",
   "logo": "monogram"
  },
  "talal al khair real estate office|khobar": {
-  "token": "talal-al-khair-real-esta-yp6xref8",
-  "rel": "d/talal-al-khair-real-esta-yp6xref8/",
-  "url": "https://bytevia-demos.pages.dev/d/talal-al-khair-real-esta-yp6xref8/",
+  "token": "realestate-talal-al-khair-real-esta-6os5sbxv",
+  "rel": "d/realestate-talal-al-khair-real-esta-6os5sbxv/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-talal-al-khair-real-esta-6os5sbxv/",
   "logo": "monogram"
  },
  "gannas al khobar|khobar": {
-  "token": "gannas-al-khobar-zpcgpjfx",
-  "rel": "d/gannas-al-khobar-zpcgpjfx/",
-  "url": "https://bytevia-demos.pages.dev/d/gannas-al-khobar-zpcgpjfx/",
+  "token": "realestate-gannas-al-khobar-uxc0esmm",
+  "rel": "d/realestate-gannas-al-khobar-uxc0esmm/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-gannas-al-khobar-uxc0esmm/",
   "logo": "monogram"
  },
  "atyaf al sharq real estate|khobar": {
-  "token": "atyaf-al-sharq-real-esta-ywtnnzhq",
-  "rel": "d/atyaf-al-sharq-real-esta-ywtnnzhq/",
-  "url": "https://bytevia-demos.pages.dev/d/atyaf-al-sharq-real-esta-ywtnnzhq/",
+  "token": "realestate-atyaf-al-sharq-real-esta-7sdo6bc5",
+  "rel": "d/realestate-atyaf-al-sharq-real-esta-7sdo6bc5/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-atyaf-al-sharq-real-esta-7sdo6bc5/",
   "logo": "monogram"
  },
  "athmn real estate company|dammam": {
-  "token": "athmn-real-estate-compan-gjgjuy7q",
-  "rel": "d/athmn-real-estate-compan-gjgjuy7q/",
-  "url": "https://bytevia-demos.pages.dev/d/athmn-real-estate-compan-gjgjuy7q/",
+  "token": "realestate-athmn-real-estate-compan-ipl4ymoy",
+  "rel": "d/realestate-athmn-real-estate-compan-ipl4ymoy/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-athmn-real-estate-compan-ipl4ymoy/",
   "logo": "monogram"
  },
  "basmat al munawara dental clinics|madinah": {
-  "token": "basmat-al-munawara-denta-pa7ur2jq",
-  "rel": "d/basmat-al-munawara-denta-pa7ur2jq/",
-  "url": "https://bytevia-demos.pages.dev/d/basmat-al-munawara-denta-pa7ur2jq/",
+  "token": "clinic-basmat-al-munawara-denta-2d72powk",
+  "rel": "d/clinic-basmat-al-munawara-denta-2d72powk/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-basmat-al-munawara-denta-2d72powk/",
   "logo": "monogram"
  },
  "alef clinic|madinah": {
-  "token": "alef-clinic-doxvfheb",
-  "rel": "d/alef-clinic-doxvfheb/",
-  "url": "https://bytevia-demos.pages.dev/d/alef-clinic-doxvfheb/",
+  "token": "clinic-alef-clinic-jnq3majk",
+  "rel": "d/clinic-alef-clinic-jnq3majk/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-alef-clinic-jnq3majk/",
   "logo": "monogram"
  },
  "daimond fitness lady gym|dammam": {
-  "token": "daimond-fitness-lady-gym-hxopxhta",
-  "rel": "d/daimond-fitness-lady-gym-hxopxhta/",
-  "url": "https://bytevia-demos.pages.dev/d/daimond-fitness-lady-gym-hxopxhta/",
+  "token": "gym-daimond-fitness-lady-gym-z23qv5ae",
+  "rel": "d/gym-daimond-fitness-lady-gym-z23qv5ae/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-daimond-fitness-lady-gym-z23qv5ae/",
   "logo": "monogram"
  },
  "fitness concept ladies club|dammam": {
-  "token": "fitness-concept-ladies-c-skimrnxk",
-  "rel": "d/fitness-concept-ladies-c-skimrnxk/",
-  "url": "https://bytevia-demos.pages.dev/d/fitness-concept-ladies-c-skimrnxk/",
+  "token": "gym-fitness-concept-ladies-c-r9t6htwc",
+  "rel": "d/gym-fitness-concept-ladies-c-r9t6htwc/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-fitness-concept-ladies-c-r9t6htwc/",
   "logo": "monogram"
  },
  "vos verhuizingen|rotterdam": {
-  "token": "vos-verhuizingen-nx1jlkk3",
-  "rel": "d/vos-verhuizingen-nx1jlkk3/",
-  "url": "https://bytevia-demos.pages.dev/d/vos-verhuizingen-nx1jlkk3/",
+  "token": "home-vos-verhuizingen-5hd1hlwa",
+  "rel": "d/home-vos-verhuizingen-5hd1hlwa/",
+  "url": "https://bytevia-demos.pages.dev/d/home-vos-verhuizingen-5hd1hlwa/",
   "logo": "monogram"
  },
  "ustar beauty|groningen": {
-  "token": "ustar-beauty-zzvassvd",
-  "rel": "d/ustar-beauty-zzvassvd/",
-  "url": "https://bytevia-demos.pages.dev/d/ustar-beauty-zzvassvd/",
+  "token": "salon-ustar-beauty-c5utyik1",
+  "rel": "d/salon-ustar-beauty-c5utyik1/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-ustar-beauty-c5utyik1/",
   "logo": "monogram"
  },
  "reemi beauty|groningen": {
-  "token": "reemi-beauty-mhsujycu",
-  "rel": "d/reemi-beauty-mhsujycu/",
-  "url": "https://bytevia-demos.pages.dev/d/reemi-beauty-mhsujycu/",
+  "token": "salon-reemi-beauty-80cghsp7",
+  "rel": "d/salon-reemi-beauty-80cghsp7/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-reemi-beauty-80cghsp7/",
   "logo": "monogram"
  },
  "kosmetikstudio salon de beauté basel|basel": {
-  "token": "kosmetikstudio-salon-de-ob3epr8f",
-  "rel": "d/kosmetikstudio-salon-de-ob3epr8f/",
-  "url": "https://bytevia-demos.pages.dev/d/kosmetikstudio-salon-de-ob3epr8f/",
+  "token": "salon-kosmetikstudio-salon-de-k2posxxe",
+  "rel": "d/salon-kosmetikstudio-salon-de-k2posxxe/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-kosmetikstudio-salon-de-k2posxxe/",
   "logo": "monogram"
  },
  "dena aesthetics|zürich": {
-  "token": "dena-aesthetics-bh9qmyy1",
-  "rel": "d/dena-aesthetics-bh9qmyy1/",
-  "url": "https://bytevia-demos.pages.dev/d/dena-aesthetics-bh9qmyy1/",
+  "token": "clinic-dena-aesthetics-eeoiauts",
+  "rel": "d/clinic-dena-aesthetics-eeoiauts/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-dena-aesthetics-eeoiauts/",
   "logo": "monogram"
  },
  "royal smile dental clinic|dubai": {
-  "token": "royal-smile-dental-clini-ubwde9yf",
-  "rel": "d/royal-smile-dental-clini-ubwde9yf/",
-  "url": "https://bytevia-demos.pages.dev/d/royal-smile-dental-clini-ubwde9yf/",
+  "token": "clinic-royal-smile-dental-clini-obmfs84i",
+  "rel": "d/clinic-royal-smile-dental-clini-obmfs84i/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-royal-smile-dental-clini-obmfs84i/",
   "logo": "monogram"
  },
  "wow aesthetic clinic|abu dhabi": {
-  "token": "wow-aesthetic-clinic-8hvod63u",
-  "rel": "d/wow-aesthetic-clinic-8hvod63u/",
-  "url": "https://bytevia-demos.pages.dev/d/wow-aesthetic-clinic-8hvod63u/",
+  "token": "clinic-wow-aesthetic-clinic-8weilxol",
+  "rel": "d/clinic-wow-aesthetic-clinic-8weilxol/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-wow-aesthetic-clinic-8weilxol/",
   "logo": "monogram"
  },
  "bioclinic medical center|abu dhabi": {
-  "token": "bioclinic-medical-center-tsmfx60r",
-  "rel": "d/bioclinic-medical-center-tsmfx60r/",
-  "url": "https://bytevia-demos.pages.dev/d/bioclinic-medical-center-tsmfx60r/",
+  "token": "clinic-bioclinic-medical-center-hkkdtbam",
+  "rel": "d/clinic-bioclinic-medical-center-hkkdtbam/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-bioclinic-medical-center-hkkdtbam/",
   "logo": "monogram"
  },
  "blonde medical center|abu dhabi": {
-  "token": "blonde-medical-center-xmgkauhn",
-  "rel": "d/blonde-medical-center-xmgkauhn/",
-  "url": "https://bytevia-demos.pages.dev/d/blonde-medical-center-xmgkauhn/",
+  "token": "clinic-blonde-medical-center-rxzoqomk",
+  "rel": "d/clinic-blonde-medical-center-rxzoqomk/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-blonde-medical-center-rxzoqomk/",
   "logo": "monogram"
  },
  "fresh n fab salon|dubai": {
-  "token": "fresh-n-fab-salon-rwrqv34x",
-  "rel": "d/fresh-n-fab-salon-rwrqv34x/",
-  "url": "https://bytevia-demos.pages.dev/d/fresh-n-fab-salon-rwrqv34x/",
+  "token": "salon-fresh-n-fab-salon-gx0g9olr",
+  "rel": "d/salon-fresh-n-fab-salon-gx0g9olr/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-fresh-n-fab-salon-gx0g9olr/",
   "logo": "monogram"
  },
  "ladies first beauty salon|dubai": {
-  "token": "ladies-first-beauty-salo-yhsktvzt",
-  "rel": "d/ladies-first-beauty-salo-yhsktvzt/",
-  "url": "https://bytevia-demos.pages.dev/d/ladies-first-beauty-salo-yhsktvzt/",
+  "token": "salon-ladies-first-beauty-salo-wpaubgca",
+  "rel": "d/salon-ladies-first-beauty-salo-wpaubgca/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-ladies-first-beauty-salo-wpaubgca/",
   "logo": "monogram"
  },
  "nua toi beauty salon|abu dhabi": {
-  "token": "nua-toi-beauty-salon-sixl1xvc",
-  "rel": "d/nua-toi-beauty-salon-sixl1xvc/",
-  "url": "https://bytevia-demos.pages.dev/d/nua-toi-beauty-salon-sixl1xvc/",
+  "token": "salon-nua-toi-beauty-salon-slstgwzv",
+  "rel": "d/salon-nua-toi-beauty-salon-slstgwzv/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-nua-toi-beauty-salon-slstgwzv/",
   "logo": "monogram"
  },
  "ken beauty salon|abu dhabi": {
-  "token": "ken-beauty-salon-qyb3ol4g",
-  "rel": "d/ken-beauty-salon-qyb3ol4g/",
-  "url": "https://bytevia-demos.pages.dev/d/ken-beauty-salon-qyb3ol4g/",
+  "token": "salon-ken-beauty-salon-ttzftxas",
+  "rel": "d/salon-ken-beauty-salon-ttzftxas/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-ken-beauty-salon-ttzftxas/",
   "logo": "monogram"
  },
  "luxeglow stockholm by mira skin|stockholm": {
-  "token": "luxeglow-stockholm-by-mi-hhsigxgj",
-  "rel": "d/luxeglow-stockholm-by-mi-hhsigxgj/",
-  "url": "https://bytevia-demos.pages.dev/d/luxeglow-stockholm-by-mi-hhsigxgj/",
+  "token": "salon-luxeglow-stockholm-by-mi-eghlnmtu",
+  "rel": "d/salon-luxeglow-stockholm-by-mi-eghlnmtu/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-luxeglow-stockholm-by-mi-eghlnmtu/",
   "logo": "monogram"
  },
  "monarchy studio|bergen": {
-  "token": "monarchy-studio-uqupsawb",
-  "rel": "d/monarchy-studio-uqupsawb/",
-  "url": "https://bytevia-demos.pages.dev/d/monarchy-studio-uqupsawb/",
+  "token": "salon-monarchy-studio-gv4w7q84",
+  "rel": "d/salon-monarchy-studio-gv4w7q84/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-monarchy-studio-gv4w7q84/",
   "logo": "monogram"
  },
  "røtter frisørsalong|bergen": {
-  "token": "rtter-frisrsalong-gtjfppom",
-  "rel": "d/rtter-frisrsalong-gtjfppom/",
-  "url": "https://bytevia-demos.pages.dev/d/rtter-frisrsalong-gtjfppom/",
+  "token": "salon-rtter-frisrsalong-7we8ixgj",
+  "rel": "d/salon-rtter-frisrsalong-7we8ixgj/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-rtter-frisrsalong-7we8ixgj/",
   "logo": "monogram"
  },
  "aesthetica medical center|umm al quwain": {
-  "token": "aesthetica-medical-cente-shitavlf",
-  "rel": "d/aesthetica-medical-cente-shitavlf/",
-  "url": "https://bytevia-demos.pages.dev/d/aesthetica-medical-cente-shitavlf/",
+  "token": "clinic-aesthetica-medical-cente-tkfwmqlg",
+  "rel": "d/clinic-aesthetica-medical-cente-tkfwmqlg/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-aesthetica-medical-cente-tkfwmqlg/",
   "logo": "monogram"
  },
  "bianca dental clinic|fujairah": {
-  "token": "bianca-dental-clinic-xh55gemr",
-  "rel": "d/bianca-dental-clinic-xh55gemr/",
-  "url": "https://bytevia-demos.pages.dev/d/bianca-dental-clinic-xh55gemr/",
+  "token": "clinic-bianca-dental-clinic-v8fnxxlq",
+  "rel": "d/clinic-bianca-dental-clinic-v8fnxxlq/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-bianca-dental-clinic-v8fnxxlq/",
   "logo": "monogram"
  },
  "al hazam cleaning services|fujairah": {
-  "token": "al-hazam-cleaning-servic-yaoanm3g",
-  "rel": "d/al-hazam-cleaning-servic-yaoanm3g/",
-  "url": "https://bytevia-demos.pages.dev/d/al-hazam-cleaning-servic-yaoanm3g/",
+  "token": "home-al-hazam-cleaning-servic-um69lln2",
+  "rel": "d/home-al-hazam-cleaning-servic-um69lln2/",
+  "url": "https://bytevia-demos.pages.dev/d/home-al-hazam-cleaning-servic-um69lln2/",
   "logo": "monogram"
  },
  "pretty ladies saloon|al ain": {
-  "token": "pretty-ladies-saloon-kqhjls9x",
-  "rel": "d/pretty-ladies-saloon-kqhjls9x/",
-  "url": "https://bytevia-demos.pages.dev/d/pretty-ladies-saloon-kqhjls9x/",
+  "token": "salon-pretty-ladies-saloon-91ru9hj2",
+  "rel": "d/salon-pretty-ladies-saloon-91ru9hj2/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-pretty-ladies-saloon-91ru9hj2/",
   "logo": "monogram"
  },
  "al nada salon|al ain": {
-  "token": "al-nada-salon-aaaotfon",
-  "rel": "d/al-nada-salon-aaaotfon/",
-  "url": "https://bytevia-demos.pages.dev/d/al-nada-salon-aaaotfon/",
+  "token": "salon-al-nada-salon-4et9cfcr",
+  "rel": "d/salon-al-nada-salon-4et9cfcr/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-al-nada-salon-4et9cfcr/",
   "logo": "monogram"
  },
  "perle beauty center|ajman": {
-  "token": "perle-beauty-center-96iktese",
-  "rel": "d/perle-beauty-center-96iktese/",
-  "url": "https://bytevia-demos.pages.dev/d/perle-beauty-center-96iktese/",
+  "token": "salon-perle-beauty-center-u3tizqkc",
+  "rel": "d/salon-perle-beauty-center-u3tizqkc/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-perle-beauty-center-u3tizqkc/",
   "logo": "monogram"
  },
  "عقارات عجمان (ajman real estate property)|ajman": {
-  "token": "ajman-real-estate-proper-mlmvjz0i",
-  "rel": "d/ajman-real-estate-proper-mlmvjz0i/",
-  "url": "https://bytevia-demos.pages.dev/d/ajman-real-estate-proper-mlmvjz0i/",
+  "token": "realestate-ajman-real-estate-proper-4wpjml0h",
+  "rel": "d/realestate-ajman-real-estate-proper-4wpjml0h/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-ajman-real-estate-proper-4wpjml0h/",
   "logo": "monogram"
  },
  "sellfast properties|ajman": {
-  "token": "sellfast-properties-hgqj1jjf",
-  "rel": "d/sellfast-properties-hgqj1jjf/",
-  "url": "https://bytevia-demos.pages.dev/d/sellfast-properties-hgqj1jjf/",
+  "token": "realestate-sellfast-properties-swcsdw5z",
+  "rel": "d/realestate-sellfast-properties-swcsdw5z/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-sellfast-properties-swcsdw5z/",
   "logo": "monogram"
  },
  "rashmi and prasad legal consultancy|ras al khaimah": {
-  "token": "rashmi-and-prasad-legal-cha969jy",
-  "rel": "d/rashmi-and-prasad-legal-cha969jy/",
-  "url": "https://bytevia-demos.pages.dev/d/rashmi-and-prasad-legal-cha969jy/",
+  "token": "law-rashmi-and-prasad-legal-jf3vgkku",
+  "rel": "d/law-rashmi-and-prasad-legal-jf3vgkku/",
+  "url": "https://bytevia-demos.pages.dev/d/law-rashmi-and-prasad-legal-jf3vgkku/",
   "logo": "monogram"
  },
  "infinity fitness & bodybuilding club|ajman": {
-  "token": "infinity-fitness-bodybui-8kqxbi4f",
-  "rel": "d/infinity-fitness-bodybui-8kqxbi4f/",
-  "url": "https://bytevia-demos.pages.dev/d/infinity-fitness-bodybui-8kqxbi4f/",
+  "token": "gym-infinity-fitness-bodybui-sm9tgcf1",
+  "rel": "d/gym-infinity-fitness-bodybui-sm9tgcf1/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-infinity-fitness-bodybui-sm9tgcf1/",
+  "logo": "monogram"
+ },
+ "dr. andreea oniga|wien": {
+  "token": "clinic-dr-andreea-oniga-qkntrrzy",
+  "rel": "d/clinic-dr-andreea-oniga-qkntrrzy/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-dr-andreea-oniga-qkntrrzy/",
+  "logo": "monogram"
+ },
+ "zahnaerzte am stadtpark wien|wien": {
+  "token": "clinic-zahnaerzte-am-stadtpark-9cowmixu",
+  "rel": "d/clinic-zahnaerzte-am-stadtpark-9cowmixu/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-zahnaerzte-am-stadtpark-9cowmixu/",
+  "logo": "monogram"
+ },
+ "praxis dr. andreas penn|leoben": {
+  "token": "clinic-praxis-dr-andreas-penn-8werober",
+  "rel": "d/clinic-praxis-dr-andreas-penn-8werober/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-praxis-dr-andreas-penn-8werober/",
+  "logo": "monogram"
+ },
+ "infinitglowmed privatmedizinische praxis|berlin": {
+  "token": "clinic-infinitglowmed-privatmed-2sbzwgxg",
+  "rel": "d/clinic-infinitglowmed-privatmed-2sbzwgxg/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-infinitglowmed-privatmed-2sbzwgxg/",
+  "logo": "monogram"
+ },
+ "dr. med. f.g. kandemir|hamburg": {
+  "token": "clinic-dr-med-fg-kandemir-tzkcjcnb",
+  "rel": "d/clinic-dr-med-fg-kandemir-tzkcjcnb/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-dr-med-fg-kandemir-tzkcjcnb/",
+  "logo": "monogram"
+ },
+ "zahnarztpraxis dr. burger|muenchen": {
+  "token": "clinic-zahnarztpraxis-dr-burger-0nwjrl3w",
+  "rel": "d/clinic-zahnarztpraxis-dr-burger-0nwjrl3w/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-zahnarztpraxis-dr-burger-0nwjrl3w/",
+  "logo": "monogram"
+ },
+ "zahnaerztin eva mueller|haar bei muenchen": {
+  "token": "clinic-zahnaerztin-eva-mueller-h31txfeh",
+  "rel": "d/clinic-zahnaerztin-eva-mueller-h31txfeh/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-zahnaerztin-eva-mueller-h31txfeh/",
+  "logo": "monogram"
+ },
+ "hasenkamp gmbh|nordrhein-westfalen": {
+  "token": "home-hasenkamp-gmbh-59xfbftx",
+  "rel": "d/home-hasenkamp-gmbh-59xfbftx/",
+  "url": "https://bytevia-demos.pages.dev/d/home-hasenkamp-gmbh-59xfbftx/",
+  "logo": "monogram"
+ },
+ "klar & gruen dienstleistungen|moers": {
+  "token": "home-klar-gruen-dienstleistun-igzogl4i",
+  "rel": "d/home-klar-gruen-dienstleistun-igzogl4i/",
+  "url": "https://bytevia-demos.pages.dev/d/home-klar-gruen-dienstleistun-igzogl4i/",
+  "logo": "monogram"
+ },
+ "moritz popp fliesen|guentersleben": {
+  "token": "home-moritz-popp-fliesen-dxogzc42",
+  "rel": "d/home-moritz-popp-fliesen-dxogzc42/",
+  "url": "https://bytevia-demos.pages.dev/d/home-moritz-popp-fliesen-dxogzc42/",
+  "logo": "monogram"
+ },
+ "konstantina aesthetic|hamburg": {
+  "token": "salon-konstantina-aesthetic-0xwucbmb",
+  "rel": "d/salon-konstantina-aesthetic-0xwucbmb/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-konstantina-aesthetic-0xwucbmb/",
+  "logo": "monogram"
+ },
+ "rs stylisten friseursalon|langenhagen (kaltenweide)": {
+  "token": "salon-rs-stylisten-friseursalo-zh0a8vvo",
+  "rel": "d/salon-rs-stylisten-friseursalo-zh0a8vvo/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-rs-stylisten-friseursalo-zh0a8vvo/",
+  "logo": "monogram"
+ },
+ "m star barbers|essen": {
+  "token": "salon-m-star-barbers-ilvxsd4q",
+  "rel": "d/salon-m-star-barbers-ilvxsd4q/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-m-star-barbers-ilvxsd4q/",
+  "logo": "monogram"
+ },
+ "stockholm hairsaloon|giessen": {
+  "token": "salon-stockholm-hairsaloon-h8l0sknr",
+  "rel": "d/salon-stockholm-hairsaloon-h8l0sknr/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-stockholm-hairsaloon-h8l0sknr/",
+  "logo": "monogram"
+ },
+ "monika balint immobilien|velden am woerthersee": {
+  "token": "realestate-monika-balint-immobilien-ggkieubx",
+  "rel": "d/realestate-monika-balint-immobilien-ggkieubx/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-monika-balint-immobilien-ggkieubx/",
+  "logo": "monogram"
+ },
+ "stella casa immobilien|moers": {
+  "token": "realestate-stella-casa-immobilien-l8ey3pks",
+  "rel": "d/realestate-stella-casa-immobilien-l8ey3pks/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-stella-casa-immobilien-l8ey3pks/",
+  "logo": "monogram"
+ },
+ "yoga stelle|wien": {
+  "token": "gym-yoga-stelle-cksxjxnl",
+  "rel": "d/gym-yoga-stelle-cksxjxnl/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-yoga-stelle-cksxjxnl/",
+  "logo": "monogram"
+ },
+ "fit flow krafttraining fuer frauen|st. andrae (kaernten)": {
+  "token": "gym-fit-flow-krafttraining-f-ayw1bun6",
+  "rel": "d/gym-fit-flow-krafttraining-f-ayw1bun6/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-fit-flow-krafttraining-f-ayw1bun6/",
+  "logo": "monogram"
+ },
+ "la tavola pizzeria lochhausen|muenchen (lochhausen)": {
+  "token": "restaurant-la-tavola-pizzeria-lochh-cvecdmqi",
+  "rel": "d/restaurant-la-tavola-pizzeria-lochh-cvecdmqi/",
+  "url": "https://bytevia-demos.pages.dev/d/restaurant-la-tavola-pizzeria-lochh-cvecdmqi/",
   "logo": "monogram"
  },
  "june salon|københavn": {
-  "token": "june-salon-wrlgvrxu",
-  "rel": "d/june-salon-wrlgvrxu/",
-  "url": "https://bytevia-demos.pages.dev/d/june-salon-wrlgvrxu/",
+  "token": "salon-june-salon-tuxexnoc",
+  "rel": "d/salon-june-salon-tuxexnoc/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-june-salon-tuxexnoc/",
   "logo": "monogram"
  },
  "frisør englehår|aalborg": {
-  "token": "frisr-englehar-6jarfvqz",
-  "rel": "d/frisr-englehar-6jarfvqz/",
-  "url": "https://bytevia-demos.pages.dev/d/frisr-englehar-6jarfvqz/",
+  "token": "salon-frisr-englehar-qnw4xgs8",
+  "rel": "d/salon-frisr-englehar-qnw4xgs8/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-frisr-englehar-qnw4xgs8/",
   "logo": "monogram"
  },
  "frisør linding|aalborg": {
-  "token": "frisr-linding-dfoqriir",
-  "rel": "d/frisr-linding-dfoqriir/",
-  "url": "https://bytevia-demos.pages.dev/d/frisr-linding-dfoqriir/",
+  "token": "salon-frisr-linding-jxteeva3",
+  "rel": "d/salon-frisr-linding-jxteeva3/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-frisr-linding-jxteeva3/",
   "logo": "monogram"
  },
  "café under masken|aarhus": {
-  "token": "cafe-under-masken-eqek6tmw",
-  "rel": "d/cafe-under-masken-eqek6tmw/",
-  "url": "https://bytevia-demos.pages.dev/d/cafe-under-masken-eqek6tmw/",
+  "token": "restaurant-cafe-under-masken-s1zpwucc",
+  "rel": "d/restaurant-cafe-under-masken-s1zpwucc/",
+  "url": "https://bytevia-demos.pages.dev/d/restaurant-cafe-under-masken-s1zpwucc/",
   "logo": "monogram"
  },
  "studio 41 pilates|københavn": {
-  "token": "studio-41-pilates-sevpszc9",
-  "rel": "d/studio-41-pilates-sevpszc9/",
-  "url": "https://bytevia-demos.pages.dev/d/studio-41-pilates-sevpszc9/",
+  "token": "gym-studio-41-pilates-0yq5kbvq",
+  "rel": "d/gym-studio-41-pilates-0yq5kbvq/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-studio-41-pilates-0yq5kbvq/",
   "logo": "monogram"
  },
  "value workout studio|": {
-  "token": "value-workout-studio-l6xvhqpb",
-  "rel": "d/value-workout-studio-l6xvhqpb/",
-  "url": "https://bytevia-demos.pages.dev/d/value-workout-studio-l6xvhqpb/",
+  "token": "gym-value-workout-studio-vel0hc96",
+  "rel": "d/gym-value-workout-studio-vel0hc96/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-value-workout-studio-vel0hc96/",
   "logo": "monogram"
  },
  "studio norway|vikersund": {
-  "token": "studio-norway-yovxowmf",
-  "rel": "d/studio-norway-yovxowmf/",
-  "url": "https://bytevia-demos.pages.dev/d/studio-norway-yovxowmf/",
+  "token": "salon-studio-norway-fjsluttj",
+  "rel": "d/salon-studio-norway-fjsluttj/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-studio-norway-fjsluttj/",
   "logo": "monogram"
  },
  "christina's neglesalong|mo i rana": {
-  "token": "christinas-neglesalong-nvsy3uf2",
-  "rel": "d/christinas-neglesalong-nvsy3uf2/",
-  "url": "https://bytevia-demos.pages.dev/d/christinas-neglesalong-nvsy3uf2/",
+  "token": "salon-christinas-neglesalong-6jwwck7p",
+  "rel": "d/salon-christinas-neglesalong-6jwwck7p/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-christinas-neglesalong-6jwwck7p/",
   "logo": "monogram"
  },
  "pulz treningssenter|stavanger": {
-  "token": "pulz-treningssenter-ruhwostx",
-  "rel": "d/pulz-treningssenter-ruhwostx/",
-  "url": "https://bytevia-demos.pages.dev/d/pulz-treningssenter-ruhwostx/",
+  "token": "gym-pulz-treningssenter-e1zx67is",
+  "rel": "d/gym-pulz-treningssenter-e1zx67is/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-pulz-treningssenter-e1zx67is/",
   "logo": "monogram"
  },
  "negler av paula|kristiansand": {
-  "token": "negler-av-paula-pcttoabe",
-  "rel": "d/negler-av-paula-pcttoabe/",
-  "url": "https://bytevia-demos.pages.dev/d/negler-av-paula-pcttoabe/",
+  "token": "salon-negler-av-paula-dwew9wec",
+  "rel": "d/salon-negler-av-paula-dwew9wec/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-negler-av-paula-dwew9wec/",
   "logo": "monogram"
  },
  "storhaug treningssenter|stavanger": {
-  "token": "storhaug-treningssenter-lbm4xgcf",
-  "rel": "d/storhaug-treningssenter-lbm4xgcf/",
-  "url": "https://bytevia-demos.pages.dev/d/storhaug-treningssenter-lbm4xgcf/",
+  "token": "gym-storhaug-treningssenter-g0nefzgb",
+  "rel": "d/gym-storhaug-treningssenter-g0nefzgb/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-storhaug-treningssenter-g0nefzgb/",
   "logo": "monogram"
  },
  "hår2o|": {
-  "token": "har2o-0hbvipcb",
-  "rel": "d/har2o-0hbvipcb/",
-  "url": "https://bytevia-demos.pages.dev/d/har2o-0hbvipcb/",
+  "token": "salon-har2o-vkeugrnx",
+  "rel": "d/salon-har2o-vkeugrnx/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-har2o-vkeugrnx/",
   "logo": "monogram"
  },
  "melike ulusoy beauty room|uppsala": {
-  "token": "melike-ulusoy-beauty-roo-pezpig12",
-  "rel": "d/melike-ulusoy-beauty-roo-pezpig12/",
-  "url": "https://bytevia-demos.pages.dev/d/melike-ulusoy-beauty-roo-pezpig12/",
+  "token": "clinic-melike-ulusoy-beauty-roo-puue6gvh",
+  "rel": "d/clinic-melike-ulusoy-beauty-roo-puue6gvh/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-melike-ulusoy-beauty-roo-puue6gvh/",
   "logo": "monogram"
  },
  "somas fransar|uppsala": {
-  "token": "somas-fransar-zt2slca9",
-  "rel": "d/somas-fransar-zt2slca9/",
-  "url": "https://bytevia-demos.pages.dev/d/somas-fransar-zt2slca9/",
+  "token": "salon-somas-fransar-px0ij64q",
+  "rel": "d/salon-somas-fransar-px0ij64q/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-somas-fransar-px0ij64q/",
   "logo": "monogram"
  },
  "städat & klart|stockholm": {
-  "token": "stadat-klart-s4rxotkr",
-  "rel": "d/stadat-klart-s4rxotkr/",
-  "url": "https://bytevia-demos.pages.dev/d/stadat-klart-s4rxotkr/",
+  "token": "home-stadat-klart-vrkvxbzs",
+  "rel": "d/home-stadat-klart-vrkvxbzs/",
+  "url": "https://bytevia-demos.pages.dev/d/home-stadat-klart-vrkvxbzs/",
   "logo": "monogram"
  },
  "städpulsen ab|": {
-  "token": "stadpulsen-ab-fd3bzie0",
-  "rel": "d/stadpulsen-ab-fd3bzie0/",
-  "url": "https://bytevia-demos.pages.dev/d/stadpulsen-ab-fd3bzie0/",
+  "token": "home-stadpulsen-ab-vxmn4z8v",
+  "rel": "d/home-stadpulsen-ab-vxmn4z8v/",
+  "url": "https://bytevia-demos.pages.dev/d/home-stadpulsen-ab-vxmn4z8v/",
   "logo": "monogram"
  },
  "frisör göteborg (ansa)|göteborg": {
-  "token": "frisor-goteborg-ansa-sysuahet",
-  "rel": "d/frisor-goteborg-ansa-sysuahet/",
-  "url": "https://bytevia-demos.pages.dev/d/frisor-goteborg-ansa-sysuahet/",
+  "token": "salon-frisor-goteborg-ansa-1ct4vbzd",
+  "rel": "d/salon-frisor-goteborg-ansa-1ct4vbzd/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-frisor-goteborg-ansa-1ct4vbzd/",
   "logo": "monogram"
  },
  "l'essentielle xl|brussels": {
-  "token": "lessentielle-xl-rxogrxgq",
-  "rel": "d/lessentielle-xl-rxogrxgq/",
-  "url": "https://bytevia-demos.pages.dev/d/lessentielle-xl-rxogrxgq/",
+  "token": "salon-lessentielle-xl-kgybdbfp",
+  "rel": "d/salon-lessentielle-xl-kgybdbfp/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-lessentielle-xl-kgybdbfp/",
   "logo": "monogram"
  },
  "cliona beauty bruxelles|brussels": {
-  "token": "cliona-beauty-bruxelles-auuzxfxw",
-  "rel": "d/cliona-beauty-bruxelles-auuzxfxw/",
-  "url": "https://bytevia-demos.pages.dev/d/cliona-beauty-bruxelles-auuzxfxw/",
+  "token": "salon-cliona-beauty-bruxelles-rbxvmob2",
+  "rel": "d/salon-cliona-beauty-bruxelles-rbxvmob2/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-cliona-beauty-bruxelles-rbxvmob2/",
   "logo": "monogram"
  },
  "kapsalon sia gent|ghent": {
-  "token": "kapsalon-sia-gent-aaekhbjc",
-  "rel": "d/kapsalon-sia-gent-aaekhbjc/",
-  "url": "https://bytevia-demos.pages.dev/d/kapsalon-sia-gent-aaekhbjc/",
+  "token": "salon-kapsalon-sia-gent-zcwcyjcx",
+  "rel": "d/salon-kapsalon-sia-gent-zcwcyjcx/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-kapsalon-sia-gent-zcwcyjcx/",
   "logo": "monogram"
  },
  "clinique dentaire de plainevaux|liège": {
-  "token": "clinique-dentaire-de-pla-lt7ch4ee",
-  "rel": "d/clinique-dentaire-de-pla-lt7ch4ee/",
-  "url": "https://bytevia-demos.pages.dev/d/clinique-dentaire-de-pla-lt7ch4ee/",
+  "token": "clinic-clinique-dentaire-de-pla-hhcymhv2",
+  "rel": "d/clinic-clinique-dentaire-de-pla-hhcymhv2/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-clinique-dentaire-de-pla-hhcymhv2/",
   "logo": "monogram"
  },
  "hair creative luxembourg|luxembourg city": {
-  "token": "hair-creative-luxembourg-c4yib0wp",
-  "rel": "d/hair-creative-luxembourg-c4yib0wp/",
-  "url": "https://bytevia-demos.pages.dev/d/hair-creative-luxembourg-c4yib0wp/",
+  "token": "salon-hair-creative-luxembourg-vxrqgny8",
+  "rel": "d/salon-hair-creative-luxembourg-vxrqgny8/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-hair-creative-luxembourg-vxrqgny8/",
   "logo": "monogram"
  },
  "prestige coiffure|luxembourg city": {
-  "token": "prestige-coiffure-18s2txxp",
-  "rel": "d/prestige-coiffure-18s2txxp/",
-  "url": "https://bytevia-demos.pages.dev/d/prestige-coiffure-18s2txxp/",
+  "token": "salon-prestige-coiffure-cnsapsoh",
+  "rel": "d/salon-prestige-coiffure-cnsapsoh/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-prestige-coiffure-cnsapsoh/",
   "logo": "monogram"
  },
  "by rosalina - japonais hair spa|luxembourg city": {
-  "token": "by-rosalina---japonais-h-nkjxcy5b",
-  "rel": "d/by-rosalina---japonais-h-nkjxcy5b/",
-  "url": "https://bytevia-demos.pages.dev/d/by-rosalina---japonais-h-nkjxcy5b/",
+  "token": "salon-by-rosalina---japonais-h-1ljxrpjd",
+  "rel": "d/salon-by-rosalina---japonais-h-1ljxrpjd/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-by-rosalina---japonais-h-1ljxrpjd/",
   "logo": "monogram"
  },
  "hello beauty antwerp|antwerp": {
-  "token": "hello-beauty-antwerp-u11yeac4",
-  "rel": "d/hello-beauty-antwerp-u11yeac4/",
-  "url": "https://bytevia-demos.pages.dev/d/hello-beauty-antwerp-u11yeac4/",
+  "token": "salon-hello-beauty-antwerp-6urmswp9",
+  "rel": "d/salon-hello-beauty-antwerp-6urmswp9/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-hello-beauty-antwerp-6urmswp9/",
   "logo": "monogram"
  },
  "bb beauty bar|brussels": {
-  "token": "bb-beauty-bar-ttxzj4dk",
-  "rel": "d/bb-beauty-bar-ttxzj4dk/",
-  "url": "https://bytevia-demos.pages.dev/d/bb-beauty-bar-ttxzj4dk/",
+  "token": "salon-bb-beauty-bar-yrkkdulc",
+  "rel": "d/salon-bb-beauty-bar-yrkkdulc/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-bb-beauty-bar-yrkkdulc/",
   "logo": "monogram"
  },
  "tandarts fatma sarı|ghent (oostakker)": {
-  "token": "tandarts-fatma-sar-ookvri3j",
-  "rel": "d/tandarts-fatma-sar-ookvri3j/",
-  "url": "https://bytevia-demos.pages.dev/d/tandarts-fatma-sar-ookvri3j/",
+  "token": "clinic-tandarts-fatma-sar-oooxflpj",
+  "rel": "d/clinic-tandarts-fatma-sar-oooxflpj/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-tandarts-fatma-sar-oooxflpj/",
   "logo": "monogram"
  },
  "mobile hair by melissa|sydney": {
-  "token": "mobile-hair-by-melissa-bluscgls",
-  "rel": "d/mobile-hair-by-melissa-bluscgls/",
-  "url": "https://bytevia-demos.pages.dev/d/mobile-hair-by-melissa-bluscgls/",
+  "token": "salon-mobile-hair-by-melissa-wvbkiq5w",
+  "rel": "d/salon-mobile-hair-by-melissa-wvbkiq5w/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-mobile-hair-by-melissa-wvbkiq5w/",
   "logo": "monogram"
  },
  "brisbane mobile hairdresser (hair by jamie a)|brisbane": {
-  "token": "brisbane-mobile-hairdres-ksrrbz6l",
-  "rel": "d/brisbane-mobile-hairdres-ksrrbz6l/",
-  "url": "https://bytevia-demos.pages.dev/d/brisbane-mobile-hairdres-ksrrbz6l/",
+  "token": "salon-brisbane-mobile-hairdres-9bhbihay",
+  "rel": "d/salon-brisbane-mobile-hairdres-9bhbihay/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-brisbane-mobile-hairdres-9bhbihay/",
   "logo": "monogram"
  },
  "forefront plumbing services|gold coast": {
-  "token": "forefront-plumbing-servi-zgwocnck",
-  "rel": "d/forefront-plumbing-servi-zgwocnck/",
-  "url": "https://bytevia-demos.pages.dev/d/forefront-plumbing-servi-zgwocnck/",
+  "token": "home-forefront-plumbing-servi-fmk4y3iq",
+  "rel": "d/home-forefront-plumbing-servi-fmk4y3iq/",
+  "url": "https://bytevia-demos.pages.dev/d/home-forefront-plumbing-servi-fmk4y3iq/",
   "logo": "monogram"
  },
  "cork window cleaning (pr cleaning solutions)|cork": {
-  "token": "cork-window-cleaning-pr-0irb1imk",
-  "rel": "d/cork-window-cleaning-pr-0irb1imk/",
-  "url": "https://bytevia-demos.pages.dev/d/cork-window-cleaning-pr-0irb1imk/",
+  "token": "home-cork-window-cleaning-pr-gqlnbxd6",
+  "rel": "d/home-cork-window-cleaning-pr-gqlnbxd6/",
+  "url": "https://bytevia-demos.pages.dev/d/home-cork-window-cleaning-pr-gqlnbxd6/",
   "logo": "monogram"
  },
  "beautyphile prospect hill|galway": {
-  "token": "beautyphile-prospect-hil-iq67gpgi",
-  "rel": "d/beautyphile-prospect-hil-iq67gpgi/",
-  "url": "https://bytevia-demos.pages.dev/d/beautyphile-prospect-hil-iq67gpgi/",
+  "token": "salon-beautyphile-prospect-hil-xslekezo",
+  "rel": "d/salon-beautyphile-prospect-hil-xslekezo/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-beautyphile-prospect-hil-xslekezo/",
   "logo": "monogram"
  },
  "beautyfi|limerick": {
-  "token": "beautyfi-busktlxb",
-  "rel": "d/beautyfi-busktlxb/",
-  "url": "https://bytevia-demos.pages.dev/d/beautyfi-busktlxb/",
+  "token": "salon-beautyfi-vxzgotbw",
+  "rel": "d/salon-beautyfi-vxzgotbw/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-beautyfi-vxzgotbw/",
   "logo": "monogram"
  },
  "flawless skin and laser clinic killeagh|killeagh, co. cork": {
-  "token": "flawless-skin-and-laser-pztmxpax",
-  "rel": "d/flawless-skin-and-laser-pztmxpax/",
-  "url": "https://bytevia-demos.pages.dev/d/flawless-skin-and-laser-pztmxpax/",
+  "token": "clinic-flawless-skin-and-laser-ubdnex5g",
+  "rel": "d/clinic-flawless-skin-and-laser-ubdnex5g/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-flawless-skin-and-laser-ubdnex5g/",
   "logo": "monogram"
  },
  "kbeauty salon halifax|halifax": {
-  "token": "kbeauty-salon-halifax-jvuerbxc",
-  "rel": "d/kbeauty-salon-halifax-jvuerbxc/",
-  "url": "https://bytevia-demos.pages.dev/d/kbeauty-salon-halifax-jvuerbxc/",
+  "token": "salon-kbeauty-salon-halifax-8asyk8lf",
+  "rel": "d/salon-kbeauty-salon-halifax-8asyk8lf/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-kbeauty-salon-halifax-8asyk8lf/",
   "logo": "monogram"
  },
  "edmonton hair salon (the one salon)|edmonton": {
-  "token": "edmonton-hair-salon-the-f31xyxhm",
-  "rel": "d/edmonton-hair-salon-the-f31xyxhm/",
-  "url": "https://bytevia-demos.pages.dev/d/edmonton-hair-salon-the-f31xyxhm/",
+  "token": "salon-edmonton-hair-salon-the-obunrxtz",
+  "rel": "d/salon-edmonton-hair-salon-the-obunrxtz/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-edmonton-hair-salon-the-obunrxtz/",
   "logo": "monogram"
  },
  "hamilton care dental centre|hamilton, ontario": {
-  "token": "hamilton-care-dental-cen-alfwupy3",
-  "rel": "d/hamilton-care-dental-cen-alfwupy3/",
-  "url": "https://bytevia-demos.pages.dev/d/hamilton-care-dental-cen-alfwupy3/",
+  "token": "clinic-hamilton-care-dental-cen-lx86bjrz",
+  "rel": "d/clinic-hamilton-care-dental-cen-lx86bjrz/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-hamilton-care-dental-cen-lx86bjrz/",
+  "logo": "monogram"
+ },
+ "smile first dental clinic|abu dhabi": {
+  "token": "clinic-smile-first-dental-clini-lp8omoxl",
+  "rel": "d/clinic-smile-first-dental-clini-lp8omoxl/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-smile-first-dental-clini-lp8omoxl/",
+  "logo": "monogram"
+ },
+ "dr chawky haddad dental clinic|abu dhabi": {
+  "token": "clinic-dr-chawky-haddad-dental-xdyujfsv",
+  "rel": "d/clinic-dr-chawky-haddad-dental-xdyujfsv/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-dr-chawky-haddad-dental-xdyujfsv/",
+  "logo": "monogram"
+ },
+ "taj dental clinic|abu dhabi": {
+  "token": "clinic-taj-dental-clinic-4ukdlgpi",
+  "rel": "d/clinic-taj-dental-clinic-4ukdlgpi/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-taj-dental-clinic-4ukdlgpi/",
+  "logo": "monogram"
+ },
+ "nara beauty salon|abu dhabi": {
+  "token": "salon-nara-beauty-salon-r3lexzfq",
+  "rel": "d/salon-nara-beauty-salon-r3lexzfq/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-nara-beauty-salon-r3lexzfq/",
+  "logo": "monogram"
+ },
+ "top notch ladies salon|dubai": {
+  "token": "salon-top-notch-ladies-salon-ke0hcigb",
+  "rel": "d/salon-top-notch-ladies-salon-ke0hcigb/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-top-notch-ladies-salon-ke0hcigb/",
+  "logo": "monogram"
+ },
+ "spark pro cleaning service|abu dhabi": {
+  "token": "home-spark-pro-cleaning-servi-esw6kstw",
+  "rel": "d/home-spark-pro-cleaning-servi-esw6kstw/",
+  "url": "https://bytevia-demos.pages.dev/d/home-spark-pro-cleaning-servi-esw6kstw/",
+  "logo": "monogram"
+ },
+ "best in town appliances repair|dubai": {
+  "token": "home-best-in-town-appliances-lyd3mgh8",
+  "rel": "d/home-best-in-town-appliances-lyd3mgh8/",
+  "url": "https://bytevia-demos.pages.dev/d/home-best-in-town-appliances-lyd3mgh8/",
+  "logo": "monogram"
+ },
+ "ss movers & packers|dubai": {
+  "token": "home-ss-movers-packers-f9gu54pj",
+  "rel": "d/home-ss-movers-packers-f9gu54pj/",
+  "url": "https://bytevia-demos.pages.dev/d/home-ss-movers-packers-f9gu54pj/",
+  "logo": "monogram"
+ },
+ "cliffton technical services|dubai": {
+  "token": "home-cliffton-technical-servi-ufhddrxp",
+  "rel": "d/home-cliffton-technical-servi-ufhddrxp/",
+  "url": "https://bytevia-demos.pages.dev/d/home-cliffton-technical-servi-ufhddrxp/",
+  "logo": "monogram"
+ },
+ "ali alkendi - dubai property|dubai": {
+  "token": "realestate-ali-alkendi---dubai-prop-zhqvxi1n",
+  "rel": "d/realestate-ali-alkendi---dubai-prop-zhqvxi1n/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-ali-alkendi---dubai-prop-zhqvxi1n/",
+  "logo": "monogram"
+ },
+ "mariam ali abdulla advocates|abu dhabi": {
+  "token": "law-mariam-ali-abdulla-advoc-xxjb55ys",
+  "rel": "d/law-mariam-ali-abdulla-advoc-xxjb55ys/",
+  "url": "https://bytevia-demos.pages.dev/d/law-mariam-ali-abdulla-advoc-xxjb55ys/",
+  "logo": "monogram"
+ },
+ "rashid deemas al suwaidi law firm (sedra rashid)|dubai": {
+  "token": "law-rashid-deemas-al-suwaidi-n8rwj89k",
+  "rel": "d/law-rashid-deemas-al-suwaidi-n8rwj89k/",
+  "url": "https://bytevia-demos.pages.dev/d/law-rashid-deemas-al-suwaidi-n8rwj89k/",
   "logo": "monogram"
  },
  "مجمع صفاء الأسنان الطبي|madinah": {
-  "token": "y9axemgx",
-  "rel": "d/y9axemgx/",
-  "url": "https://bytevia-demos.pages.dev/d/y9axemgx/",
+  "token": "clinic-glogi6vw",
+  "rel": "d/clinic-glogi6vw/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-glogi6vw/",
   "logo": "monogram"
  },
  "د. ولاء الضبيبان|riyadh": {
-  "token": "edch17vf",
-  "rel": "d/edch17vf/",
-  "url": "https://bytevia-demos.pages.dev/d/edch17vf/",
+  "token": "clinic-bvbgr1jx",
+  "rel": "d/clinic-bvbgr1jx/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-bvbgr1jx/",
   "logo": "monogram"
  },
  "نور المثالية للتنظيف ومكافحة الحشرات|dammam": {
-  "token": "wo5sndc6",
-  "rel": "d/wo5sndc6/",
-  "url": "https://bytevia-demos.pages.dev/d/wo5sndc6/",
+  "token": "home-t1yapxbh",
+  "rel": "d/home-t1yapxbh/",
+  "url": "https://bytevia-demos.pages.dev/d/home-t1yapxbh/",
   "logo": "monogram"
  },
  "لوجيستك جدة لنقل العفش|jeddah": {
-  "token": "77tbwive",
-  "rel": "d/77tbwive/",
-  "url": "https://bytevia-demos.pages.dev/d/77tbwive/",
+  "token": "home-agqriose",
+  "rel": "d/home-agqriose/",
+  "url": "https://bytevia-demos.pages.dev/d/home-agqriose/",
   "logo": "monogram"
  },
  "مكتب الغزاوي للمحاماة|jeddah": {
-  "token": "wsgxgkox",
-  "rel": "d/wsgxgkox/",
-  "url": "https://bytevia-demos.pages.dev/d/wsgxgkox/",
+  "token": "law-2uoourmf",
+  "rel": "d/law-2uoourmf/",
+  "url": "https://bytevia-demos.pages.dev/d/law-2uoourmf/",
   "logo": "monogram"
  },
  "alma beauty salon|jeddah": {
-  "token": "alma-beauty-salon-ymh3cr37",
-  "rel": "d/alma-beauty-salon-ymh3cr37/",
-  "url": "https://bytevia-demos.pages.dev/d/alma-beauty-salon-ymh3cr37/",
+  "token": "salon-alma-beauty-salon-g6lyhlx1",
+  "rel": "d/salon-alma-beauty-salon-g6lyhlx1/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-alma-beauty-salon-g6lyhlx1/",
   "logo": "monogram"
  },
  "مكاتب المحارب عقار الدمام|dammam": {
-  "token": "34s2ztt4",
-  "rel": "d/34s2ztt4/",
-  "url": "https://bytevia-demos.pages.dev/d/34s2ztt4/",
+  "token": "realestate-423ncfbj",
+  "rel": "d/realestate-423ncfbj/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-423ncfbj/",
   "logo": "monogram"
  },
  "نادي أيام الرشاقة النسائي|riyadh": {
-  "token": "avjxkowy",
-  "rel": "d/avjxkowy/",
-  "url": "https://bytevia-demos.pages.dev/d/avjxkowy/",
+  "token": "gym-bmmpgqee",
+  "rel": "d/gym-bmmpgqee/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-bmmpgqee/",
   "logo": "monogram"
  },
  "qatar prime dental center|doha": {
-  "token": "qatar-prime-dental-cente-1z4l1pge",
-  "rel": "d/qatar-prime-dental-cente-1z4l1pge/",
-  "url": "https://bytevia-demos.pages.dev/d/qatar-prime-dental-cente-1z4l1pge/",
+  "token": "clinic-qatar-prime-dental-cente-5pgqx0vz",
+  "rel": "d/clinic-qatar-prime-dental-cente-5pgqx0vz/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-qatar-prime-dental-cente-5pgqx0vz/",
   "logo": "monogram"
  },
  "florancisca beauty salon|doha": {
-  "token": "florancisca-beauty-salon-psfvqhto",
-  "rel": "d/florancisca-beauty-salon-psfvqhto/",
-  "url": "https://bytevia-demos.pages.dev/d/florancisca-beauty-salon-psfvqhto/",
+  "token": "salon-florancisca-beauty-salon-kxz0cdfw",
+  "rel": "d/salon-florancisca-beauty-salon-kxz0cdfw/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-florancisca-beauty-salon-kxz0cdfw/",
   "logo": "monogram"
  },
  "queens salon|doha": {
-  "token": "queens-salon-sdm8zliv",
-  "rel": "d/queens-salon-sdm8zliv/",
-  "url": "https://bytevia-demos.pages.dev/d/queens-salon-sdm8zliv/",
+  "token": "salon-queens-salon-r0nskfwq",
+  "rel": "d/salon-queens-salon-r0nskfwq/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-queens-salon-r0nskfwq/",
   "logo": "monogram"
  },
  "new tabreedco|doha": {
-  "token": "new-tabreedco-eihvfksw",
-  "rel": "d/new-tabreedco-eihvfksw/",
-  "url": "https://bytevia-demos.pages.dev/d/new-tabreedco-eihvfksw/",
+  "token": "home-new-tabreedco-hrkmc5oh",
+  "rel": "d/home-new-tabreedco-hrkmc5oh/",
+  "url": "https://bytevia-demos.pages.dev/d/home-new-tabreedco-hrkmc5oh/",
   "logo": "monogram"
  },
  "rent aqar kuwait|kuwait city": {
-  "token": "rent-aqar-kuwait-7nqlhflp",
-  "rel": "d/rent-aqar-kuwait-7nqlhflp/",
-  "url": "https://bytevia-demos.pages.dev/d/rent-aqar-kuwait-7nqlhflp/",
+  "token": "realestate-rent-aqar-kuwait-xrosenx8",
+  "rel": "d/realestate-rent-aqar-kuwait-xrosenx8/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-rent-aqar-kuwait-xrosenx8/",
   "logo": "monogram"
  },
  "abdullah malallah real estate office|kuwait city": {
-  "token": "abdullah-malallah-real-e-lgalqvxw",
-  "rel": "d/abdullah-malallah-real-e-lgalqvxw/",
-  "url": "https://bytevia-demos.pages.dev/d/abdullah-malallah-real-e-lgalqvxw/",
+  "token": "realestate-abdullah-malallah-real-e-wg6myqlw",
+  "rel": "d/realestate-abdullah-malallah-real-e-wg6myqlw/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-abdullah-malallah-real-e-wg6myqlw/",
   "logo": "monogram"
  },
  "sanboak real estate|kuwait city": {
-  "token": "sanboak-real-estate-cvhncetx",
-  "rel": "d/sanboak-real-estate-cvhncetx/",
-  "url": "https://bytevia-demos.pages.dev/d/sanboak-real-estate-cvhncetx/",
+  "token": "realestate-sanboak-real-estate-2jxtmcsw",
+  "rel": "d/realestate-sanboak-real-estate-2jxtmcsw/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-sanboak-real-estate-2jxtmcsw/",
   "logo": "monogram"
  },
  "beauty concept salon & spa|shaab al bahri": {
-  "token": "beauty-concept-salon-spa-eu6uydtp",
-  "rel": "d/beauty-concept-salon-spa-eu6uydtp/",
-  "url": "https://bytevia-demos.pages.dev/d/beauty-concept-salon-spa-eu6uydtp/",
+  "token": "salon-beauty-concept-salon-spa-rulaxcgq",
+  "rel": "d/salon-beauty-concept-salon-spa-rulaxcgq/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-beauty-concept-salon-spa-rulaxcgq/",
   "logo": "monogram"
  },
  "fresho cleaning services|doha": {
-  "token": "fresho-cleaning-services-mq5m8sib",
-  "rel": "d/fresho-cleaning-services-mq5m8sib/",
-  "url": "https://bytevia-demos.pages.dev/d/fresho-cleaning-services-mq5m8sib/",
+  "token": "home-fresho-cleaning-services-sm8g3lx4",
+  "rel": "d/home-fresho-cleaning-services-sm8g3lx4/",
+  "url": "https://bytevia-demos.pages.dev/d/home-fresho-cleaning-services-sm8g3lx4/",
   "logo": "monogram"
  },
  "noor cleaning services|doha": {
-  "token": "noor-cleaning-services-2crqr9ys",
-  "rel": "d/noor-cleaning-services-2crqr9ys/",
-  "url": "https://bytevia-demos.pages.dev/d/noor-cleaning-services-2crqr9ys/",
+  "token": "home-noor-cleaning-services-awrpxu7t",
+  "rel": "d/home-noor-cleaning-services-awrpxu7t/",
+  "url": "https://bytevia-demos.pages.dev/d/home-noor-cleaning-services-awrpxu7t/",
   "logo": "monogram"
  },
  "doha home cleaning service|doha": {
-  "token": "doha-home-cleaning-servi-727z1oh8",
-  "rel": "d/doha-home-cleaning-servi-727z1oh8/",
-  "url": "https://bytevia-demos.pages.dev/d/doha-home-cleaning-servi-727z1oh8/",
+  "token": "home-doha-home-cleaning-servi-nesegda6",
+  "rel": "d/home-doha-home-cleaning-servi-nesegda6/",
+  "url": "https://bytevia-demos.pages.dev/d/home-doha-home-cleaning-servi-nesegda6/",
   "logo": "monogram"
  },
  "dar al mahara cleaning and hospitality services|doha": {
-  "token": "dar-al-mahara-cleaning-a-d7grxbee",
-  "rel": "d/dar-al-mahara-cleaning-a-d7grxbee/",
-  "url": "https://bytevia-demos.pages.dev/d/dar-al-mahara-cleaning-a-d7grxbee/",
+  "token": "home-dar-al-mahara-cleaning-a-hbjxydnc",
+  "rel": "d/home-dar-al-mahara-cleaning-a-hbjxydnc/",
+  "url": "https://bytevia-demos.pages.dev/d/home-dar-al-mahara-cleaning-a-hbjxydnc/",
   "logo": "monogram"
  },
  "beautini salon|andalus": {
-  "token": "beautini-salon-5yebbtgb",
-  "rel": "d/beautini-salon-5yebbtgb/",
-  "url": "https://bytevia-demos.pages.dev/d/beautini-salon-5yebbtgb/",
+  "token": "salon-beautini-salon-94y0nsbr",
+  "rel": "d/salon-beautini-salon-94y0nsbr/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-beautini-salon-94y0nsbr/",
   "logo": "monogram"
  },
  "love beauty home services|khobar": {
-  "token": "love-beauty-home-service-xdbro5ls",
-  "rel": "d/love-beauty-home-service-xdbro5ls/",
-  "url": "https://bytevia-demos.pages.dev/d/love-beauty-home-service-xdbro5ls/",
+  "token": "salon-love-beauty-home-service-cxnbyfmv",
+  "rel": "d/salon-love-beauty-home-service-cxnbyfmv/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-love-beauty-home-service-cxnbyfmv/",
   "logo": "monogram"
  },
  "vb salon dammam|dammam": {
-  "token": "vb-salon-dammam-7scdfufq",
-  "rel": "d/vb-salon-dammam-7scdfufq/",
-  "url": "https://bytevia-demos.pages.dev/d/vb-salon-dammam-7scdfufq/",
+  "token": "salon-vb-salon-dammam-ohtcll9t",
+  "rel": "d/salon-vb-salon-dammam-ohtcll9t/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-vb-salon-dammam-ohtcll9t/",
   "logo": "monogram"
  },
  "posh salon madinah|madinah": {
-  "token": "posh-salon-madinah-yhdbva8c",
-  "rel": "d/posh-salon-madinah-yhdbva8c/",
-  "url": "https://bytevia-demos.pages.dev/d/posh-salon-madinah-yhdbva8c/",
+  "token": "salon-posh-salon-madinah-dx9jm8ss",
+  "rel": "d/salon-posh-salon-madinah-dx9jm8ss/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-posh-salon-madinah-dx9jm8ss/",
   "logo": "monogram"
  },
  "cleaning service kuwait|kuwait city": {
-  "token": "cleaning-service-kuwait-8paaqpol",
-  "rel": "d/cleaning-service-kuwait-8paaqpol/",
-  "url": "https://bytevia-demos.pages.dev/d/cleaning-service-kuwait-8paaqpol/",
+  "token": "home-cleaning-service-kuwait-lcuzutin",
+  "rel": "d/home-cleaning-service-kuwait-lcuzutin/",
+  "url": "https://bytevia-demos.pages.dev/d/home-cleaning-service-kuwait-lcuzutin/",
   "logo": "monogram"
  },
  "beverly hills dispensary - dr. olesia kurnat|salmiya": {
-  "token": "beverly-hills-dispensary-xysm69cy",
-  "rel": "d/beverly-hills-dispensary-xysm69cy/",
-  "url": "https://bytevia-demos.pages.dev/d/beverly-hills-dispensary-xysm69cy/",
+  "token": "clinic-beverly-hills-dispensary-497qbyxr",
+  "rel": "d/clinic-beverly-hills-dispensary-497qbyxr/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-beverly-hills-dispensary-497qbyxr/",
   "logo": "monogram"
  },
  "22 spa & saloon (twenty two men's spa)|salmiya": {
-  "token": "22-spa-saloon-twenty-two-ndxvgcou",
-  "rel": "d/22-spa-saloon-twenty-two-ndxvgcou/",
-  "url": "https://bytevia-demos.pages.dev/d/22-spa-saloon-twenty-two-ndxvgcou/",
+  "token": "salon-22-spa-saloon-twenty-two-zljav2iz",
+  "rel": "d/salon-22-spa-saloon-twenty-two-zljav2iz/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-22-spa-saloon-twenty-two-zljav2iz/",
   "logo": "monogram"
  },
  "dr. basma medical center|doha": {
-  "token": "dr-basma-medical-center-f2jaftmj",
-  "rel": "d/dr-basma-medical-center-f2jaftmj/",
-  "url": "https://bytevia-demos.pages.dev/d/dr-basma-medical-center-f2jaftmj/",
+  "token": "clinic-dr-basma-medical-center-uu31luzz",
+  "rel": "d/clinic-dr-basma-medical-center-uu31luzz/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-dr-basma-medical-center-uu31luzz/",
   "logo": "monogram"
  },
  "al mansour restaurant|khiran": {
-  "token": "al-mansour-restaurant-i85ws3w5",
-  "rel": "d/al-mansour-restaurant-i85ws3w5/",
-  "url": "https://bytevia-demos.pages.dev/d/al-mansour-restaurant-i85ws3w5/",
+  "token": "restaurant-al-mansour-restaurant-pxtzabz2",
+  "rel": "d/restaurant-al-mansour-restaurant-pxtzabz2/",
+  "url": "https://bytevia-demos.pages.dev/d/restaurant-al-mansour-restaurant-pxtzabz2/",
   "logo": "monogram"
  },
  "crown dental clinic|sharjah": {
-  "token": "crown-dental-clinic-5ysr1xod",
-  "rel": "d/crown-dental-clinic-5ysr1xod/",
-  "url": "https://bytevia-demos.pages.dev/d/crown-dental-clinic-5ysr1xod/",
+  "token": "clinic-crown-dental-clinic-vonxzq0q",
+  "rel": "d/clinic-crown-dental-clinic-vonxzq0q/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-crown-dental-clinic-vonxzq0q/",
   "logo": "monogram"
  },
  "al sukoon medical center|sharjah": {
-  "token": "al-sukoon-medical-center-ehv5oivv",
-  "rel": "d/al-sukoon-medical-center-ehv5oivv/",
-  "url": "https://bytevia-demos.pages.dev/d/al-sukoon-medical-center-ehv5oivv/",
+  "token": "clinic-al-sukoon-medical-center-rwlkso5i",
+  "rel": "d/clinic-al-sukoon-medical-center-rwlkso5i/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-al-sukoon-medical-center-rwlkso5i/",
   "logo": "monogram"
  },
  "alesayi specialized dental center|sharjah": {
-  "token": "alesayi-specialized-dent-2fy5ae9j",
-  "rel": "d/alesayi-specialized-dent-2fy5ae9j/",
-  "url": "https://bytevia-demos.pages.dev/d/alesayi-specialized-dent-2fy5ae9j/",
+  "token": "clinic-alesayi-specialized-dent-1fgmywua",
+  "rel": "d/clinic-alesayi-specialized-dent-1fgmywua/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-alesayi-specialized-dent-1fgmywua/",
   "logo": "monogram"
  },
  "dental clinic ajman dr ahmed jouda (al yasmine mc)|ajman": {
-  "token": "dental-clinic-ajman-dr-a-xjgoxa55",
-  "rel": "d/dental-clinic-ajman-dr-a-xjgoxa55/",
-  "url": "https://bytevia-demos.pages.dev/d/dental-clinic-ajman-dr-a-xjgoxa55/",
+  "token": "clinic-dental-clinic-ajman-dr-a-cnnakobo",
+  "rel": "d/clinic-dental-clinic-ajman-dr-a-cnnakobo/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-dental-clinic-ajman-dr-a-cnnakobo/",
   "logo": "monogram"
  },
  "dr hasna dental clinic|ajman": {
-  "token": "dr-hasna-dental-clinic-quvnvhgn",
-  "rel": "d/dr-hasna-dental-clinic-quvnvhgn/",
-  "url": "https://bytevia-demos.pages.dev/d/dr-hasna-dental-clinic-quvnvhgn/",
+  "token": "clinic-dr-hasna-dental-clinic-0zid7tj2",
+  "rel": "d/clinic-dr-hasna-dental-clinic-0zid7tj2/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-dr-hasna-dental-clinic-0zid7tj2/",
   "logo": "monogram"
  },
  "oriana aesthetic clinic rak|ras al khaimah": {
-  "token": "oriana-aesthetic-clinic-fzdnvtwz",
-  "rel": "d/oriana-aesthetic-clinic-fzdnvtwz/",
-  "url": "https://bytevia-demos.pages.dev/d/oriana-aesthetic-clinic-fzdnvtwz/",
+  "token": "clinic-oriana-aesthetic-clinic-x95w889m",
+  "rel": "d/clinic-oriana-aesthetic-clinic-x95w889m/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-oriana-aesthetic-clinic-x95w889m/",
   "logo": "monogram"
  },
  "dr. al naeem clinic|ras al khaimah": {
-  "token": "dr-al-naeem-clinic-jikbqdpa",
-  "rel": "d/dr-al-naeem-clinic-jikbqdpa/",
-  "url": "https://bytevia-demos.pages.dev/d/dr-al-naeem-clinic-jikbqdpa/",
+  "token": "clinic-dr-al-naeem-clinic-3vcjczxq",
+  "rel": "d/clinic-dr-al-naeem-clinic-3vcjczxq/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-dr-al-naeem-clinic-3vcjczxq/",
   "logo": "monogram"
  },
  "bliss medical center|ajman": {
-  "token": "bliss-medical-center-hnykocbt",
-  "rel": "d/bliss-medical-center-hnykocbt/",
-  "url": "https://bytevia-demos.pages.dev/d/bliss-medical-center-hnykocbt/",
+  "token": "clinic-bliss-medical-center-vt4gwwqx",
+  "rel": "d/clinic-bliss-medical-center-vt4gwwqx/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-bliss-medical-center-vt4gwwqx/",
   "logo": "monogram"
  },
  "mother dental center|ajman": {
-  "token": "mother-dental-center-m8hmc6j9",
-  "rel": "d/mother-dental-center-m8hmc6j9/",
-  "url": "https://bytevia-demos.pages.dev/d/mother-dental-center-m8hmc6j9/",
+  "token": "clinic-mother-dental-center-jpglldct",
+  "rel": "d/clinic-mother-dental-center-jpglldct/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-mother-dental-center-jpglldct/",
   "logo": "monogram"
  },
  "dermatology & cosmetology clinic abu dhabi (emirates dermatology)|abu dhabi": {
-  "token": "dermatology-cosmetology-msauvuib",
-  "rel": "d/dermatology-cosmetology-msauvuib/",
-  "url": "https://bytevia-demos.pages.dev/d/dermatology-cosmetology-msauvuib/",
+  "token": "clinic-dermatology-cosmetology-kqsisjao",
+  "rel": "d/clinic-dermatology-cosmetology-kqsisjao/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-dermatology-cosmetology-kqsisjao/",
   "logo": "monogram"
  },
  "el aj medical centre|ajman": {
-  "token": "el-aj-medical-centre-68rbd33e",
-  "rel": "d/el-aj-medical-centre-68rbd33e/",
-  "url": "https://bytevia-demos.pages.dev/d/el-aj-medical-centre-68rbd33e/",
+  "token": "clinic-el-aj-medical-centre-tesxtova",
+  "rel": "d/clinic-el-aj-medical-centre-tesxtova/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-el-aj-medical-centre-tesxtova/",
   "logo": "monogram"
  },
  "u beauty salon rak mall|ras al khaimah": {
-  "token": "u-beauty-salon-rak-mall-htnjn59d",
-  "rel": "d/u-beauty-salon-rak-mall-htnjn59d/",
-  "url": "https://bytevia-demos.pages.dev/d/u-beauty-salon-rak-mall-htnjn59d/",
+  "token": "salon-u-beauty-salon-rak-mall-mqcmk28x",
+  "rel": "d/salon-u-beauty-salon-rak-mall-mqcmk28x/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-u-beauty-salon-rak-mall-mqcmk28x/",
   "logo": "monogram"
  },
  "rafy beauty salon|ras al khaimah": {
-  "token": "rafy-beauty-salon-5c2eymdx",
-  "rel": "d/rafy-beauty-salon-5c2eymdx/",
-  "url": "https://bytevia-demos.pages.dev/d/rafy-beauty-salon-5c2eymdx/",
+  "token": "salon-rafy-beauty-salon-o9hxtx6x",
+  "rel": "d/salon-rafy-beauty-salon-o9hxtx6x/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-rafy-beauty-salon-o9hxtx6x/",
   "logo": "monogram"
  },
  "al nazish ladies salon|ras al khaimah": {
-  "token": "al-nazish-ladies-salon-gxfzzngo",
-  "rel": "d/al-nazish-ladies-salon-gxfzzngo/",
-  "url": "https://bytevia-demos.pages.dev/d/al-nazish-ladies-salon-gxfzzngo/",
+  "token": "salon-al-nazish-ladies-salon-rxgy37ei",
+  "rel": "d/salon-al-nazish-ladies-salon-rxgy37ei/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-al-nazish-ladies-salon-rxgy37ei/",
   "logo": "monogram"
  },
  "hijabi ladies beauty salon rak|ras al khaimah": {
-  "token": "hijabi-ladies-beauty-sal-ltehr5ez",
-  "rel": "d/hijabi-ladies-beauty-sal-ltehr5ez/",
-  "url": "https://bytevia-demos.pages.dev/d/hijabi-ladies-beauty-sal-ltehr5ez/",
+  "token": "salon-hijabi-ladies-beauty-sal-zoq2j0xm",
+  "rel": "d/salon-hijabi-ladies-beauty-sal-zoq2j0xm/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-hijabi-ladies-beauty-sal-zoq2j0xm/",
   "logo": "monogram"
  },
  "saja beauty center|ajman": {
-  "token": "saja-beauty-center-j7vfbfyk",
-  "rel": "d/saja-beauty-center-j7vfbfyk/",
-  "url": "https://bytevia-demos.pages.dev/d/saja-beauty-center-j7vfbfyk/",
+  "token": "salon-saja-beauty-center-pv1gpxsg",
+  "rel": "d/salon-saja-beauty-center-pv1gpxsg/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-saja-beauty-center-pv1gpxsg/",
   "logo": "monogram"
  },
  "flora beauty center ajman|ajman": {
-  "token": "flora-beauty-center-ajma-b0xkgdk3",
-  "rel": "d/flora-beauty-center-ajma-b0xkgdk3/",
-  "url": "https://bytevia-demos.pages.dev/d/flora-beauty-center-ajma-b0xkgdk3/",
+  "token": "salon-flora-beauty-center-ajma-gbxopom5",
+  "rel": "d/salon-flora-beauty-center-ajma-gbxopom5/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-flora-beauty-center-ajma-gbxopom5/",
   "logo": "monogram"
  },
  "mariam beauty salon ajman|ajman": {
-  "token": "mariam-beauty-salon-ajma-gnyqxjmm",
-  "rel": "d/mariam-beauty-salon-ajma-gnyqxjmm/",
-  "url": "https://bytevia-demos.pages.dev/d/mariam-beauty-salon-ajma-gnyqxjmm/",
+  "token": "salon-mariam-beauty-salon-ajma-xiwihvyx",
+  "rel": "d/salon-mariam-beauty-salon-ajma-xiwihvyx/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-mariam-beauty-salon-ajma-xiwihvyx/",
   "logo": "monogram"
  },
  "the sister's salon|ajman": {
-  "token": "the-sisters-salon-veszvlsx",
-  "rel": "d/the-sisters-salon-veszvlsx/",
-  "url": "https://bytevia-demos.pages.dev/d/the-sisters-salon-veszvlsx/",
+  "token": "salon-the-sisters-salon-mildxpm0",
+  "rel": "d/salon-the-sisters-salon-mildxpm0/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-the-sisters-salon-mildxpm0/",
   "logo": "monogram"
  },
  "al sadiq beauty saloon (artist hair & beauty)|ajman": {
-  "token": "al-sadiq-beauty-saloon-a-66fscnhv",
-  "rel": "d/al-sadiq-beauty-saloon-a-66fscnhv/",
-  "url": "https://bytevia-demos.pages.dev/d/al-sadiq-beauty-saloon-a-66fscnhv/",
+  "token": "salon-al-sadiq-beauty-saloon-a-aruvxm79",
+  "rel": "d/salon-al-sadiq-beauty-saloon-a-aruvxm79/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-al-sadiq-beauty-saloon-a-aruvxm79/",
   "logo": "monogram"
  },
  "inaaya's beauty lounge|ajman": {
-  "token": "inaayas-beauty-lounge-6xzzpymy",
-  "rel": "d/inaayas-beauty-lounge-6xzzpymy/",
-  "url": "https://bytevia-demos.pages.dev/d/inaayas-beauty-lounge-6xzzpymy/",
+  "token": "salon-inaayas-beauty-lounge-f7ph3xbd",
+  "rel": "d/salon-inaayas-beauty-lounge-f7ph3xbd/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-inaayas-beauty-lounge-f7ph3xbd/",
   "logo": "monogram"
  },
  "premier fitness gym|sharjah": {
-  "token": "premier-fitness-gym-6ow4v2d2",
-  "rel": "d/premier-fitness-gym-6ow4v2d2/",
-  "url": "https://bytevia-demos.pages.dev/d/premier-fitness-gym-6ow4v2d2/",
+  "token": "gym-premier-fitness-gym-g1czy5xu",
+  "rel": "d/gym-premier-fitness-gym-g1czy5xu/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-premier-fitness-gym-g1czy5xu/",
   "logo": "monogram"
  },
  "empower ladies fitness|sharjah": {
-  "token": "empower-ladies-fitness-gbrgzzhf",
-  "rel": "d/empower-ladies-fitness-gbrgzzhf/",
-  "url": "https://bytevia-demos.pages.dev/d/empower-ladies-fitness-gbrgzzhf/",
+  "token": "gym-empower-ladies-fitness-ccg30myp",
+  "rel": "d/gym-empower-ladies-fitness-ccg30myp/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-empower-ladies-fitness-ccg30myp/",
   "logo": "monogram"
  },
  "atlantis fitness|sharjah": {
-  "token": "atlantis-fitness-tkcybfdu",
-  "rel": "d/atlantis-fitness-tkcybfdu/",
-  "url": "https://bytevia-demos.pages.dev/d/atlantis-fitness-tkcybfdu/",
+  "token": "gym-atlantis-fitness-ktkazimu",
+  "rel": "d/gym-atlantis-fitness-ktkazimu/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-atlantis-fitness-ktkazimu/",
   "logo": "monogram"
  },
  "fitness bridge|sharjah": {
-  "token": "fitness-bridge-gh3c0rtw",
-  "rel": "d/fitness-bridge-gh3c0rtw/",
-  "url": "https://bytevia-demos.pages.dev/d/fitness-bridge-gh3c0rtw/",
+  "token": "gym-fitness-bridge-rodvvxmw",
+  "rel": "d/gym-fitness-bridge-rodvvxmw/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-fitness-bridge-rodvvxmw/",
   "logo": "monogram"
  },
  "wellness fitness|sharjah": {
-  "token": "wellness-fitness-eotfsnzq",
-  "rel": "d/wellness-fitness-eotfsnzq/",
-  "url": "https://bytevia-demos.pages.dev/d/wellness-fitness-eotfsnzq/",
+  "token": "gym-wellness-fitness-6p5crisk",
+  "rel": "d/gym-wellness-fitness-6p5crisk/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-wellness-fitness-6p5crisk/",
   "logo": "monogram"
  },
  "zie core fitness|ajman": {
-  "token": "zie-core-fitness-enraiklk",
-  "rel": "d/zie-core-fitness-enraiklk/",
-  "url": "https://bytevia-demos.pages.dev/d/zie-core-fitness-enraiklk/",
+  "token": "gym-zie-core-fitness-7yprbqsv",
+  "rel": "d/gym-zie-core-fitness-7yprbqsv/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-zie-core-fitness-7yprbqsv/",
   "logo": "monogram"
  },
  "al safar and partners law firm|dubai": {
-  "token": "al-safar-and-partners-la-cpa53vmj",
-  "rel": "d/al-safar-and-partners-la-cpa53vmj/",
-  "url": "https://bytevia-demos.pages.dev/d/al-safar-and-partners-la-cpa53vmj/",
+  "token": "law-al-safar-and-partners-la-49eskir2",
+  "rel": "d/law-al-safar-and-partners-la-49eskir2/",
+  "url": "https://bytevia-demos.pages.dev/d/law-al-safar-and-partners-la-49eskir2/",
   "logo": "monogram"
  },
  "souzan el kayaji legal consultancy|dubai": {
-  "token": "souzan-el-kayaji-legal-c-778pruoj",
-  "rel": "d/souzan-el-kayaji-legal-c-778pruoj/",
-  "url": "https://bytevia-demos.pages.dev/d/souzan-el-kayaji-legal-c-778pruoj/",
+  "token": "law-souzan-el-kayaji-legal-c-pp0red6h",
+  "rel": "d/law-souzan-el-kayaji-legal-c-pp0red6h/",
+  "url": "https://bytevia-demos.pages.dev/d/law-souzan-el-kayaji-legal-c-pp0red6h/",
   "logo": "monogram"
  },
  "rs advocates and legal consultants|dubai": {
-  "token": "rs-advocates-and-legal-c-hsh3kyrw",
-  "rel": "d/rs-advocates-and-legal-c-hsh3kyrw/",
-  "url": "https://bytevia-demos.pages.dev/d/rs-advocates-and-legal-c-hsh3kyrw/",
+  "token": "law-rs-advocates-and-legal-c-wl2i3pu7",
+  "rel": "d/law-rs-advocates-and-legal-c-wl2i3pu7/",
+  "url": "https://bytevia-demos.pages.dev/d/law-rs-advocates-and-legal-c-wl2i3pu7/",
   "logo": "monogram"
  },
  "esam al zarooni advocates & legal consultants|dubai": {
-  "token": "esam-al-zarooni-advocate-4txr8hgp",
-  "rel": "d/esam-al-zarooni-advocate-4txr8hgp/",
-  "url": "https://bytevia-demos.pages.dev/d/esam-al-zarooni-advocate-4txr8hgp/",
+  "token": "law-esam-al-zarooni-advocate-ur0cfprk",
+  "rel": "d/law-esam-al-zarooni-advocate-ur0cfprk/",
+  "url": "https://bytevia-demos.pages.dev/d/law-esam-al-zarooni-advocate-ur0cfprk/",
   "logo": "monogram"
  },
  "ask legal consultancy|dubai": {
-  "token": "ask-legal-consultancy-compywit",
-  "rel": "d/ask-legal-consultancy-compywit/",
-  "url": "https://bytevia-demos.pages.dev/d/ask-legal-consultancy-compywit/",
+  "token": "law-ask-legal-consultancy-ckzhgz5w",
+  "rel": "d/law-ask-legal-consultancy-ckzhgz5w/",
+  "url": "https://bytevia-demos.pages.dev/d/law-ask-legal-consultancy-ckzhgz5w/",
   "logo": "monogram"
  },
  "kmna lawyers & legal consultants|abu dhabi": {
-  "token": "kmna-lawyers-legal-consu-ksxls0r7",
-  "rel": "d/kmna-lawyers-legal-consu-ksxls0r7/",
-  "url": "https://bytevia-demos.pages.dev/d/kmna-lawyers-legal-consu-ksxls0r7/",
+  "token": "law-kmna-lawyers-legal-consu-biyava5v",
+  "rel": "d/law-kmna-lawyers-legal-consu-biyava5v/",
+  "url": "https://bytevia-demos.pages.dev/d/law-kmna-lawyers-legal-consu-biyava5v/",
   "logo": "monogram"
  },
  "wisecreativity accounts uae|dubai": {
-  "token": "wisecreativity-accounts-ofjzxxix",
-  "rel": "d/wisecreativity-accounts-ofjzxxix/",
-  "url": "https://bytevia-demos.pages.dev/d/wisecreativity-accounts-ofjzxxix/",
+  "token": "law-wisecreativity-accounts-zfkvqobq",
+  "rel": "d/law-wisecreativity-accounts-zfkvqobq/",
+  "url": "https://bytevia-demos.pages.dev/d/law-wisecreativity-accounts-zfkvqobq/",
   "logo": "monogram"
  },
  "smart business solutions|dubai": {
-  "token": "smart-business-solutions-sniaocwr",
-  "rel": "d/smart-business-solutions-sniaocwr/",
-  "url": "https://bytevia-demos.pages.dev/d/smart-business-solutions-sniaocwr/",
+  "token": "law-smart-business-solutions-xvypfac3",
+  "rel": "d/law-smart-business-solutions-xvypfac3/",
+  "url": "https://bytevia-demos.pages.dev/d/law-smart-business-solutions-xvypfac3/",
   "logo": "monogram"
  },
  "al janah ac services dubai|dubai": {
-  "token": "al-janah-ac-services-dub-hsucszqn",
-  "rel": "d/al-janah-ac-services-dub-hsucszqn/",
-  "url": "https://bytevia-demos.pages.dev/d/al-janah-ac-services-dub-hsucszqn/",
+  "token": "home-al-janah-ac-services-dub-qyyxmazk",
+  "rel": "d/home-al-janah-ac-services-dub-qyyxmazk/",
+  "url": "https://bytevia-demos.pages.dev/d/home-al-janah-ac-services-dub-qyyxmazk/",
   "logo": "monogram"
  },
  "al hadi ac repair & maintenance services|dubai": {
-  "token": "al-hadi-ac-repair-mainte-nphksidw",
-  "rel": "d/al-hadi-ac-repair-mainte-nphksidw/",
-  "url": "https://bytevia-demos.pages.dev/d/al-hadi-ac-repair-mainte-nphksidw/",
+  "token": "home-al-hadi-ac-repair-mainte-udqdi3tj",
+  "rel": "d/home-al-hadi-ac-repair-mainte-udqdi3tj/",
+  "url": "https://bytevia-demos.pages.dev/d/home-al-hadi-ac-repair-mainte-udqdi3tj/",
   "logo": "monogram"
  },
  "xshield pest and clean|dubai": {
-  "token": "xshield-pest-and-clean-53mo5w1k",
-  "rel": "d/xshield-pest-and-clean-53mo5w1k/",
-  "url": "https://bytevia-demos.pages.dev/d/xshield-pest-and-clean-53mo5w1k/",
+  "token": "home-xshield-pest-and-clean-otrpuev5",
+  "rel": "d/home-xshield-pest-and-clean-otrpuev5/",
+  "url": "https://bytevia-demos.pages.dev/d/home-xshield-pest-and-clean-otrpuev5/",
   "logo": "monogram"
  },
  "brilliant way technical services|dubai": {
-  "token": "brilliant-way-technical-eowajrsl",
-  "rel": "d/brilliant-way-technical-eowajrsl/",
-  "url": "https://bytevia-demos.pages.dev/d/brilliant-way-technical-eowajrsl/",
+  "token": "home-brilliant-way-technical-zkdvcijv",
+  "rel": "d/home-brilliant-way-technical-zkdvcijv/",
+  "url": "https://bytevia-demos.pages.dev/d/home-brilliant-way-technical-zkdvcijv/",
   "logo": "monogram"
  },
  "dufix technical services|dubai": {
-  "token": "dufix-technical-services-jm4cr9d6",
-  "rel": "d/dufix-technical-services-jm4cr9d6/",
-  "url": "https://bytevia-demos.pages.dev/d/dufix-technical-services-jm4cr9d6/",
+  "token": "home-dufix-technical-services-0bhz0wvw",
+  "rel": "d/home-dufix-technical-services-0bhz0wvw/",
+  "url": "https://bytevia-demos.pages.dev/d/home-dufix-technical-services-0bhz0wvw/",
   "logo": "monogram"
  },
  "aat movers packers|dubai": {
-  "token": "aat-movers-packers-kzxqru1s",
-  "rel": "d/aat-movers-packers-kzxqru1s/",
-  "url": "https://bytevia-demos.pages.dev/d/aat-movers-packers-kzxqru1s/",
+  "token": "home-aat-movers-packers-ay8cpfnu",
+  "rel": "d/home-aat-movers-packers-ay8cpfnu/",
+  "url": "https://bytevia-demos.pages.dev/d/home-aat-movers-packers-ay8cpfnu/",
   "logo": "monogram"
  },
  "service zone uae|abu dhabi": {
-  "token": "service-zone-uae-rfuf3arm",
-  "rel": "d/service-zone-uae-rfuf3arm/",
-  "url": "https://bytevia-demos.pages.dev/d/service-zone-uae-rfuf3arm/",
+  "token": "home-service-zone-uae-lmpahrtu",
+  "rel": "d/home-service-zone-uae-lmpahrtu/",
+  "url": "https://bytevia-demos.pages.dev/d/home-service-zone-uae-lmpahrtu/",
   "logo": "monogram"
  },
  "alras real estate|sharjah": {
-  "token": "alras-real-estate-a57bzlyi",
-  "rel": "d/alras-real-estate-a57bzlyi/",
-  "url": "https://bytevia-demos.pages.dev/d/alras-real-estate-a57bzlyi/",
+  "token": "realestate-alras-real-estate-vthj5953",
+  "rel": "d/realestate-alras-real-estate-vthj5953/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-alras-real-estate-vthj5953/",
   "logo": "monogram"
  },
  "swz realty|dubai": {
-  "token": "swz-realty-afoz45ig",
-  "rel": "d/swz-realty-afoz45ig/",
-  "url": "https://bytevia-demos.pages.dev/d/swz-realty-afoz45ig/",
+  "token": "realestate-swz-realty-de1xvmor",
+  "rel": "d/realestate-swz-realty-de1xvmor/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-swz-realty-de1xvmor/",
   "logo": "monogram"
  },
  "zelton real estate|dubai": {
-  "token": "zelton-real-estate-fv8tnwpv",
-  "rel": "d/zelton-real-estate-fv8tnwpv/",
-  "url": "https://bytevia-demos.pages.dev/d/zelton-real-estate-fv8tnwpv/",
+  "token": "realestate-zelton-real-estate-ikoqigeu",
+  "rel": "d/realestate-zelton-real-estate-ikoqigeu/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-zelton-real-estate-ikoqigeu/",
   "logo": "monogram"
  },
  "future realestate|dubai": {
-  "token": "future-realestate-mv8e7frv",
-  "rel": "d/future-realestate-mv8e7frv/",
-  "url": "https://bytevia-demos.pages.dev/d/future-realestate-mv8e7frv/",
+  "token": "realestate-future-realestate-5hspab37",
+  "rel": "d/realestate-future-realestate-5hspab37/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-future-realestate-5hspab37/",
   "logo": "monogram"
  },
  "hafsa rajput realtor|sharjah": {
-  "token": "hafsa-rajput-realtor-g4bnllz7",
-  "rel": "d/hafsa-rajput-realtor-g4bnllz7/",
-  "url": "https://bytevia-demos.pages.dev/d/hafsa-rajput-realtor-g4bnllz7/",
+  "token": "realestate-hafsa-rajput-realtor-19xkf2x2",
+  "rel": "d/realestate-hafsa-rajput-realtor-19xkf2x2/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-hafsa-rajput-realtor-19xkf2x2/",
   "logo": "monogram"
  },
  "falconbay real estate|abu dhabi": {
-  "token": "falconbay-real-estate-j8u0sccr",
-  "rel": "d/falconbay-real-estate-j8u0sccr/",
-  "url": "https://bytevia-demos.pages.dev/d/falconbay-real-estate-j8u0sccr/",
+  "token": "realestate-falconbay-real-estate-ohzco7wn",
+  "rel": "d/realestate-falconbay-real-estate-ohzco7wn/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-falconbay-real-estate-ohzco7wn/",
   "logo": "monogram"
  },
  "katea cafe|sharjah": {
-  "token": "katea-cafe-yfcik5re",
-  "rel": "d/katea-cafe-yfcik5re/",
-  "url": "https://bytevia-demos.pages.dev/d/katea-cafe-yfcik5re/",
+  "token": "restaurant-katea-cafe-2gfjh9zo",
+  "rel": "d/restaurant-katea-cafe-2gfjh9zo/",
+  "url": "https://bytevia-demos.pages.dev/d/restaurant-katea-cafe-2gfjh9zo/",
   "logo": "monogram"
  },
  "el mondo cafe|sharjah": {
-  "token": "el-mondo-cafe-gwkwjnzd",
-  "rel": "d/el-mondo-cafe-gwkwjnzd/",
-  "url": "https://bytevia-demos.pages.dev/d/el-mondo-cafe-gwkwjnzd/",
+  "token": "restaurant-el-mondo-cafe-mgiiptmq",
+  "rel": "d/restaurant-el-mondo-cafe-mgiiptmq/",
+  "url": "https://bytevia-demos.pages.dev/d/restaurant-el-mondo-cafe-mgiiptmq/",
   "logo": "monogram"
  },
  "italian pizza kawkab|sharjah": {
-  "token": "italian-pizza-kawkab-6psy9wxq",
-  "rel": "d/italian-pizza-kawkab-6psy9wxq/",
-  "url": "https://bytevia-demos.pages.dev/d/italian-pizza-kawkab-6psy9wxq/",
+  "token": "restaurant-italian-pizza-kawkab-h2mjn9qq",
+  "rel": "d/restaurant-italian-pizza-kawkab-h2mjn9qq/",
+  "url": "https://bytevia-demos.pages.dev/d/restaurant-italian-pizza-kawkab-h2mjn9qq/",
   "logo": "monogram"
  },
  "oumi ramen|sharjah": {
-  "token": "oumi-ramen-iqiocswm",
-  "rel": "d/oumi-ramen-iqiocswm/",
-  "url": "https://bytevia-demos.pages.dev/d/oumi-ramen-iqiocswm/",
+  "token": "restaurant-oumi-ramen-f4umb3uw",
+  "rel": "d/restaurant-oumi-ramen-f4umb3uw/",
+  "url": "https://bytevia-demos.pages.dev/d/restaurant-oumi-ramen-f4umb3uw/",
+  "logo": "monogram"
+ },
+ "bellevue zahnärzte|zürich": {
+  "token": "clinic-bellevue-zahnarzte-ome6bzay",
+  "rel": "d/clinic-bellevue-zahnarzte-ome6bzay/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-bellevue-zahnarzte-ome6bzay/",
+  "logo": "monogram"
+ },
+ "dr. bahri adis zahnärzte|zürich": {
+  "token": "clinic-dr-bahri-adis-zahnarzte-uszxgxnk",
+  "rel": "d/clinic-dr-bahri-adis-zahnarzte-uszxgxnk/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-dr-bahri-adis-zahnarzte-uszxgxnk/",
+  "logo": "monogram"
+ },
+ "bu beauty|basel": {
+  "token": "clinic-bu-beauty-y5sscmx5",
+  "rel": "d/clinic-bu-beauty-y5sscmx5/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-bu-beauty-y5sscmx5/",
+  "logo": "monogram"
+ },
+ "saade beauty|lausanne": {
+  "token": "clinic-saade-beauty-0rq1mnxf",
+  "rel": "d/clinic-saade-beauty-0rq1mnxf/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-saade-beauty-0rq1mnxf/",
+  "logo": "monogram"
+ },
+ "oral clinic by tétaz|lausanne": {
+  "token": "clinic-oral-clinic-by-tetaz-yhayuxrp",
+  "rel": "d/clinic-oral-clinic-by-tetaz-yhayuxrp/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-oral-clinic-by-tetaz-yhayuxrp/",
+  "logo": "monogram"
+ },
+ "coiffeur shech|basel": {
+  "token": "salon-coiffeur-shech-pfetrxnu",
+  "rel": "d/salon-coiffeur-shech-pfetrxnu/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-coiffeur-shech-pfetrxnu/",
+  "logo": "monogram"
+ },
+ "salon dila|basel": {
+  "token": "salon-salon-dila-59ig0ihf",
+  "rel": "d/salon-salon-dila-59ig0ihf/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-salon-dila-59ig0ihf/",
+  "logo": "monogram"
+ },
+ "hg hair & beauty|zürich": {
+  "token": "salon-hg-hair-beauty-yi6mxpnu",
+  "rel": "d/salon-hg-hair-beauty-yi6mxpnu/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-hg-hair-beauty-yi6mxpnu/",
+  "logo": "monogram"
+ },
+ "mky treuhandpartner gmbh|luzern": {
+  "token": "law-mky-treuhandpartner-gmbh-vbvka3fs",
+  "rel": "d/law-mky-treuhandpartner-gmbh-vbvka3fs/",
+  "url": "https://bytevia-demos.pages.dev/d/law-mky-treuhandpartner-gmbh-vbvka3fs/",
+  "logo": "monogram"
+ },
+ "saniperl gmbh|basel": {
+  "token": "home-saniperl-gmbh-6tpz77tq",
+  "rel": "d/home-saniperl-gmbh-6tpz77tq/",
+  "url": "https://bytevia-demos.pages.dev/d/home-saniperl-gmbh-6tpz77tq/",
+  "logo": "monogram"
+ },
+ "malergeschäft achermann ag|basel": {
+  "token": "home-malergeschaft-achermann-mgzlyknw",
+  "rel": "d/home-malergeschaft-achermann-mgzlyknw/",
+  "url": "https://bytevia-demos.pages.dev/d/home-malergeschaft-achermann-mgzlyknw/",
+  "logo": "monogram"
+ },
+ "daniel jutzi ag|burgdorf": {
+  "token": "home-daniel-jutzi-ag-9po7lo41",
+  "rel": "d/home-daniel-jutzi-ag-9po7lo41/",
+  "url": "https://bytevia-demos.pages.dev/d/home-daniel-jutzi-ag-9po7lo41/",
+  "logo": "monogram"
+ },
+ "pilates stube zürich|zürich": {
+  "token": "gym-pilates-stube-zurich-zftqaqij",
+  "rel": "d/gym-pilates-stube-zurich-zftqaqij/",
+  "url": "https://bytevia-demos.pages.dev/d/gym-pilates-stube-zurich-zftqaqij/",
+  "logo": "monogram"
+ },
+ "basler kebab haus|basel": {
+  "token": "restaurant-basler-kebab-haus-trtgnpcm",
+  "rel": "d/restaurant-basler-kebab-haus-trtgnpcm/",
+  "url": "https://bytevia-demos.pages.dev/d/restaurant-basler-kebab-haus-trtgnpcm/",
   "logo": "monogram"
  },
  "nova almadina dental|madinah": {
-  "token": "nova-almadina-dental-mfyu2otb",
-  "rel": "d/nova-almadina-dental-mfyu2otb/",
-  "url": "https://bytevia-demos.pages.dev/d/nova-almadina-dental-mfyu2otb/",
+  "token": "clinic-nova-almadina-dental-itvlddv0",
+  "rel": "d/clinic-nova-almadina-dental-itvlddv0/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-nova-almadina-dental-itvlddv0/",
   "logo": "monogram"
  },
  "maress hair & skin care|groningen": {
-  "token": "maress-hair-skin-care-wmeianro",
-  "rel": "d/maress-hair-skin-care-wmeianro/",
-  "url": "https://bytevia-demos.pages.dev/d/maress-hair-skin-care-wmeianro/",
+  "token": "salon-maress-hair-skin-care-tgqlle8n",
+  "rel": "d/salon-maress-hair-skin-care-tgqlle8n/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-maress-hair-skin-care-tgqlle8n/",
   "logo": "business logo"
  },
  "bella donna kosmetik studio|basel": {
-  "token": "bella-donna-kosmetik-stu-51iyoot2",
-  "rel": "d/bella-donna-kosmetik-stu-51iyoot2/",
-  "url": "https://bytevia-demos.pages.dev/d/bella-donna-kosmetik-stu-51iyoot2/",
+  "token": "salon-bella-donna-kosmetik-stu-bcexqrre",
+  "rel": "d/salon-bella-donna-kosmetik-stu-bcexqrre/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-bella-donna-kosmetik-stu-bcexqrre/",
   "logo": "monogram"
  },
  "the most hair design studio|dubai": {
-  "token": "the-most-hair-design-stu-aenherrj",
-  "rel": "d/the-most-hair-design-stu-aenherrj/",
-  "url": "https://bytevia-demos.pages.dev/d/the-most-hair-design-stu-aenherrj/",
+  "token": "salon-the-most-hair-design-stu-8ly9c6e6",
+  "rel": "d/salon-the-most-hair-design-stu-8ly9c6e6/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-the-most-hair-design-stu-8ly9c6e6/",
   "logo": "monogram"
  },
  "tell frisør bergen|bergen": {
-  "token": "tell-frisr-bergen-ylrazzhe",
-  "rel": "d/tell-frisr-bergen-ylrazzhe/",
-  "url": "https://bytevia-demos.pages.dev/d/tell-frisr-bergen-ylrazzhe/",
+  "token": "salon-tell-frisr-bergen-qfxhdxe3",
+  "rel": "d/salon-tell-frisr-bergen-qfxhdxe3/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-tell-frisr-bergen-qfxhdxe3/",
   "logo": "business logo"
  },
  "al bareda ac repairing|ras al khaimah": {
-  "token": "al-bareda-ac-repairing-xc48o00f",
-  "rel": "d/al-bareda-ac-repairing-xc48o00f/",
-  "url": "https://bytevia-demos.pages.dev/d/al-bareda-ac-repairing-xc48o00f/",
+  "token": "home-al-bareda-ac-repairing-anefbnht",
+  "rel": "d/home-al-bareda-ac-repairing-anefbnht/",
+  "url": "https://bytevia-demos.pages.dev/d/home-al-bareda-ac-repairing-anefbnht/",
   "logo": "monogram"
  },
  "gulf law consultancy fz llc|fujairah": {
-  "token": "gulf-law-consultancy-fz-lqbjqlp1",
-  "rel": "d/gulf-law-consultancy-fz-lqbjqlp1/",
-  "url": "https://bytevia-demos.pages.dev/d/gulf-law-consultancy-fz-lqbjqlp1/",
+  "token": "law-gulf-law-consultancy-fz-mddxvxwr",
+  "rel": "d/law-gulf-law-consultancy-fz-mddxvxwr/",
+  "url": "https://bytevia-demos.pages.dev/d/law-gulf-law-consultancy-fz-mddxvxwr/",
   "logo": "monogram"
  },
  "ensjø hudpleie|oslo": {
-  "token": "ensj-hudpleie-faxxx5om",
-  "rel": "d/ensj-hudpleie-faxxx5om/",
-  "url": "https://bytevia-demos.pages.dev/d/ensj-hudpleie-faxxx5om/",
+  "token": "clinic-ensj-hudpleie-s5xvyp9i",
+  "rel": "d/clinic-ensj-hudpleie-s5xvyp9i/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-ensj-hudpleie-s5xvyp9i/",
   "logo": "monogram"
  },
  "j'adore clinique|ajman": {
-  "token": "jadore-clinique-pedtvjis",
-  "rel": "d/jadore-clinique-pedtvjis/",
-  "url": "https://bytevia-demos.pages.dev/d/jadore-clinique-pedtvjis/",
+  "token": "clinic-jadore-clinique-sqvmcs0o",
+  "rel": "d/clinic-jadore-clinique-sqvmcs0o/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-jadore-clinique-sqvmcs0o/",
   "logo": "monogram"
  },
  "alkhat alawal technical services|dubai": {
-  "token": "alkhat-alawal-technical-sgqxr0yz",
-  "rel": "d/alkhat-alawal-technical-sgqxr0yz/",
-  "url": "https://bytevia-demos.pages.dev/d/alkhat-alawal-technical-sgqxr0yz/",
+  "token": "home-alkhat-alawal-technical-jxt9x5dx",
+  "rel": "d/home-alkhat-alawal-technical-jxt9x5dx/",
+  "url": "https://bytevia-demos.pages.dev/d/home-alkhat-alawal-technical-jxt9x5dx/",
+  "logo": "monogram"
+ },
+ "zmp dental|zürich": {
+  "token": "clinic-zmp-dental-kfu8qyai",
+  "rel": "d/clinic-zmp-dental-kfu8qyai/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-zmp-dental-kfu8qyai/",
+  "logo": "monogram"
+ },
+ "sv treuhand (sali vranovci)|wabern": {
+  "token": "law-sv-treuhand-sali-vranovc-zhhfavml",
+  "rel": "d/law-sv-treuhand-sali-vranovc-zhhfavml/",
+  "url": "https://bytevia-demos.pages.dev/d/law-sv-treuhand-sali-vranovc-zhhfavml/",
+  "logo": "monogram"
+ },
+ "aar consulting gmbh|rapperswil-jona": {
+  "token": "law-aar-consulting-gmbh-2yrtwxqj",
+  "rel": "d/law-aar-consulting-gmbh-2yrtwxqj/",
+  "url": "https://bytevia-demos.pages.dev/d/law-aar-consulting-gmbh-2yrtwxqj/",
+  "logo": "monogram"
+ },
+ "malergeschäft städler|winterthur": {
+  "token": "home-malergeschaft-stadler-sxnhakz4",
+  "rel": "d/home-malergeschaft-stadler-sxnhakz4/",
+  "url": "https://bytevia-demos.pages.dev/d/home-malergeschaft-stadler-sxnhakz4/",
+  "logo": "monogram"
+ },
+ "liwa immobilien ag|basel": {
+  "token": "realestate-liwa-immobilien-ag-zppu7wko",
+  "rel": "d/realestate-liwa-immobilien-ag-zppu7wko/",
+  "url": "https://bytevia-demos.pages.dev/d/realestate-liwa-immobilien-ag-zppu7wko/",
   "logo": "monogram"
  },
  "lulu palace technical services|dubai": {
-  "token": "lulu-palace-technical-se-2imurv4j",
-  "rel": "d/lulu-palace-technical-se-2imurv4j/",
-  "url": "https://bytevia-demos.pages.dev/d/lulu-palace-technical-se-2imurv4j/",
+  "token": "home-lulu-palace-technical-se-nxqbrcsx",
+  "rel": "d/home-lulu-palace-technical-se-nxqbrcsx/",
+  "url": "https://bytevia-demos.pages.dev/d/home-lulu-palace-technical-se-nxqbrcsx/",
   "logo": "monogram"
  }
 }

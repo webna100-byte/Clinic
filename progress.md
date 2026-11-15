@@ -28,3 +28,10 @@
 ## Remaining
 - research (agents running) → then `./template/run_all.sh` → QA → summary
 - Resume: check which research/A*.csv are short of target and re-run only those slices
+
+## Update 2026-11-15
+- Round 1+2 research done: 235 unique rows (49 WhatsApp / 186 Instagram) -> leads.csv / leads.xlsx, 235 demos built + screenshots.
+- Price in messages = local-currency equivalent of ~$850-900 (see PRICES in template/merge.py), no-deposit wording, click-to-send link column.
+- Running: C1-C3 extra discovery (NL, DACH law/home, GCC) + 6 verify agents (Instagram activity -> research/verify_out_N.csv).
+- BLOCKER: Cloudflare token injected in the session now belongs to another account (Icyounis1@gmail.com), not webna100 -> NOT deploying. bytevia-demos.pages.dev still serves the older 51-demo build.
+- After agents finish: `python3 template/merge.py && node template/build.js --all && node template/shots.js && python3 template/merge.py --final`, then deploy once the right token is back.

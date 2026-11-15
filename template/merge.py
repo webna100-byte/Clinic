@@ -18,9 +18,24 @@ NICHE_LABEL = {'clinic': 'Clinic (dental/aesthetic/derma)', 'law': 'Law / accoun
 
 COLUMNS = ['#', 'اسم النشاط', 'النيش', 'الدولة', 'المدينة', 'القناة', 'رقم الواتساب', 'حساب انستغرام', 'رابط Google Maps',
            'رابط الموقع', 'سبب الحاجة', 'درجة الحاجة', 'اسم المالك/المسؤول', 'اللون/الهوية', 'لغة الرسالة', 'رابط الديمو',
-           'الرسالة الأولى', 'رسالة المتابعة', 'رابط الإرسال', 'يحتاج مراجعة لغوية', 'حالة الإرسال', 'تاريخ الإرسال', 'الرد', 'ملاحظات',
+           'الرسالة الأولى', 'رسالة المتابعة', 'رابط الإرسال', 'يحتاج مراجعة لغوية', 'نشاط الحساب', 'آخر منشور', 'حالة الإرسال', 'تاريخ الإرسال', 'الرد', 'ملاحظات',
            # extra helpful columns
            'التخصص', 'سبب الحاجة (بلغة الرسالة)', 'لقطة ديسكتوب', 'لقطة جوال', 'الشعار في الديمو', 'مصدر المعلومة']
+
+# ---------------- activity verification ----------------
+STATUS_AR = {'active': 'نشط', 'stale': 'قديم (غير نشط)', 'unclear': 'غير واضح', 'missing': 'غير موجود'}
+
+
+def load_verify():
+    v = {}
+    for f in glob.glob(os.path.join(ROOT, 'research', 'verify_out_*.csv')):
+        with open(f, encoding='utf-8') as fh:
+            for r in csv.DictReader(fh):
+                h = ig_handle(r.get('instagram', ''))
+                if h:
+                    v[h] = r
+    return v
+
 
 # ---------------- messages ----------------
 # reason_local is phrased to follow "I noticed that ..." in each language.
@@ -235,6 +250,7 @@ def main():
     for e in existing:
         seen.update(k for k in ('ig:' + ig_handle(e.get('حساب انستغرام')), 'wa:' + phone(e.get('رقم الواتساب')),
                                 'nc:' + norm(e.get('اسم النشاط')) + norm(e.get('المدينة'))) if len(k) > 4)
+    ver = load_verify()
     out = [{c: e.get(c, '') for c in COLUMNS} for e in existing]
     nxt = max([int(e['#']) for e in existing if str(e.get('#', '')).isdigit()] + [0]) + 1
     for r in rows:
@@ -263,9 +279,18 @@ def main():
             'الشعار في الديمو': 'شعار النشاط' if b.get('logo') == 'business logo' else 'شعار مؤقت بالأحرف الأولى (أضف شعارهم)',
             'مصدر المعلومة': r['source_url'],
         })
+        vv = ver.get(ig_handle(r['instagram']))
+        if vv:
+            out[-1]['نشاط الحساب'] = STATUS_AR.get(vv.get('status', ''), vv.get('status', ''))
+            out[-1]['آخر منشور'] = vv.get('last_post', '')
         nxt += 1
     byig = {ig_handle(r['instagram']): r for r in rows if ig_handle(r['instagram'])}
     byph = {phone(r['whatsapp']): r for r in rows if phone(r['whatsapp'])}
+    for o in out:
+        vv = ver.get(ig_handle(o.get('حساب انستغرام')))
+        if vv:
+            o['نشاط الحساب'] = STATUS_AR.get(vv.get('status', ''), vv.get('status', ''))
+            o['آخر منشور'] = vv.get('last_post', '')
     for o in out[:len(existing)]:
         if o.get('حالة الإرسال', 'لم يُرسل') not in ('', 'لم يُرسل'):
             continue  # already sent: never touch

@@ -95,7 +95,7 @@ const WA = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><pat
 // ---------- render ----------
 function render(d, lang, otherLang, depth) {
   const t = ui[lang], n = niches[d.niche], c = n.copy[lang];
-  const v = { name: d.name, city: d.cityLocal?.[lang] || d.city };
+  const v = { name: (lang === 'ar' && d.nameAr) || d.name, city: d.cityLocal?.[lang] || d.city };
   const up = '../'.repeat(depth);
   const assets = up + '../../assets';
   const img = (i) => `${assets}/img/${n.images[i % n.images.length]}.jpg`;
@@ -113,7 +113,7 @@ function render(d, lang, otherLang, depth) {
 <html lang="${lang}" dir="${t.dir}">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(d.name)} — ${esc(c.svcT)}</title>
+<title>${esc(v.name)} — ${esc(c.svcT)}</title>
 <meta name="robots" content="noindex,nofollow">
 <meta name="description" content="${esc(fill(c.heroS, v))}">
 <link rel="stylesheet" href="${assets}/site.css">
@@ -123,7 +123,7 @@ function render(d, lang, otherLang, depth) {
 <div class="top">
 <div class="concept"><img src="${assets}/bytevia.png" alt="">${esc(fill(t.bar, v))}</div>
 <header class="site"><div class="wrap nav">
-  <a class="brand" href="#top">${logo}<span>${esc(d.name)}</span></a>
+  <a class="brand" href="#top">${logo}<span>${esc(v.name)}</span></a>
   <nav class="menu">${t.nav.map((x, i) => `<a href="#${sections[i]}">${esc(x)}</a>`).join('')}</nav>
   <div class="tools"><a class="lang" href="${otherHref}">${esc(ui[otherLang].label)}</a><a class="btn sm" href="#contact">${esc(c.cta)}</a></div>
 </div></header>
@@ -131,7 +131,7 @@ function render(d, lang, otherLang, depth) {
 
 <main id="top">
 <section class="hero"><div class="bg" style="background-image:url('${img(0)}')"></div><div class="wrap">
-  <span class="kicker">${esc(d.name)} · ${esc(v.city)}</span>
+  <span class="kicker">${esc(v.name)} · ${esc(v.city)}</span>
   <h1>${esc(fill(c.heroT, v))}</h1>
   <p>${esc(fill(c.heroS, v))}</p>
   <div class="ctas"><a class="btn" href="#contact">${esc(c.cta)}</a>${waLink ? `<a class="btn ghost" href="${waLink}" target="_blank" rel="noopener">${esc(t.whatsapp)}</a>` : ''}</div>
@@ -145,7 +145,7 @@ function render(d, lang, otherLang, depth) {
 
 <section id="about" class="soft"><div class="wrap grid g2 about">
   <div class="img" style="background-image:url('${img(1)}')"></div>
-  <div><span class="eyebrow">${esc(t.about)}</span><h2>${esc(d.name)}</h2><p>${esc(fill(c.aboutX, v))}</p>
+  <div><span class="eyebrow">${esc(t.about)}</span><h2>${esc(v.name)}</h2><p>${esc(fill(c.aboutX, v))}</p>
   <h3 style="margin-top:22px">${esc(t.team)}</h3><p style="color:var(--muted)">${esc(t.teamText)}</p>
   <ul>${t.why.map((w) => `<li>${svg('check')}${esc(w)}</li>`).join('')}</ul></div>
 </div></section>
@@ -181,7 +181,7 @@ function render(d, lang, otherLang, depth) {
   <div>
     <div class="map"><iframe loading="lazy" title="${esc(t.map)}" src="https://www.google.com/maps?q=${mapsQ}&output=embed"></iframe></div>
     <div class="info">
-      <a href="https://www.google.com/maps/search/?api=1&query=${mapsQ}" target="_blank" rel="noopener">${svg('pin')}${esc(d.name)}, ${esc(v.city)}</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=${mapsQ}" target="_blank" rel="noopener">${svg('pin')}${esc(v.name)}, ${esc(v.city)}</a>
       ${waLink ? `<a href="${waLink}" target="_blank" rel="noopener">${svg('phone')}<span dir="ltr">${esc(d.whatsapp)}</span></a>` : ''}
       ${igLink ? `<a href="${esc(igLink)}" target="_blank" rel="noopener">${svg('insta')}Instagram</a>` : ''}
     </div>
@@ -189,7 +189,7 @@ function render(d, lang, otherLang, depth) {
 </div></section>
 </main>
 
-<footer><div class="wrap row"><div>© ${new Date().getFullYear()} ${esc(d.name)} · ${esc(t.rights)}</div><div>${esc(fill(t.bar, v))}</div></div></footer>
+<footer><div class="wrap row"><div>© ${new Date().getFullYear()} ${esc(v.name)} · ${esc(t.rights)}</div><div>${esc(fill(t.bar, v))}</div></div></footer>
 ${chat !== '#contact' ? `<a class="fab" href="${esc(chat)}" target="_blank" rel="noopener" aria-label="${esc(t.whatsapp)}" style="${waLink ? '' : 'background:var(--brand)'}">${waLink ? WA : svg('insta')}</a>` : ''}
 </body></html>`;
 }
@@ -203,7 +203,7 @@ function normalize(r) {
   const color = /^#[0-9a-f]{6}$/i.test(r.color || r.brand_color || '') ? (r.color || r.brand_color) : niches[niche].color;
   const city = r.city.trim();
   const cityLocal = AR_CITY[city.toLowerCase()] ? { ar: AR_CITY[city.toLowerCase()] } : {};
-  return { name: r.name.trim(), niche, city, cityLocal, lang, color, whatsapp: r.whatsapp || '', instagram: r.instagram || '', maps: r.maps || '', logo: r.logo || r.logo_url || '' };
+  return { name: r.name.trim(), nameAr: (r.name_ar || '').trim(), niche, city, cityLocal, lang, color, whatsapp: r.whatsapp || '', instagram: r.instagram || '', maps: r.maps || '', logo: r.logo || r.logo_url || '' };
 }
 
 function buildOne(raw, tokens) {

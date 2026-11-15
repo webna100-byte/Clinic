@@ -93,7 +93,7 @@ def messages(row):
     ch = 'WhatsApp' if row['channel'].lower().startswith('whats') else 'Instagram'
     tpl = TPL.get((lang, ch)) or TPL.get((lang, 'Instagram'))
     reason = clean_reason(row.get('need_reason_local'), lang) or FALLBACK_REASON[lang]
-    name = row['name'].strip()
+    name = (row.get('name_ar') if lang == 'ar' and row.get('name_ar') else row['name']).strip()
     first, follow = (t.format(name=name, reason=reason) for t in tpl)
     review = 'نعم' if (lang not in CONFIDENT or not row.get('need_reason_local')) else 'لا'
     return first, follow, review
@@ -114,6 +114,42 @@ def phone(p):
     return re.sub(r'\D', '', p or '')
 
 
+PREFIX = [('+971', 'UAE'), ('+966', 'Saudi Arabia'), ('+974', 'Qatar'), ('+965', 'Kuwait'), ('+352', 'Luxembourg'),
+          ('+358', 'Finland'), ('+31', 'Netherlands'), ('+41', 'Switzerland'), ('+49', 'Germany'), ('+43', 'Austria'),
+          ('+45', 'Denmark'), ('+47', 'Norway'), ('+46', 'Sweden'), ('+32', 'Belgium')]
+CITY_COUNTRY = {c: 'UAE' for c in ['dubai', 'abu dhabi', 'sharjah', 'ajman', 'ras al khaimah', 'al ain', 'fujairah', 'umm al quwain']}
+CITY_COUNTRY.update({c: 'Saudi Arabia' for c in ['riyadh', 'jeddah', 'dammam', 'khobar', 'al khobar', 'madinah', 'medina', 'makkah', 'mecca', 'taif', 'abha', 'jubail', 'buraidah']})
+CITY_COUNTRY.update({'doha': 'Qatar', 'lusail': 'Qatar', 'al rayyan': 'Qatar', 'al wakrah': 'Qatar', 'kuwait': 'Kuwait', 'kuwait city': 'Kuwait',
+                     'hawalli': 'Kuwait', 'salmiya': 'Kuwait', 'farwaniya': 'Kuwait', 'jahra': 'Kuwait'})
+GULF = {'UAE', 'Saudi Arabia', 'Qatar', 'Kuwait'}
+ALIASES = {'united arab emirates': 'UAE', 'uae': 'UAE', 'ksa': 'Saudi Arabia', 'saudi': 'Saudi Arabia'}
+
+
+def fix_row(r):
+    """Correct country from phone prefix / city; Gulf rows use ar/en; split bilingual names."""
+    c = ALIASES.get(r['country'].lower(), r['country'])
+    wa = '+' + phone(r['whatsapp']) if phone(r['whatsapp']) else ''
+    by_city = CITY_COUNTRY.get(r['city'].lower())
+    by_phone = next((n for pre, n in PREFIX if wa.startswith(pre)), None)
+    if by_city:
+        c = by_city
+    elif by_phone and c in GULF | {'Switzerland', 'Netherlands', 'Germany', 'Austria'} and by_phone != c:
+        c = by_phone
+    r['country'] = c
+    if c in GULF and r['message_lang'] not in ('ar', 'en'):
+        r['message_lang'] = 'ar'
+    if c in GULF and r['channel'].lower().startswith('whats') is False and r['channel'] != 'Instagram':
+        r['channel'] = 'Instagram'
+    # "English Name (الاسم العربي)" -> name_en / name_ar
+    m = re.match(r'^(.*?)\s*\(([^)]*[\u0600-\u06ff][^)]*)\)\s*$', r['name'])
+    r['name_ar'] = ''
+    if m:
+        r['name'], r['name_ar'] = m.group(1).strip(), m.group(2).strip()
+    elif re.search(r'[\u0600-\u06ff]', r['name']):
+        r['name_ar'] = r['name']
+    return r
+
+
 def load():
     rows, seen = [], set()
     dups = []
@@ -124,6 +160,7 @@ def load():
                     continue
                 r = {k: (r.get(k) or '').strip() for k in FIELDS}
                 r['_slice'] = os.path.basename(f)[:-4]
+                r = fix_row(r)
                 keys = [k for k in ('ig:' + ig_handle(r['instagram']), 'wa:' + phone(r['whatsapp']),
                                     'nc:' + norm(r['name']) + norm(r['city'])) if len(k) > 4]
                 if any(k in seen for k in keys):
@@ -141,7 +178,7 @@ def main():
     rows.sort(key=lambda r: (order.get(r['need_score'], 3), r['_slice']))
     build = []
     for r in rows:
-        build.append({'name': r['name'], 'niche': r['niche'], 'city': r['city'], 'lang': r['message_lang'],
+        build.append({'name': r['name'], 'name_ar': r['name_ar'], 'niche': r['niche'], 'city': r['city'], 'lang': r['message_lang'],
                       'color': r['brand_color'], 'whatsapp': r['whatsapp'], 'instagram': r['instagram'],
                       'maps': f"{r['name']} {r['city']}", 'logo': r['logo_url']})
     os.makedirs(os.path.join(ROOT, 'data'), exist_ok=True)
@@ -153,15 +190,34 @@ def main():
     res = json.load(open(os.path.join(ROOT, 'data', 'build_result.json')))
     cfg_p = os.path.join(ROOT, 'template', 'config.json')
     base = (json.load(open(cfg_p)).get('baseUrl', '') if os.path.exists(cfg_p) else '').rstrip('/')
-    out = []
-    for i, r in enumerate(rows, 1):
+
+    # APPEND-ONLY: existing rows in leads.csv are kept exactly (numbers + user columns); new leads appended.
+    existing = []
+    lp = os.path.join(ROOT, 'leads.csv')
+    if os.path.exists(lp):
+        with open(lp, encoding='utf-8-sig') as fh:
+            existing = list(csv.DictReader(fh))
+    seen = set()
+    for e in existing:
+        seen.update(k for k in ('ig:' + ig_handle(e.get('حساب انستغرام')), 'wa:' + phone(e.get('رقم الواتساب')),
+                                'nc:' + norm(e.get('اسم النشاط')) + norm(e.get('المدينة'))) if len(k) > 4)
+    out = [{c: e.get(c, '') for c in COLUMNS} for e in existing]
+    nxt = max([int(e['#']) for e in existing if str(e.get('#', '')).isdigit()] + [0]) + 1
+    for r in rows:
+        keys = [k for k in ('ig:' + ig_handle(r['instagram']), 'wa:' + phone(r['whatsapp']),
+                            'nc:' + norm(r['name']) + norm(r['city'])) if len(k) > 4]
+        if any(k in seen for k in keys):
+            continue
+        seen.update(keys)
         key = re.sub(r'\s+', ' ', (r['name'] + '|' + r['city']).lower()).strip()
         b = res.get(key, {})
         tok = b.get('token', '')
-        url = (f'{base}/d/{tok}/' if base else f'd/{tok}/') if tok else ''
+        if not tok:
+            continue  # demo not built yet -> picked up next run
+        url = f'{base}/d/{tok}/' if base else f'd/{tok}/'
         first, follow, review = messages(r)
         out.append({
-            '#': i, 'اسم النشاط': r['name'], 'النيش': NICHE_LABEL.get(r['niche'], r['niche']), 'الدولة': r['country'],
+            '#': nxt, 'اسم النشاط': r['name'] + (f" ({r['name_ar']})" if r['name_ar'] and r['name_ar'] != r['name'] else ''), 'النيش': NICHE_LABEL.get(r['niche'], r['niche']), 'الدولة': r['country'],
             'المدينة': r['city'], 'القناة': 'WhatsApp' if r['channel'].lower().startswith('whats') else 'Instagram',
             'رقم الواتساب': r['whatsapp'], 'حساب انستغرام': r['instagram'], 'رابط Google Maps': r['maps_url'],
             'رابط الموقع': r['website'], 'سبب الحاجة': r['need_reason_en'], 'درجة الحاجة': r['need_score'],
@@ -169,16 +225,17 @@ def main():
             'رابط الديمو': url, 'الرسالة الأولى': first, 'رسالة المتابعة': follow, 'يحتاج مراجعة لغوية': review,
             'حالة الإرسال': 'لم يُرسل', 'تاريخ الإرسال': '', 'الرد': '', 'ملاحظات': r['notes'],
             'التخصص': r['sub_niche'], 'سبب الحاجة (بلغة الرسالة)': r['need_reason_local'],
-            'لقطة ديسكتوب': f'screenshots/{tok}-desktop.jpg' if tok else '', 'لقطة جوال': f'screenshots/{tok}-mobile.jpg' if tok else '',
+            'لقطة ديسكتوب': f'screenshots/{tok}-desktop.jpg', 'لقطة جوال': f'screenshots/{tok}-mobile.jpg',
             'الشعار في الديمو': 'شعار النشاط' if b.get('logo') == 'business logo' else 'شعار مؤقت بالأحرف الأولى (أضف شعارهم)',
             'مصدر المعلومة': r['source_url'],
         })
+        nxt += 1
     with open(os.path.join(ROOT, 'leads.csv'), 'w', encoding='utf-8-sig', newline='') as fh:
         w = csv.DictWriter(fh, fieldnames=COLUMNS)
         w.writeheader()
         w.writerows(out)
     write_xlsx(out)
-    print(f'Final: {len(out)} rows -> leads.csv / leads.xlsx ({len(dups)} duplicates removed)')
+    print(f'Final: {len(out)} rows ({len(existing)} kept, {len(out)-len(existing)} new) -> leads.csv / leads.xlsx')
 
 
 def write_xlsx(out):

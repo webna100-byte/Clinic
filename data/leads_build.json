@@ -2665,6 +2665,71 @@
   "logo": ""
  },
  {
+  "name": "Mooi&Mooi Beauty Salon",
+  "name_ar": "",
+  "country": "Netherlands",
+  "niche": "salon",
+  "city": "Groningen (Hoogkerk)",
+  "lang": "nl",
+  "color": "#C9A28F",
+  "whatsapp": "+31633651950",
+  "instagram": "https://www.instagram.com/mooienmooisalon/",
+  "maps": "Mooi&Mooi Beauty Salon Groningen (Hoogkerk)",
+  "logo": ""
+ },
+ {
+  "name": "NailClinic.nl",
+  "name_ar": "",
+  "country": "Netherlands",
+  "niche": "salon",
+  "city": "Groningen",
+  "lang": "nl",
+  "color": "#D8B4A6",
+  "whatsapp": "",
+  "instagram": "https://www.instagram.com/nailclinic.nl/",
+  "maps": "NailClinic.nl Groningen",
+  "logo": ""
+ },
+ {
+  "name": "ZIZAMARA",
+  "name_ar": "",
+  "country": "Netherlands",
+  "niche": "salon",
+  "city": "Utrecht",
+  "lang": "nl",
+  "color": "#B88C7D",
+  "whatsapp": "+31631064190",
+  "instagram": "https://www.instagram.com/zizamarabeauty/",
+  "maps": "ZIZAMARA Utrecht",
+  "logo": ""
+ },
+ {
+  "name": "By Hind Lash Lift & Brow Styling",
+  "name_ar": "",
+  "country": "Netherlands",
+  "niche": "salon",
+  "city": "Utrecht (Vleuten)",
+  "lang": "nl",
+  "color": "#C4A29A",
+  "whatsapp": "",
+  "instagram": "https://www.instagram.com/beautifiedbyhind/",
+  "maps": "By Hind Lash Lift & Brow Styling Utrecht (Vleuten)",
+  "logo": ""
+ },
+ {
+  "name": "RenoVatex Klusbedrijf",
+  "name_ar": "",
+  "country": "Netherlands",
+  "niche": "home",
+  "city": "Noord-Holland",
+  "lang": "nl",
+  "color": "#E07B1F",
+  "whatsapp": "",
+  "instagram": "https://www.instagram.com/klusbedrijf.renovatex/",
+  "maps": "RenoVatex Klusbedrijf Noord-Holland",
+  "logo": ""
+ },
+ {
   "name": "Bellevue Zahnärzte",
   "name_ar": "",
   "country": "Switzerland",
@@ -2974,6 +3039,19 @@
   "whatsapp": "",
   "instagram": "https://www.instagram.com/alkhatalawal/",
   "maps": "Alkhat Alawal Technical Services Dubai",
+  "logo": ""
+ },
+ {
+  "name": "Tandartsenpraktijk Rotterdam",
+  "name_ar": "",
+  "country": "Netherlands",
+  "niche": "clinic",
+  "city": "Rotterdam",
+  "lang": "nl",
+  "color": "#2A7FB8",
+  "whatsapp": "",
+  "instagram": "https://www.instagram.com/tandartsenpraktijkrotterdam/",
+  "maps": "Tandartsenpraktijk Rotterdam Rotterdam",
   "logo": ""
  },
  {

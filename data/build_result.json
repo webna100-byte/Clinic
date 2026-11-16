@@ -1229,6 +1229,36 @@
   "url": "https://bytevia-demos.pages.dev/d/restaurant-oumi-ramen-f4umb3uw/",
   "logo": "monogram"
  },
+ "mooi&mooi beauty salon|groningen (hoogkerk)": {
+  "token": "salon-mooimooi-beauty-salon-gx9hpfm3",
+  "rel": "d/salon-mooimooi-beauty-salon-gx9hpfm3/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-mooimooi-beauty-salon-gx9hpfm3/",
+  "logo": "monogram"
+ },
+ "nailclinic.nl|groningen": {
+  "token": "salon-nailclinicnl-xq9sxrxr",
+  "rel": "d/salon-nailclinicnl-xq9sxrxr/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-nailclinicnl-xq9sxrxr/",
+  "logo": "monogram"
+ },
+ "zizamara|utrecht": {
+  "token": "salon-zizamara-afrsuvnq",
+  "rel": "d/salon-zizamara-afrsuvnq/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-zizamara-afrsuvnq/",
+  "logo": "monogram"
+ },
+ "by hind lash lift & brow styling|utrecht (vleuten)": {
+  "token": "salon-by-hind-lash-lift-brow-s-agvrckkf",
+  "rel": "d/salon-by-hind-lash-lift-brow-s-agvrckkf/",
+  "url": "https://bytevia-demos.pages.dev/d/salon-by-hind-lash-lift-brow-s-agvrckkf/",
+  "logo": "monogram"
+ },
+ "renovatex klusbedrijf|noord-holland": {
+  "token": "home-renovatex-klusbedrijf-v4lct0um",
+  "rel": "d/home-renovatex-klusbedrijf-v4lct0um/",
+  "url": "https://bytevia-demos.pages.dev/d/home-renovatex-klusbedrijf-v4lct0um/",
+  "logo": "monogram"
+ },
  "bellevue zahnärzte|zürich": {
   "token": "clinic-bellevue-zahnarzte-ome6bzay",
   "rel": "d/clinic-bellevue-zahnarzte-ome6bzay/",
@@ -1371,6 +1401,12 @@
   "token": "home-alkhat-alawal-technical-jxt9x5dx",
   "rel": "d/home-alkhat-alawal-technical-jxt9x5dx/",
   "url": "https://bytevia-demos.pages.dev/d/home-alkhat-alawal-technical-jxt9x5dx/",
+  "logo": "monogram"
+ },
+ "tandartsenpraktijk rotterdam|rotterdam": {
+  "token": "clinic-tandartsenpraktijk-rotte-3nqenjrq",
+  "rel": "d/clinic-tandartsenpraktijk-rotte-3nqenjrq/",
+  "url": "https://bytevia-demos.pages.dev/d/clinic-tandartsenpraktijk-rotte-3nqenjrq/",
   "logo": "monogram"
  },
  "zmp dental|zürich": {

@@ -37,6 +37,22 @@ def load_verify():
     return v
 
 
+def act_fields(vv):
+    """Status + a hint line. Dates aren't visible logged-out, so use followers/posts as a proxy."""
+    st = STATUS_AR.get(vv.get('status', ''), vv.get('status', ''))
+    def num(x):
+        x = (x or '').replace(',', '').strip().upper()
+        try:
+            return int(float(x[:-1]) * 1000) if x.endswith('K') else int(float(x[:-1]) * 1e6) if x.endswith('M') else int(float(x))
+        except ValueError:
+            return None
+    f, p = num(vv.get('followers')), num(vv.get('posts'))
+    hint = f"{vv.get('followers', '?')} متابع · {vv.get('posts', '?')} منشور"
+    if vv.get('status') == 'unclear' and ((f is not None and f < 30) or (p is not None and p < 10)):
+        st = 'ضعيف النشاط'
+    return st, hint
+
+
 # ---------------- messages ----------------
 # reason_local is phrased to follow "I noticed that ..." in each language.
 FALLBACK_REASON = {
@@ -281,16 +297,14 @@ def main():
         })
         vv = ver.get(ig_handle(r['instagram']))
         if vv:
-            out[-1]['نشاط الحساب'] = STATUS_AR.get(vv.get('status', ''), vv.get('status', ''))
-            out[-1]['آخر منشور'] = vv.get('last_post', '')
+            out[-1]['نشاط الحساب'], out[-1]['آخر منشور'] = act_fields(vv)
         nxt += 1
     byig = {ig_handle(r['instagram']): r for r in rows if ig_handle(r['instagram'])}
     byph = {phone(r['whatsapp']): r for r in rows if phone(r['whatsapp'])}
     for o in out:
         vv = ver.get(ig_handle(o.get('حساب انستغرام')))
         if vv:
-            o['نشاط الحساب'] = STATUS_AR.get(vv.get('status', ''), vv.get('status', ''))
-            o['آخر منشور'] = vv.get('last_post', '')
+            o['نشاط الحساب'], o['آخر منشور'] = act_fields(vv)
     for o in out[:len(existing)]:
         if o.get('حالة الإرسال', 'لم يُرسل') not in ('', 'لم يُرسل'):
             continue  # already sent: never touch
@@ -298,6 +312,12 @@ def main():
         if src:
             o['الرسالة الأولى'], o['رسالة المتابعة'], o['يحتاج مراجعة لغوية'] = messages(src)
             o['رابط الإرسال'] = send_link(src, o['الرسالة الأولى'])
+    for o in out:
+        if o.get('نشاط الحساب') == 'غير موجود' and o.get('حالة الإرسال') in ('', 'لم يُرسل', None):
+            o['حالة الإرسال'] = 'لا تُرسل (الحساب غير متاح)'
+    for o in out:
+        for c in COLUMNS:
+            o.setdefault(c, '')
     with open(os.path.join(ROOT, 'leads.csv'), 'w', encoding='utf-8-sig', newline='') as fh:
         w = csv.DictWriter(fh, fieldnames=COLUMNS)
         w.writeheader()

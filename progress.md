@@ -35,3 +35,9 @@
 - Running: C1-C3 extra discovery (NL, DACH law/home, GCC) + 6 verify agents (Instagram activity -> research/verify_out_N.csv).
 - BLOCKER: Cloudflare token injected in the session now belongs to another account (Icyounis1@gmail.com), not webna100 -> NOT deploying. bytevia-demos.pages.dev still serves the older 51-demo build.
 - After agents finish: `python3 template/merge.py && node template/build.js --all && node template/shots.js && python3 template/merge.py --final`, then deploy once the right token is back.
+
+## Update 2026-11-16
+- leads.csv/xlsx: 241 rows (49 WhatsApp / 192 Instagram), 241 demos + screenshots built locally (public/d/, screenshots/).
+- Activity check: Instagram hides post dates when logged out -> statuses = unclear (218), weak (13), unavailable (2). Followers/posts shown in column "آخر منشور".
+- C1-C3 extra discovery agents hit the 5-hour limit (resets 20:40 UTC) before saving rows. Resume them with SendMessage after reset to reach 50 WA / 200 IG with buffer.
+- Cloudflare deploy still blocked (token belongs to another account). Old 51-demo build still live on bytevia-demos.pages.dev.

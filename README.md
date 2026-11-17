@@ -32,3 +32,7 @@ node template/build.js --name "Smile Studio" --niche clinic --city Dubai --lang 
 
 كل الصفحات عليها `noindex` وشريط ثابت: "Design concept prepared for … by Bytevia — not an official website".
 الصور من Unsplash (رخصة مجانية للاستخدام التجاري). التقييمات والعقارات وجدول الحصص أمثلة توضيحية ومكتوب عليها ذلك.
+
+## متاجر إلكترونية (نماذج)
+ثلاثة نماذج متاجر عامة (أي نوع منتجات)، بلغتين عربي وإنجليزي مع RTL: `public/stores/linen`, `public/stores/sage`, `public/stores/mist`.
+المنتجات والنصوص في `public/stores/shared/products.js`؛ المحرك (سلة، بحث، فلترة، عرض سريع) في `shared/store.js`. الدفع غير مفعّل (ديمو).

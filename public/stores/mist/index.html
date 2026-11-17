@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atelier Brume — Store concept</title><meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="../shared/base.css"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo-note">Store concept by <b>Bytevia</b> · demo products and prices</div>
+<header class="top"><div class="wrap bar">
+  <a class="logo" href="#">ATELIER <span>BRUME</span></a>
+  <div class="searchbar"><input id="search" type="search"></div>
+  <div class="right"><button class="langbtn" data-lang-toggle>العربية</button><button class="icon-btn" data-cart-open aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><em class="count" data-cart-count hidden>0</em></button></div>
+</div></header>
+
+<section class="hero"><div class="bg"></div><div class="wrap"><div class="copy"><span class="eyebrow" data-tx="eyebrow">The new edit</span><h1 data-tx="heroT">Calm design for every corner of life</h1><p data-tx="heroS">Fashion, home, beauty and more, gathered in one thoughtful place.</p><div class="ctas"><a class="btn" href="#shop" data-tx="cta">Shop now</a><a class="btn ghost" href="#featured-s" data-tx="cta2">Featured</a></div></div></div></section>
+
+<section class="strip"><div class="wrap"><span data-tx="s1">Free shipping over $75</span><span data-tx="s2">30-day returns</span><span data-tx="s3">Secure checkout</span></div></section>
+
+<section id="featured-s" class="feat"><div class="wrap"><div class="head"><h2 data-tx="fT">Featured</h2></div><div id="featured" class="rail"></div></div></section>
+
+<section class="banners"><div class="wrap two"><a href="#shop" class="ban b1"><span data-tx="b1">Home &amp; living</span></a><a href="#shop" class="ban b2"><span data-tx="b2">Wardrobe edit</span></a></div></section>
+
+<section id="shop" class="shop"><div class="wrap lay">
+  <aside class="side"><h3 data-tx="catT">Categories</h3><div id="filters" class="filters"></div></aside>
+  <div><div class="bartools"><span id="count" class="muted"></span><select id="sort"></select></div><div id="grid" class="grid"></div></div>
+</div></section>
+<footer><div class="wrap"><b class="logo">ATELIER <span>BRUME</span></b><span>© 2026 · Store concept by Bytevia</span></div></footer>
+
+<div id="drawer"><div class="overlay" data-close></div><aside class="drawer"><header><h2 data-t="cart">Your cart</h2><button class="x" data-close aria-label="Close">×</button></header><div id="drawer-items"></div><footer><div class="sum"><span data-t="subtotal">Subtotal</span><b id="drawer-total">$0</b></div><p data-t="shipping"></p><button id="checkout" class="btn" data-t="checkout">Checkout</button></footer></aside></div>
+<div id="modal" class="modal"><div class="bg" data-close></div><div class="sheet"><button class="x" data-close aria-label="Close">×</button><div id="modal-body"></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="../shared/products.js"></script><script src="../shared/store.js"></script>
+<script>
+Store.init({ id: 'mist', lang: 'en', text: {
+ en: { eyebrow:'The new edit', heroT:'Calm design for every corner of life', heroS:'Fashion, home, beauty and more, gathered in one thoughtful place.', cta:'Shop now', cta2:'Featured', s1:'Free shipping over $75', s2:'30-day returns', s3:'Secure checkout', fT:'Featured', b1:'Home & living', b2:'Wardrobe edit', catT:'Categories' },
+ ar: { eyebrow:'الاختيارات الجديدة', heroT:'تصميم هادئ لكل زاوية في حياتك', heroS:'أزياء ومنزل وعناية وأكثر، مجموعة في مكان واحد مدروس.', cta:'تسوّق الآن', cta2:'المميزة', s1:'شحن مجاني فوق 75$', s2:'إرجاع خلال 30 يومًا', s3:'دفع آمن', fT:'المميزة', b1:'المنزل والمعيشة', b2:'اختيارات الأزياء', catT:'الأقسام' } } });
+</script>
+</body></html>

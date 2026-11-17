@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verdea — Store concept</title><meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="../shared/base.css"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo-note">Store concept by <b>Bytevia</b> · demo products and prices</div>
+<header class="top"><div class="wrap bar">
+  <a class="logo" href="#"><i></i>Verdea</a>
+  <nav><a href="#shop" data-tx="navShop">Shop</a><a href="#why" data-tx="navWhy">Why us</a><a href="#news" data-tx="navNews">Journal</a></nav>
+  <div class="right"><button class="langbtn" data-lang-toggle>العربية</button><button class="icon-btn" data-cart-open aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><em class="count" data-cart-count hidden>0</em></button></div>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="stage"><div class="card-hero"><span class="eyebrow" data-tx="eyebrow">Everyday essentials</span><h1 data-tx="heroT">Good things, gently chosen</h1><p data-tx="heroS">A small shop for everything you reach for every day, from the home to the wardrobe.</p><a class="btn" href="#shop" data-tx="cta">Start shopping</a></div></div>
+</div></section>
+
+<section class="cats"><div class="wrap"><div id="filters" class="filters"></div></div></section>
+
+<section id="shop" class="shop"><div class="wrap">
+  <div class="head"><div><h2 data-tx="shopT">Shop all</h2><span id="count" class="muted"></span></div><div class="rgt"><input id="search" type="search"><select id="sort"></select></div></div>
+  <div id="grid" class="grid"></div>
+</div></section>
+
+<section id="why" class="why"><div class="wrap vals">
+  <div><b>01</b><h3 data-tx="w1t">Considered quality</h3><p data-tx="w1p">Every product is tested and picked to feel right in daily use.</p></div>
+  <div><b>02</b><h3 data-tx="w2t">Fast, careful delivery</h3><p data-tx="w2p">Packed with care and on its way within 24 hours.</p></div>
+  <div><b>03</b><h3 data-tx="w3t">Easy returns</h3><p data-tx="w3p">Changed your mind? Send it back within 30 days.</p></div>
+</div></section>
+
+<section id="news" class="news"><div class="wrap nl"><div class="nimg"></div><div class="ncopy"><h2 data-tx="nT">Join the quiet list</h2><p data-tx="nP">New arrivals and small offers, once or twice a month. Nothing more.</p><form onsubmit="event.preventDefault()"><input type="email" placeholder="email@example.com" aria-label="Email"><button class="btn" data-tx="nB">Subscribe</button></form></div></div></section>
+<footer><div class="wrap"><span>© 2026 Verdea · Store concept by Bytevia</span></div></footer>
+
+<div id="drawer"><div class="overlay" data-close></div><aside class="drawer"><header><h2 data-t="cart">Your cart</h2><button class="x" data-close aria-label="Close">×</button></header><div id="drawer-items"></div><footer><div class="sum"><span data-t="subtotal">Subtotal</span><b id="drawer-total">$0</b></div><p data-t="shipping"></p><button id="checkout" class="btn" data-t="checkout">Checkout</button></footer></aside></div>
+<div id="modal" class="modal"><div class="bg" data-close></div><div class="sheet"><button class="x" data-close aria-label="Close">×</button><div id="modal-body"></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="../shared/products.js"></script><script src="../shared/store.js"></script>
+<script>
+Store.init({ id: 'sage', lang: 'en', text: {
+ en: { navShop:'Shop', navWhy:'Why us', navNews:'Journal', eyebrow:'Everyday essentials', heroT:'Good things, gently chosen', heroS:'A small shop for everything you reach for every day, from the home to the wardrobe.', cta:'Start shopping', shopT:'Shop all', w1t:'Considered quality', w1p:'Every product is tested and picked to feel right in daily use.', w2t:'Fast, careful delivery', w2p:'Packed with care and on its way within 24 hours.', w3t:'Easy returns', w3p:'Changed your mind? Send it back within 30 days.', nT:'Join the quiet list', nP:'New arrivals and small offers, once or twice a month. Nothing more.', nB:'Subscribe' },
+ ar: { navShop:'تسوّق', navWhy:'لماذا نحن', navNews:'المدوّنة', eyebrow:'أساسيات يومية', heroT:'أشياء جميلة، اختيرت بلطف', heroS:'متجر صغير لكل ما تحتاجه كل يوم، من المنزل إلى خزانة الملابس.', cta:'ابدأ التسوق', shopT:'كل المنتجات', w1t:'جودة مدروسة', w1p:'كل منتج مُختبر ومُختار ليكون مريحًا في الاستخدام اليومي.', w2t:'توصيل سريع وبعناية', w2p:'تغليف دقيق وشحن خلال 24 ساعة.', w3t:'إرجاع سهل', w3p:'غيّرت رأيك؟ أعده خلال 30 يومًا.', nT:'انضم إلى القائمة الهادئة', nP:'وصول منتجات جديدة وعروض صغيرة مرة أو مرتين شهريًا، لا أكثر.', nB:'اشترك' } } });
+</script>
+</body></html>

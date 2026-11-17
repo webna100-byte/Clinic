@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maison Lune — Store concept</title><meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="../shared/base.css"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo-note">Store concept by <b>Bytevia</b> · demo products and prices</div>
+<div class="ann"><span data-t="free">Free shipping over $75</span></div>
+<header class="top"><div class="wrap bar">
+  <nav class="left"><a href="#shop" data-tx="navShop">Shop</a><a href="#story" data-tx="navStory">Our story</a><a href="#contact" data-tx="navContact">Contact</a></nav>
+  <a class="logo" href="#">Maison Lune</a>
+  <div class="right"><button class="langbtn" data-lang-toggle>العربية</button><button class="icon-btn" data-cart-open aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><em class="count" data-cart-count hidden>0</em></button></div>
+</div></header>
+
+<section class="hero"><div class="wrap split">
+  <div class="copy"><span class="eyebrow" data-tx="eyebrow">New season</span><h1 data-tx="heroT">Quiet pieces for everyday living</h1><p data-tx="heroS">Thoughtfully made things for you and your home. Natural materials, calm colours, built to last.</p><a class="btn" href="#shop" data-tx="cta">Shop the collection</a></div>
+  <div class="pic"></div>
+</div></section>
+
+<section id="shop" class="shop"><div class="wrap">
+  <div class="head"><h2 data-tx="shopT">The collection</h2><span id="count" class="muted"></span></div>
+  <div class="tools"><div id="filters" class="filters"></div><div class="rgt"><input id="search" type="search"><select id="sort"></select></div></div>
+  <div id="grid" class="grid"></div>
+</div></section>
+
+<section id="story" class="story"><div class="wrap two">
+  <div class="img"></div>
+  <div><span class="eyebrow" data-tx="storyE">Our story</span><h2 data-tx="storyT">Made slowly, chosen carefully</h2><p data-tx="storyP">We work with small makers and choose pieces that feel good, look good and last. No noise, just well-made things for a calmer home.</p><ul><li data-tx="v1">Natural, responsibly sourced materials</li><li data-tx="v2">Small batches, honest prices</li><li data-tx="v3">Easy 30-day returns</li></ul></div>
+</div></section>
+
+<footer id="contact"><div class="wrap fg"><div><b class="logo">Maison Lune</b><p data-tx="fabout">A calm, considered shop. Demo content.</p></div><div><b data-tx="fhelp">Help</b><a href="#" data-tx="fl1">Shipping</a><a href="#" data-tx="fl2">Returns</a><a href="#" data-tx="fl3">Contact us</a></div><div><b data-tx="fnews">Newsletter</b><form onsubmit="event.preventDefault()"><input type="email" placeholder="email@example.com" aria-label="Email"><button class="btn" data-tx="fsub">Subscribe</button></form></div></div><div class="wrap copy2">© 2026 Maison Lune · Store concept by Bytevia</div></footer>
+
+<div id="drawer"><div class="overlay" data-close></div><aside class="drawer"><header><h2 data-t="cart">Your cart</h2><button class="x" data-close aria-label="Close">×</button></header><div id="drawer-items"></div><footer><div class="sum"><span data-t="subtotal">Subtotal</span><b id="drawer-total">$0</b></div><p data-t="shipping"></p><button id="checkout" class="btn" data-t="checkout">Checkout</button></footer></aside></div>
+<div id="modal" class="modal"><div class="bg" data-close></div><div class="sheet"><button class="x" data-close aria-label="Close">×</button><div id="modal-body"></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="../shared/products.js"></script><script src="../shared/store.js"></script>
+<script>
+Store.init({ id: 'linen', lang: 'en', text: {
+ en: { navShop:'Shop', navStory:'Our story', navContact:'Contact', eyebrow:'New season', heroT:'Quiet pieces for everyday living', heroS:'Thoughtfully made things for you and your home. Natural materials, calm colours, built to last.', cta:'Shop the collection', shopT:'The collection', storyE:'Our story', storyT:'Made slowly, chosen carefully', storyP:'We work with small makers and choose pieces that feel good, look good and last. No noise, just well-made things for a calmer home.', v1:'Natural, responsibly sourced materials', v2:'Small batches, honest prices', v3:'Easy 30-day returns', fabout:'A calm, considered shop. Demo content.', fhelp:'Help', fl1:'Shipping', fl2:'Returns', fl3:'Contact us', fnews:'Newsletter', fsub:'Subscribe' },
+ ar: { navShop:'تسوّق', navStory:'قصتنا', navContact:'تواصل', eyebrow:'موسم جديد', heroT:'قطع هادئة لحياتك اليومية', heroS:'منتجات مصنوعة بعناية لك ولمنزلك. خامات طبيعية وألوان هادئة، وجودة تدوم.', cta:'تسوّق المجموعة', shopT:'المجموعة', storyE:'قصتنا', storyT:'صُنعت ببطء واختيرت بعناية', storyP:'نعمل مع حرفيين صغار ونختار قطعًا تبدو جميلة وتدوم طويلًا. بلا ضجيج، فقط منتجات متقنة لمنزل أهدأ.', v1:'خامات طبيعية ومصادر مسؤولة', v2:'دفعات صغيرة وأسعار عادلة', v3:'إرجاع سهل خلال 30 يومًا', fabout:'متجر هادئ ومدروس. محتوى تجريبي.', fhelp:'مساعدة', fl1:'الشحن', fl2:'الإرجاع', fl3:'تواصل معنا', fnews:'النشرة البريدية', fsub:'اشترك' } } });
+</script>
+</body></html>

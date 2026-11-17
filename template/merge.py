@@ -154,11 +154,16 @@ def messages(row):
     lang = row['message_lang'] if row['message_lang'] in FALLBACK_REASON else 'en'
     ch = 'WhatsApp' if row['channel'].lower().startswith('whats') else 'Instagram'
     tpl = TPL.get((lang, ch)) or TPL.get((lang, 'Instagram'))
-    reason = clean_reason(row.get('need_reason_local'), lang) or FALLBACK_REASON[lang]
+    reason = clean_reason(row.get('need_reason_local'), lang)
+    has_ar = bool(re.search(r'[\u0600-\u06ff]', reason))
+    looks_en = bool(re.search(r"\b(the|website|bio|no|has|and|with|only|link|site)\b", reason, re.I))
+    mismatch = (lang == 'ar' and reason and not has_ar) or (lang != 'ar' and has_ar) or (lang not in ('en', 'ar') and looks_en)
+    if not reason or mismatch:
+        reason = FALLBACK_REASON[lang]
     name = (row.get('name_ar') if lang == 'ar' and row.get('name_ar') else row['name']).strip()
     pr = price_str(row.get('country', ''), lang)
     first, follow = (t.format(name=name, reason=reason, price=pr) for t in tpl)
-    review = 'نعم' if (lang not in CONFIDENT or not row.get('need_reason_local')) else 'لا'
+    review = 'نعم' if (lang not in CONFIDENT or not row.get('need_reason_local') or mismatch) else 'لا'
     return first, follow, review
 
 

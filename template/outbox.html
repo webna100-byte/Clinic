@@ -132,7 +132,7 @@ function renderDetail(){
   el.innerHTML='<div class="card"><button class="back" id="back">← القائمة</button><h1>'+esc(d.name)+'</h1><div class="sub">'+(isWa?'<span dir="ltr">+'+esc(d.wa)+'</span>':'<span dir="ltr">'+esc(d.ig.replace('https://www.instagram.com/','@').replace(/\/$/,''))+'</span>')+'</div><div class="chips">'+chips+'</div>'+
    '<label for="msg">'+lab+'</label><textarea id="msg">'+esc(msg)+'</textarea>'+
    '<div class="actions">'+primary+'<button class="sec'+(sent?' done':'')+'" id="done">'+(sent?'✓ تم، التالي':'تم الإرسال ✓')+'</button></div>'+
-   '<div class="mini"><button id="cp">نسخ الرسالة فقط</button>'+(d.ig?'<a href="'+esc(d.ig)+'" target="_blank" rel="noopener">فتح الحساب</a>':'')+(d.demo?'<button id="cd">نسخ رابط الديمو</button>':'')+(d.maps?'<a href="'+esc(d.maps)+'" target="_blank" rel="noopener">الخريطة</a>':'')+'<button id="skip">تخطي</button></div>'+
+   '<div class="mini"><button id="cp">نسخ الرسالة فقط</button>'+(d.ig?'<a href="'+esc(d.ig)+'" target="_blank" rel="noopener">فتح الحساب</a>':'')+(d.demo?'<button id="cd">نسخ رابط الديمو</button>':'')+(d.maps?'<a href="'+esc(d.maps)+'" target="_blank" rel="noopener">الخريطة</a>':'')+'<button id="skip">تخطي</button><button id="upto">علّم هذا وكل ما قبله كمُرسل</button></div>'+
    '<div class="note">'+(isWa?'<b>واتساب:</b> الزر يفتح المحادثة والرسالة جاهزة، اضغط إرسال داخل واتساب ثم ارجع واضغط "تم الإرسال".':'<b>انستغرام:</b> الزر ينسخ الرسالة ويفتح الحساب، اضغط Message ثم الصق (لصق) وأرسل، ثم ارجع واضغط "تم الإرسال".')+(d.note?'<br><b>ملاحظات:</b> '+esc(d.note):'')+(d.reason?'<br><b>سبب الحاجة:</b> '+esc(d.reason):'')+'</div></div>';
   var ta=$('msg');
   ta.addEventListener('input',function(){S.edit[d.id]=ta.value;save()});
@@ -140,6 +140,12 @@ function renderDetail(){
   $('cp').onclick=function(){copy(ta.value).then(function(){toast('تم نسخ الرسالة')})};
   if($('cd'))$('cd').onclick=function(){copy(d.demo).then(function(){toast('تم نسخ رابط الديمو')})};
   $('skip').onclick=function(){next(d.id)};
+  $('upto').onclick=function(){
+    var list=DATA.filter(function(x){return x.ch===d.ch}),pos=list.map(function(x){return x.id}).indexOf(d.id)+1;
+    if(!confirm('تعليم '+pos+' جهة (من الأولى حتى هذه) كمُرسلة؟'))return;
+    var n=0;list.slice(0,pos).forEach(function(x){if(!x.blocked&&!S.st[x.id]){S.st[x.id]={t:Date.now()};n++}});
+    save();toast('تم تعليم '+n+' جهة كمُرسلة');renderAll();
+  };
   $('done').onclick=function(){
     if(!S.st[d.id]){S.st[d.id]={t:Date.now()}}else if(st==='due'){S.st[d.id].f=Date.now()}
     save();toast('تم تسجيل الإرسال');next(d.id,true);

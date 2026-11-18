@@ -18,7 +18,7 @@ NICHE_LABEL = {'clinic': 'Clinic (dental/aesthetic/derma)', 'law': 'Law / accoun
 
 COLUMNS = ['#', 'اسم النشاط', 'النيش', 'الدولة', 'المدينة', 'القناة', 'رقم الواتساب', 'حساب انستغرام', 'رابط Google Maps',
            'رابط الموقع', 'سبب الحاجة', 'درجة الحاجة', 'اسم المالك/المسؤول', 'اللون/الهوية', 'لغة الرسالة', 'رابط الديمو',
-           'الرسالة الأولى', 'رسالة المتابعة', 'رابط الإرسال', 'يحتاج مراجعة لغوية', 'نشاط الحساب', 'آخر منشور', 'حالة الإرسال', 'تاريخ الإرسال', 'الرد', 'ملاحظات',
+           'الرسالة الأولى', 'رسالة المتابعة', 'رد إرسال الديمو', 'رابط الإرسال', 'يحتاج مراجعة لغوية', 'نشاط الحساب', 'آخر منشور', 'حالة الإرسال', 'تاريخ الإرسال', 'الرد', 'ملاحظات',
            # extra helpful columns
            'التخصص', 'سبب الحاجة (بلغة الرسالة)', 'لقطة ديسكتوب', 'لقطة جوال', 'الشعار في الديمو', 'مصدر المعلومة']
 
@@ -91,13 +91,13 @@ def price_str(country, lang):
 
 TPL = {
     ('ar', 'WhatsApp'): (
-        'السلام عليكم 👋 معكم Bytevia. لاحظنا أن {reason}. صمّمنا لـ{name} موقعًا احترافيًا جاهزًا، وتنفيذه بـ {price} فقط (دفعة واحدة، بدون اشتراكات). لا نطلب أي مقدّم، تشوفون التصميم أولًا. نرسله لكم؟',
+        'السلام عليكم، معكم Bytevia. لاحظنا أن {reason}. صمّمنا لـ{name} موقعًا احترافيًا جاهزًا، وتنفيذه بـ {price} فقط (دفعة واحدة، بدون اشتراكات). لا نطلب أي مقدّم، تشوفون التصميم أولًا. نرسله لكم؟',
         'السلام عليكم، تصميم موقع {name} جاهز بـ {price} فقط، وبدون أي مقدّم. نرسله لكم؟'),
     ('ar', 'Instagram'): (
         'مرحبًا {name} 👋 معكم Bytevia. لاحظنا أن {reason}. صمّمنا لكم موقعًا احترافيًا جاهزًا، وتنفيذه بـ {price} فقط (دفعة واحدة، بدون اشتراكات). لا نطلب أي مقدّم، تشوفون التصميم أولًا. نرسله لكم؟',
         'مرحبًا مجددًا 🙂 تصميم موقع {name} جاهز بـ {price} فقط، وبدون أي مقدّم. نرسله هنا؟'),
     ('en', 'WhatsApp'): (
-        "Hello 👋 This is Bytevia. We noticed that {reason}. We've designed a professional website for {name} and can build it for just {price} (one-time, no subscriptions). No upfront payment: you see the design first. Shall we send it over?",
+        "Hello, this is Bytevia. We noticed that {reason}. We've designed a professional website for {name} and can build it for just {price} (one-time, no subscriptions). No upfront payment: you see the design first. Shall we send it over?",
         'Hello, the website design for {name} is ready for just {price}, with no upfront payment. Shall we send it?'),
     ('en', 'Instagram'): (
         "Hi {name} 👋 Bytevia here. We noticed that {reason}. We've designed a professional website for you and can build it for just {price} (one-time, no subscriptions). No upfront payment: you see the design first. Want to see it?",
@@ -124,6 +124,25 @@ TPL = {
         'Hei {name} 👋 Bytevia tässä. Huomasimme, että {reason}. Olemme jo tehneet teille ammattimaisen verkkosivuehdotuksen, toteutus vain {price} (kertamaksu, ei tilausta). Ei ennakkomaksua – näette ensin luonnoksen. Lähetämmekö sen?',
         'Hei taas! Verkkosivuehdotuksenne on valmis hintaan {price}, ilman ennakkomaksua. Lähetämmekö sen tänne?'),
 }
+DEMO_REPLY = {
+    'ar': 'ممتاز! هذا التصميم الذي جهّزناه لـ{name}: {demo}\nيعمل على الجوال وبلغتين. إذا أعجبكم نُطلقه لكم بـ {price} (دفعة واحدة، بدون اشتراكات) وننقله إلى حسابكم بعد الاتفاق. تحبون نعدّل الألوان أو النصوص؟',
+    'en': 'Great! Here is the design we prepared for {name}: {demo}\nIt works on mobile and in two languages. If you like it, we can launch it for {price} (one-time, no subscriptions) and move it to your own account once we agree. Would you like any changes to the colours or text?',
+    'nl': 'Mooi! Dit is het ontwerp dat we voor {name} hebben gemaakt: {demo}\nHet werkt op mobiel en in twee talen. Bevalt het, dan zetten we het live voor {price} (eenmalig, geen abonnement) en dragen we het over na afspraak. Willen jullie nog aanpassingen aan kleuren of teksten?',
+    'de': 'Sehr gern! Hier ist der Entwurf, den wir für {name} vorbereitet haben: {demo}\nEr funktioniert auf dem Handy und in zwei Sprachen. Wenn er Ihnen gefällt, setzen wir ihn für {price} um (einmalig, ohne Abo) und übergeben ihn nach Absprache. Möchten Sie Anpassungen bei Farben oder Texten?',
+    'fr': "Avec plaisir ! Voici la maquette préparée pour {name} : {demo}\nElle fonctionne sur mobile et en deux langues. Si elle vous plaît, nous la mettons en ligne pour {price} (paiement unique, sans abonnement) et la transférons après accord. Souhaitez-vous modifier les couleurs ou les textes ?",
+    'da': 'Super! Her er udkastet, vi har lavet til {name}: {demo}\nDet virker på mobil og på to sprog. Hvis I kan lide det, sætter vi det live for {price} (engangsbetaling, intet abonnement) og overdrager det efter aftale. Vil I have ændringer i farver eller tekster?',
+    'no': 'Flott! Her er utkastet vi har laget til {name}: {demo}\nDet fungerer på mobil og på to språk. Hvis dere liker det, setter vi det live for {price} (engangsbetaling, uten abonnement) og overleverer etter avtale. Vil dere ha endringer i farger eller tekster?',
+    'sv': 'Vad roligt! Här är förslaget vi tagit fram åt {name}: {demo}\nDet fungerar på mobil och på två språk. Om ni gillar det lanserar vi det för {price} (engångsbelopp, inget abonnemang) och överlämnar efter överenskommelse. Vill ni ändra färger eller texter?',
+    'fi': 'Hienoa! Tässä on {name} varten tehty ehdotus: {demo}\nSe toimii mobiilissa ja kahdella kielellä. Jos pidätte siitä, julkaisemme sen hintaan {price} (kertamaksu, ei tilausta) ja luovutamme sopimuksen jälkeen. Haluatteko muutoksia väreihin tai teksteihin?',
+}
+
+
+def demo_reply(row, demo):
+    lang = row['message_lang'] if row['message_lang'] in DEMO_REPLY else 'en'
+    name = (row.get('name_ar') if lang == 'ar' and row.get('name_ar') else row['name']).strip()
+    return DEMO_REPLY[lang].format(name=name, demo=demo, price=price_str(row.get('country', ''), lang))
+
+
 CONFIDENT = {'ar', 'en', 'de', 'nl', 'fr'}  # others flagged for native review
 
 
@@ -293,7 +312,7 @@ def main():
             'رقم الواتساب': r['whatsapp'], 'حساب انستغرام': r['instagram'], 'رابط Google Maps': r['maps_url'],
             'رابط الموقع': r['website'], 'سبب الحاجة': r['need_reason_en'], 'درجة الحاجة': r['need_score'],
             'اسم المالك/المسؤول': r['owner_name'], 'اللون/الهوية': r['brand_color'], 'لغة الرسالة': r['message_lang'],
-            'رابط الديمو': url, 'الرسالة الأولى': first, 'رسالة المتابعة': follow, 'رابط الإرسال': send_link(r, first), 'يحتاج مراجعة لغوية': review,
+            'رابط الديمو': url, 'الرسالة الأولى': first, 'رسالة المتابعة': follow, 'رد إرسال الديمو': demo_reply(r, url), 'رابط الإرسال': send_link(r, first), 'يحتاج مراجعة لغوية': review,
             'حالة الإرسال': 'لم يُرسل', 'تاريخ الإرسال': '', 'الرد': '', 'ملاحظات': r['notes'],
             'التخصص': r['sub_niche'], 'سبب الحاجة (بلغة الرسالة)': r['need_reason_local'],
             'لقطة ديسكتوب': f'screenshots/{tok}-desktop.jpg', 'لقطة جوال': f'screenshots/{tok}-mobile.jpg',
@@ -317,6 +336,7 @@ def main():
         if src:
             o['الرسالة الأولى'], o['رسالة المتابعة'], o['يحتاج مراجعة لغوية'] = messages(src)
             o['رابط الإرسال'] = send_link(src, o['الرسالة الأولى'])
+            o['رد إرسال الديمو'] = demo_reply(src, o.get('رابط الديمو', ''))
     for o in out:
         if o.get('نشاط الحساب') == 'غير موجود' and o.get('حالة الإرسال') in ('', 'لم يُرسل', None):
             o['حالة الإرسال'] = 'لا تُرسل (الحساب غير متاح)'

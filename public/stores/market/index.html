@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bazario Marketplace</title><meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="../shared/base.css"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo-note">Store concept by <b>Bytevia</b> · demo products and prices</div>
+<header class="hd">
+  <div class="hrow wrap">
+    <button class="burger-btn" data-toggle="#mega" aria-label="Menu">☰</button>
+    <a class="logo" href="#">Bazario<i>.</i></a>
+    <form class="search" role="search"><select id="search-cat" aria-label="Department"></select><input id="search" type="search" data-ph="search" autocomplete="off"><button class="sbtn" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button></form>
+    <div class="hact"><button class="langbtn" data-lang-toggle>العربية</button><a class="acc" href="#"><small data-tx="hello">Hello, sign in</small><b data-tx="acct">Account</b></a><button class="cartbtn" data-cart-open aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.4 12.2a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.5L21.5 8H6"/></svg><em class="count" data-cart-count hidden>0</em><b data-t="cart">Your cart</b></button></div>
+  </div>
+  <nav class="sub"><div class="wrap"><button class="all" data-toggle="#mega">☰ <span data-t="all">All</span></button><a href="#deals-s" data-tx="n1">Today's deals</a><a href="#new-s" data-tx="n2">New arrivals</a><a href="#shop" data-tx="n3">Best sellers</a><a href="#help" data-tx="n4">Customer service</a><a href="#shop" data-tx="n5">Gift ideas</a></div></nav>
+  <div id="mega" class="mega" data-pop></div>
+</header>
+
+<section class="heroS"><div class="slider" data-slider>
+  <div class="slide s1"><div class="wrap"><h1 data-tx="h1">Everything you need, delivered fast</h1><p data-tx="p1">Millions of products across fashion, home, beauty and tech.</p><a class="btn" href="#shop" data-tx="c1">Shop now</a></div></div>
+  <div class="slide s2"><div class="wrap"><h1 data-tx="h2">Up to 30% off home &amp; living</h1><p data-tx="p2">Limited-time deals on the pieces you love.</p><a class="btn" href="#deals-s" data-tx="c2">See deals</a></div></div>
+  <div class="slide s3"><div class="wrap"><h1 data-tx="h3">The new season edit</h1><p data-tx="p3">Fresh arrivals in fashion and accessories.</p><a class="btn" href="#new-s" data-tx="c3">Explore</a></div></div>
+  <button class="nav prev" data-prev aria-label="Previous">‹</button><button class="nav next" data-next aria-label="Next">›</button><div class="dots"></div>
+</div></section>
+
+<section class="tiles wrap">
+  <div class="tile"><h2 data-tx="t1">Fashion for every day</h2><div class="q"><img src="../shared/img/jacket.jpg" alt=""><img src="../shared/img/tee.jpg" alt=""><img src="../shared/img/sneakers.jpg" alt=""><img src="../shared/img/tote.jpg" alt=""></div><button data-cat="fashion" data-tx="more">See more</button></div>
+  <div class="tile"><h2 data-tx="t2">Refresh your home</h2><div class="q"><img src="../shared/img/lamp.jpg" alt=""><img src="../shared/img/cups.jpg" alt=""><img src="../shared/img/candle.jpg" alt=""><img src="../shared/img/plates.jpg" alt=""></div><button data-cat="home" data-tx="more">See more</button></div>
+  <div class="tile"><h2 data-tx="t3">Beauty picks</h2><div class="q"><img src="../shared/img/cream.jpg" alt=""><img src="../shared/img/mask.jpg" alt=""><img src="../shared/img/care.jpg" alt=""><img src="../shared/img/necklace.jpg" alt=""></div><button data-cat="beauty" data-tx="more">See more</button></div>
+  <div class="tile"><h2 data-tx="t4">Gadgets &amp; accessories</h2><div class="q"><img src="../shared/img/headphones.jpg" alt=""><img src="../shared/img/watch.jpg" alt=""><img src="../shared/img/wallet.jpg" alt=""><img src="../shared/img/handbag.jpg" alt=""></div><button data-cat="accessories" data-tx="more">See more</button></div>
+</section>
+
+<section id="deals-s" class="rail wrap"><div class="rh"><h2 data-tx="dT">Today's deals</h2><a href="#shop" data-tx="all2">See all deals</a></div><div id="deals" class="scroller"></div></section>
+<section id="new-s" class="rail wrap"><div class="rh"><h2 data-tx="nT">New arrivals</h2></div><div id="newin" class="scroller"></div></section>
+
+<section id="shop" class="main wrap">
+  <aside class="side"><h3 data-t="dept">Department</h3><div id="f-cats" class="fgroup"></div><h3 data-t="price">Price</h3><div id="f-price" class="fgroup"></div><h3 data-t="rate">Customer reviews</h3><div id="f-rate" class="fgroup"></div><button class="clr" data-clear data-t="clear">Clear filters</button></aside>
+  <div class="res"><div class="bar"><span id="count"></span><label><span data-t="sort">Sort by</span> <select id="sort"></select></label></div><div id="grid" class="grid"></div></div>
+</section>
+<footer id="help"><div class="back" onclick="scrollTo({top:0,behavior:'smooth'})" data-tx="top">Back to top</div><div class="wrap fcols"><div><b data-tx="f1">Get to know us</b><a href="#" data-tx="f1a">About</a><a href="#" data-tx="f1b">Careers</a></div><div><b data-tx="f2">Help</b><a href="#" data-tx="f2a">Shipping &amp; delivery</a><a href="#" data-tx="f2b">Returns</a></div><div><b data-tx="f3">Sell with us</b><a href="#" data-tx="f3a">Become a seller</a><a href="#" data-tx="f3b">Advertise</a></div></div><div class="wrap cp">© 2026 Bazario · Store concept by Bytevia</div></footer>
+
+<div id="drawer"><div class="overlay" data-close></div><aside class="drawer"><header><h2 data-t="cart">Your cart</h2><button class="x" data-close aria-label="Close">×</button></header><div class="ship"><div class="sbar"><i id="ship-bar"></i></div><span id="ship-text"></span></div><div id="drawer-items"></div><footer><div class="sum"><span data-t="subtotal">Subtotal</span><b id="drawer-total">$0</b></div><button id="checkout" class="btn" data-t="checkout">Checkout</button></footer></aside></div>
+<div id="modal" class="modal"><div class="bg" data-close></div><div class="sheet"><button class="x" data-close aria-label="Close">×</button><div id="modal-body"></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="../shared/products.js"></script><script src="../shared/store2.js"></script>
+<script>
+Store.init({ id: 'market', lang: 'en', freeShip: 35, cur: { sym: '$', rate: 1, round: 1, after: false }, text: {
+ en: { hello:'Hello, sign in', acct:'Account', n1:"Today's deals", n2:'New arrivals', n3:'Best sellers', n4:'Customer service', n5:'Gift ideas', h1:'Everything you need, delivered fast', p1:'Millions of products across fashion, home, beauty and tech.', c1:'Shop now', h2:'Up to 30% off home &amp; living', p2:'Limited-time deals on the pieces you love.', c2:'See deals', h3:'The new season edit', p3:'Fresh arrivals in fashion and accessories.', c3:'Explore', t1:'Fashion for every day', t2:'Refresh your home', t3:'Beauty picks', t4:'Gadgets &amp; accessories', more:'See more', dT:"Today's deals", all2:'See all deals', nT:'New arrivals', top:'Back to top', f1:'Get to know us', f1a:'About', f1b:'Careers', f2:'Help', f2a:'Shipping &amp; delivery', f2b:'Returns', f3:'Sell with us', f3a:'Become a seller', f3b:'Advertise' },
+ ar: { hello:'مرحبًا، سجّل الدخول', acct:'حسابي', n1:'عروض اليوم', n2:'وصل حديثًا', n3:'الأكثر مبيعًا', n4:'خدمة العملاء', n5:'أفكار هدايا', h1:'كل ما تحتاجه، يصلك بسرعة', p1:'آلاف المنتجات في الأزياء والمنزل والعناية والإلكترونيات.', c1:'تسوّق الآن', h2:'خصم يصل إلى 30% على المنزل والمعيشة', p2:'عروض لفترة محدودة على قطع تحبها.', c2:'شاهد العروض', h3:'اختيارات الموسم الجديد', p3:'وصل حديثًا في الأزياء والإكسسوارات.', c3:'اكتشف', t1:'أزياء لكل يوم', t2:'جدّد منزلك', t3:'اختيارات العناية', t4:'أجهزة وإكسسوارات', more:'عرض المزيد', dT:'عروض اليوم', all2:'عرض كل العروض', nT:'وصل حديثًا', top:'العودة للأعلى', f1:'تعرّف علينا', f1a:'من نحن', f1b:'الوظائف', f2:'مساعدة', f2a:'الشحن والتوصيل', f2b:'الإرجاع', f3:'بِع معنا', f3a:'كن بائعًا', f3b:'أعلن معنا' } } });
+</script>
+</body></html>

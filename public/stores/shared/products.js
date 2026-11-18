@@ -31,3 +31,13 @@ window.PRODUCTS = [
   { id: 21, cat: 'home',        price: 16,  img: 'mug',        badge: '',     en: ['Matte ceramic mug', 'A comfortable handle and a soft, matte glaze.'], ar: ['كوب سيراميك مطفي', 'مقبض مريح وطلاء مطفي ناعم.'] },
   { id: 22, cat: 'home',        price: 22,  img: 'tea',        badge: '',     en: ['Tea & biscuit gift set', 'A cup, saucer and handmade biscuits to share.'], ar: ['طقم هدية شاي وبسكويت', 'فنجان وصحن وبسكويت مصنوع يدويًا للمشاركة.'] },
 ];
+
+/* Department tree for mega menus (decorative sub-levels; clicking a department filters by its top category). */
+window.TREE = {
+  fashion:     { en: ['Women', 'Men', 'Kids', 'Shoes'], ar: ['نسائي', 'رجالي', 'أطفال', 'أحذية'] },
+  accessories: { en: ['Bags', 'Jewellery', 'Watches', 'Wallets'], ar: ['حقائب', 'مجوهرات', 'ساعات', 'محافظ'] },
+  home:        { en: ['Kitchen', 'Decor', 'Lighting', 'Gifts'], ar: ['المطبخ', 'ديكور', 'إضاءة', 'هدايا'] },
+  beauty:      { en: ['Skincare', 'Hair care', 'Body care', 'Perfume'], ar: ['العناية بالبشرة', 'العناية بالشعر', 'العناية بالجسم', 'عطور'] },
+  tech:        { en: ['Audio', 'Phones', 'Smart home', 'Gaming'], ar: ['صوتيات', 'هواتف', 'المنزل الذكي', 'ألعاب'] },
+  stationery:  { en: ['Notebooks', 'Pens', 'Art', 'Office'], ar: ['دفاتر', 'أقلام', 'فنون', 'مكتب'] },
+};

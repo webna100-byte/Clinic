@@ -36,3 +36,4 @@ node template/build.js --name "Smile Studio" --niche clinic --city Dubai --lang 
 ## متاجر إلكترونية (نماذج)
 ثلاثة نماذج متاجر عامة (أي نوع منتجات)، بلغتين عربي وإنجليزي مع RTL: `public/stores/linen`, `public/stores/sage`, `public/stores/mist`.
 المنتجات والنصوص في `public/stores/shared/products.js`؛ المحرك (سلة، بحث، فلترة، عرض سريع) في `shared/store.js`. الدفع غير مفعّل (ديمو).
+المتجران 4 و5: `public/stores/market` (نمط المتاجر العالمية الكبرى: بحث وأقسام وعروض وتقييمات) و`public/stores/watan` (نمط متجر فلسطيني: عربي أولًا، شيكل، دفع عند الاستلام، توصيل للضفة، شجرة تصنيفات). المحرك: `shared/store2.js`.

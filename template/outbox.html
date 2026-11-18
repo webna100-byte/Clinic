@@ -14,9 +14,9 @@ header b{font-size:18px;letter-spacing:.02em}header b i{color:var(--teal);font-s
 .stats{margin-inline-start:auto;display:flex;gap:14px;font-size:13px;color:#cfe7e3;flex-wrap:wrap}.stats span b{color:#fff}
 .app{flex:1;display:grid;grid-template-columns:340px 1fr;min-height:0}
 aside{background:var(--card);border-inline-end:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
-.tabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line)}
+.tabs{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid var(--line)}
 .tab{padding:13px 8px;background:none;font-weight:600;color:var(--muted);border-bottom:3px solid transparent}
-.tab.on[data-t=wa]{color:#128c4a;border-color:var(--wa)}.tab.on[data-t=ig]{color:var(--ig);border-color:var(--ig)}
+.tab.on[data-t=wa]{color:#128c4a;border-color:var(--wa)}.tab.on[data-t=ig]{color:var(--ig);border-color:var(--ig)}.tab.on[data-t=fu]{color:#b45309;border-color:var(--warn)}
 .tab small{display:block;font-weight:400;font-size:12px}
 .tools{padding:10px;display:flex;gap:8px;border-bottom:1px solid var(--line)}
 .tools input{flex:1;min-width:0;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font:inherit}
@@ -58,7 +58,7 @@ textarea:focus{outline:2px solid color-mix(in srgb,var(--teal) 40%,transparent)}
 <header><b>Byte<i>via</i> · Outbox</b><div class="stats" id="stats"></div></header>
 <div class="app" id="app">
   <aside>
-    <div class="tabs"><button class="tab on" data-t="wa" id="tab-wa"></button><button class="tab" data-t="ig" id="tab-ig"></button></div>
+    <div class="tabs"><button class="tab on" data-t="wa" id="tab-wa"></button><button class="tab" data-t="ig" id="tab-ig"></button><button class="tab" data-t="fu" id="tab-fu"></button></div>
     <div class="tools"><input id="q" type="search" placeholder="بحث بالاسم أو المدينة"><select id="flt"><option value="pending">المتبقي</option><option value="all">الكل</option><option value="sent">المُرسل</option><option value="due">متابعة</option></select></div>
     <div id="list"></div>
   </aside>
@@ -68,13 +68,13 @@ textarea:focus{outline:2px solid color-mix(in srgb,var(--teal) 40%,transparent)}
 <script>
 var DATA=/*DATA*/[];
 var KEY='bv_outbox_v1';
-var S={tab:'wa',sel:null,q:'',flt:'pending',st:{},edit:{}};
-try{S.st=JSON.parse(localStorage.getItem(KEY)||'{}');S.edit=JSON.parse(localStorage.getItem(KEY+'_e')||'{}')}catch(e){}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(S.st));localStorage.setItem(KEY+'_e',JSON.stringify(S.edit))}catch(e){}}
+var S={tab:'wa',sel:null,q:'',flt:'pending',st:{},edit:{},edit2:{}};
+try{S.st=JSON.parse(localStorage.getItem(KEY)||'{}');S.edit=JSON.parse(localStorage.getItem(KEY+'_e')||'{}');S.edit2=JSON.parse(localStorage.getItem(KEY+'_e2')||'{}')}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S.st));localStorage.setItem(KEY+'_e',JSON.stringify(S.edit));localStorage.setItem(KEY+'_e2',JSON.stringify(S.edit2))}catch(e){}}
 function $(i){return document.getElementById(i)}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function days(ts){return (Date.now()-ts)/86400000}
-function state(d){var s=S.st[d.id];if(!s)return 'new';if(s.f)return 'sent2';if(days(s.t)>=3)return 'due';return 'sent'}
+function state(d){var s=S.st[d.id];if(!s)return 'new';if(s.r)return 'replied';if(s.f)return 'sent2';if(days(s.t)>=3)return 'due';return 'sent'}
 function toast(m){var t=$('toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.h);toast.h=setTimeout(function(){t.classList.remove('on')},1800)}
 function copy(text){
   function fb(){var a=document.createElement('textarea');a.value=text;a.style.position='fixed';a.style.opacity=0;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a)}
@@ -85,6 +85,10 @@ function igUrl(d){return d.ig||''}
 function msgOf(d){return S.edit[d.id]!=null?S.edit[d.id]:d.msg1}
 function visible(){
   var q=S.q.trim().toLowerCase();
+  if(S.tab==='fu'){
+    return DATA.filter(function(d){var s=S.st[d.id];if(!s||s.f||s.r)return false;
+      return !q||(d.name+' '+d.city+' '+d.country).toLowerCase().indexOf(q)>-1}).sort(function(a,b){return S.st[a.id].t-S.st[b.id].t});
+  }
   return DATA.filter(function(d){
     if(d.ch!==S.tab)return false;
     var st=state(d);
@@ -100,42 +104,44 @@ function renderTabs(){
   var w=counts('wa'),i=counts('ig');
   $('tab-wa').innerHTML='واتساب<small>'+w.s+' / '+w.t+' مُرسل</small>';
   $('tab-ig').innerHTML='انستغرام<small>'+i.s+' / '+i.t+' مُرسل</small>';
+  $('tab-fu').innerHTML='متابعة<small>'+fuCount()+' بانتظار المتابعة</small>';
   [].forEach.call(document.querySelectorAll('.tab'),function(b){b.classList.toggle('on',b.dataset.t===S.tab)});
   var due=w.du+i.du;
   $('stats').innerHTML='<span>اليوم: <b>'+todayCount()+'</b></span><span>مُرسل: <b>'+(w.s+i.s)+'</b></span><span>متابعات مستحقة: <b>'+due+'</b></span>';
 }
+function fuCount(){var n=0;DATA.forEach(function(d){var s=S.st[d.id];if(s&&!s.f&&!s.r)n++});return n}
 function todayCount(){var n=0,t0=new Date();t0.setHours(0,0,0,0);Object.keys(S.st).forEach(function(k){if(S.st[k].t>=t0.getTime())n++});return n}
 function renderList(){
   var v=visible();
   $('list').innerHTML=v.length?v.map(function(d){
     var st=state(d),cls='it '+(st==='new'?'':st==='due'?'due':'sent')+(d.blocked?' blk':'')+(S.sel===d.id?' sel':'');
     var tag=d.act==='ضعيف النشاط'?'<span class="tag weak">ضعيف النشاط</span>':(d.score==='3'?'<span class="tag s3">حاجة قوية</span>':'');
-    return '<button class="'+cls+'" data-id="'+d.id+'"><i class="dot"></i><span class="n"><b>'+esc(d.name)+'</b><span>'+esc(d.city)+' · '+esc(d.country)+'</span></span>'+tag+'</button>';
+    return '<button class="'+cls+'" data-id="'+d.id+'"><i class="dot"></i><span class="n"><b>'+esc(d.name)+'</b><span>'+esc(d.city)+' · '+esc(d.country)+(S.tab==='fu'?' · '+(d.ch==='wa'?'واتساب':'انستغرام')+' · مرّ '+Math.floor(days(S.st[d.id].t))+' يوم':'')+'</span></span>'+tag+'</button>';
   }).join(''):'<div class="empty">لا توجد نتائج في هذه القائمة</div>';
 }
 function renderDetail(){
   var d=DATA.filter(function(x){return x.id===S.sel})[0],el=$('detail');
   if(!d){el.innerHTML='<div class="card empty">اختر نشاطًا من القائمة</div>';return}
-  var st=state(d),sent=S.st[d.id],isWa=d.ch==='wa';
+  var st=state(d),sent=S.st[d.id],isWa=d.ch==='wa',fu=S.tab==='fu';
   var chips='<span class="chip">'+esc(d.niche)+(d.sub?' · '+esc(d.sub):'')+'</span><span class="chip">'+esc(d.city)+' · '+esc(d.country)+'</span>';
   if(d.score==='3')chips+='<span class="chip good">حاجة قوية</span>';
   if(d.act==='ضعيف النشاط')chips+='<span class="chip warn">ضعيف النشاط</span>';
   if(d.hint)chips+='<span class="chip">'+esc(d.hint)+'</span>';
   if(d.review)chips+='<span class="chip warn">يحتاج مراجعة لغوية</span>';
-  if(sent)chips+='<span class="chip good">أُرسلت '+new Date(sent.t).toLocaleDateString('ar')+(st==='due'?' · وقت المتابعة':'')+'</span>';
-  var msg=(sent&&sent.f===undefined&&st==='due')?d.msg2:msgOf(d);
-  var lab=(st==='due')?'رسالة المتابعة (بعد 3 أيام)':'الرسالة (يمكنك تعديلها)';
+  if(sent)chips+='<span class="chip good">أُرسلت '+new Date(sent.t).toLocaleDateString('ar')+' · مرّ '+Math.floor(days(sent.t))+' يوم'+(st==='due'?' · وقت المتابعة':'')+'</span>';
+  var msg=fu?(S.edit2[d.id]!=null?S.edit2[d.id]:d.msg2):msgOf(d);
+  var lab=fu?'رسالة المتابعة (يمكنك تعديلها)':'الرسالة (يمكنك تعديلها)';
   var primary;
   if(d.blocked)primary='<button class="big" disabled>لا تُرسل: الحساب غير متاح</button>';
-  else if(isWa)primary='<button class="big wa" id="go">فتح واتساب بالرسالة</button>';
-  else primary='<button class="big ig" id="go">نسخ الرسالة وفتح انستغرام</button>';
+  else if(isWa)primary='<button class="big wa" id="go">'+(fu?'فتح واتساب بالمتابعة':'فتح واتساب بالرسالة')+'</button>';
+  else primary='<button class="big ig" id="go">'+(fu?'نسخ المتابعة وفتح انستغرام':'نسخ الرسالة وفتح انستغرام')+'</button>';
   el.innerHTML='<div class="card"><button class="back" id="back">← القائمة</button><h1>'+esc(d.name)+'</h1><div class="sub">'+(isWa?'<span dir="ltr">+'+esc(d.wa)+'</span>':'<span dir="ltr">'+esc(d.ig.replace('https://www.instagram.com/','@').replace(/\/$/,''))+'</span>')+'</div><div class="chips">'+chips+'</div>'+
    '<label for="msg">'+lab+'</label><textarea id="msg">'+esc(msg)+'</textarea>'+
-   '<div class="actions">'+primary+'<button class="sec'+(sent?' done':'')+'" id="done">'+(sent?'✓ تم، التالي':'تم الإرسال ✓')+'</button></div>'+
-   '<div class="mini"><button id="cp">نسخ الرسالة فقط</button>'+(d.ig?'<a href="'+esc(d.ig)+'" target="_blank" rel="noopener">فتح الحساب</a>':'')+(d.demo?'<button id="cd">نسخ رابط الديمو</button>':'')+(d.maps?'<a href="'+esc(d.maps)+'" target="_blank" rel="noopener">الخريطة</a>':'')+'<button id="r3">ردّ: أرسل الديمو</button><button id="skip">تخطي</button><button id="upto">علّم هذا وكل ما قبله كمُرسل</button></div>'+
+   '<div class="actions">'+primary+'<button class="sec'+(sent?' done':'')+'" id="done">'+(fu?'تم إرسال المتابعة ✓':(sent?'✓ تم، التالي':'تم الإرسال ✓'))+'</button></div>'+
+   '<div class="mini"><button id="cp">نسخ الرسالة فقط</button>'+(d.ig?'<a href="'+esc(d.ig)+'" target="_blank" rel="noopener">فتح الحساب</a>':'')+(d.demo?'<button id="cd">نسخ رابط الديمو</button>':'')+(d.maps?'<a href="'+esc(d.maps)+'" target="_blank" rel="noopener">الخريطة</a>':'')+'<button id="r3">ردّ: أرسل الديمو</button><button id="skip">تخطي</button>'+(fu?'':'<button id="upto">علّم هذا وكل ما قبله كمُرسل</button>')+(sent?'<button id="rep">وصل ردّ ✓</button>':'')+'</div>'+
    '<div class="note">'+(isWa?'<b>واتساب:</b> الزر يفتح المحادثة والرسالة جاهزة، اضغط إرسال داخل واتساب ثم ارجع واضغط "تم الإرسال".':'<b>انستغرام:</b> الزر ينسخ الرسالة ويفتح الحساب، اضغط Message ثم الصق (لصق) وأرسل، ثم ارجع واضغط "تم الإرسال".')+(d.note?'<br><b>ملاحظات:</b> '+esc(d.note):'')+(d.reason?'<br><b>سبب الحاجة:</b> '+esc(d.reason):'')+'</div></div>';
   var ta=$('msg');
-  ta.addEventListener('input',function(){S.edit[d.id]=ta.value;save()});
+  ta.addEventListener('input',function(){(fu?S.edit2:S.edit)[d.id]=ta.value;save()});
   if($('back'))$('back').onclick=function(){$('app').classList.remove('show-detail')};
   $('cp').onclick=function(){copy(ta.value).then(function(){toast('تم نسخ الرسالة')})};
   if($('cd'))$('cd').onclick=function(){copy(d.demo).then(function(){toast('تم نسخ رابط الديمو')})};
@@ -145,14 +151,15 @@ function renderDetail(){
     else{copy(t).then(function(){toast('تم نسخ رسالة الديمو، الصقها في المحادثة')});window.open(igUrl(d),'_blank','noopener')}
   };
   $('skip').onclick=function(){next(d.id)};
-  $('upto').onclick=function(){
+  if($('rep'))$('rep').onclick=function(){S.st[d.id].r=Date.now();save();toast('تم تسجيل الرد، أُخرج من المتابعات');next(d.id,true)};
+  if($('upto'))$('upto').onclick=function(){
     var list=DATA.filter(function(x){return x.ch===d.ch}),pos=list.map(function(x){return x.id}).indexOf(d.id)+1;
     if(!confirm('تعليم '+pos+' جهة (من الأولى حتى هذه) كمُرسلة؟'))return;
     var n=0;list.slice(0,pos).forEach(function(x){if(!x.blocked&&!S.st[x.id]){S.st[x.id]={t:Date.now()};n++}});
     save();toast('تم تعليم '+n+' جهة كمُرسلة');renderAll();
   };
   $('done').onclick=function(){
-    if(!S.st[d.id]){S.st[d.id]={t:Date.now()}}else if(st==='due'){S.st[d.id].f=Date.now()}
+    if(fu){S.st[d.id].f=Date.now()}else if(!S.st[d.id]){S.st[d.id]={t:Date.now()}}
     save();toast('تم تسجيل الإرسال');next(d.id,true);
   };
   if($('go')&&!d.blocked)$('go').onclick=function(){
